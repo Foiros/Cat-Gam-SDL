@@ -1,0 +1,56 @@
+//
+// Created by Arttu Paldán on 11/05/2021.
+//
+
+#ifndef SDLTUTORIAL_GAMEMANAGER_H
+#define SDLTUTORIAL_GAMEMANAGER_H
+
+#include "../SDLFramework/SDLHeaderFiles/AudioManager.h"
+#include "../SDLFramework/SDLHeaderFiles/Timer.h"
+#include "../SDLFramework/SDLHeaderFiles/InputManager.h"
+#include "../CatGameHeaderFiles/PlayScreen.h"
+
+namespace SDL{
+
+    class GameManager {
+
+        // Variables
+    private:
+
+        static GameManager* sInstance;
+
+        const int FRAME_RATE = 120;
+
+        bool mQuit;
+        Graphics* mGraphics;
+        AssetManager* mAssetManager;
+        InputManager* mInputManager;
+        AudioManager* mAudioManager;
+        Timer* mTimer;
+
+        PlayScreen* mPlayScreen;
+
+        SDL_Event mEvents;
+
+        // Functions
+    public:
+
+        static GameManager* Instance();
+        static void Release();
+
+        void Run();
+
+    private:
+
+        GameManager();
+        ~GameManager();
+
+        void EarlyUpdate();
+        void Update();
+        void LateUpdate();
+
+        void Render();
+    };
+}
+
+#endif
