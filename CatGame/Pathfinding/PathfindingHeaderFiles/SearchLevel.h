@@ -7,25 +7,15 @@
 
 #include "SearchNode.h"
 
-class SearchLevel
-{
+class SearchLevel{
+
 public:
-    SearchLevel(){}
+    SearchLevel();
+    ~SearchLevel();
 
-    float GetG(const Position& fromPos, const Position& toPos)
-    {
-        float dX = (float)(toPos.first - fromPos.first);
-        float dY = (float)(toPos.second - fromPos.second);
-        float result = sqrtf(dX * dX + dY * dY);
-        return result;
-    }
+    float GetG(const Position& fromPos, const Position& toPos);
 
-    float GetH(const Position& fromPos, const Position& toPos)
-    {
-        float dX = (float)(toPos.first - fromPos.first);
-        float dY = (float)(toPos.second - fromPos.second);
-        return sqrtf(dX * dX + dY * dY);
-    }
+    float GetH(const Position& fromPos, const Position& toPos);
 };
 
 #endif

@@ -10,18 +10,19 @@
 
 class PathfindingClosedList {
 
-public:
-    PathfindingClosedList(){}
-
-    void AddToClosedList(SearchNode* node) { closedList[node->pos] = node; }
-
-    bool IsInClosedList(const Position& pos) { return closedList.find(pos) != closedList.end();}
-
-    void ClearList(){ closedList.clear(); }
-
 private:
     typedef std::map<Position, SearchNode*> ClosedListType;
     ClosedListType closedList;
+
+public:
+    PathfindingClosedList();
+    ~PathfindingClosedList();
+
+    void AddToClosedList(SearchNode* node);
+
+    bool IsInClosedList(const Position& pos);
+
+    void ClearList();
 };
 
 #endif
