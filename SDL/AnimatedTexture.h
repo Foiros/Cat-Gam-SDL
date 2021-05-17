@@ -2,8 +2,8 @@
 // Created by arttu on 11/05/2021.
 //
 
-#ifndef SDLTUTORIAL_ANIMATEDTEXTURE_H
-#define SDLTUTORIAL_ANIMATEDTEXTURE_H
+#ifndef ANIMATEDTEXTURE_H
+#define ANIMATEDTEXTURE_H
 
 #include "Timer.h"
 #include "Texture.h"

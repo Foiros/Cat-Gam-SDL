@@ -250,6 +250,101 @@ CMakeFiles\CatGameSDL.dir\SDL\Timer.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\SDL\Timer.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\SDL\Timer.cpp"
 <<
 
+CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.obj: ..\Pathfinding\PathfindingClosedList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CatGameSDL.dir/Pathfinding/PathfindingClosedList.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\PathfindingClosedList.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/Pathfinding/PathfindingClosedList.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\PathfindingClosedList.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/Pathfinding/PathfindingClosedList.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\PathfindingClosedList.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.obj: ..\Pathfinding\PathfindingOpenList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/CatGameSDL.dir/Pathfinding/PathfindingOpenList.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\PathfindingOpenList.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/Pathfinding/PathfindingOpenList.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\PathfindingOpenList.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/Pathfinding/PathfindingOpenList.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\PathfindingOpenList.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.obj: ..\Pathfinding\Pathfinding.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/CatGameSDL.dir/Pathfinding/Pathfinding.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\Pathfinding.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/Pathfinding/Pathfinding.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\Pathfinding.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/Pathfinding/Pathfinding.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\Pathfinding.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.obj: ..\Pathfinding\SearchLevel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/CatGameSDL.dir/Pathfinding/SearchLevel.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\SearchLevel.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/Pathfinding/SearchLevel.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\SearchLevel.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/Pathfinding/SearchLevel.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\SearchLevel.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.obj: ..\Pathfinding\SearchNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/CatGameSDL.dir/Pathfinding/SearchNode.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\SearchNode.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/Pathfinding/SearchNode.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\SearchNode.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/Pathfinding/SearchNode.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\Pathfinding\SearchNode.cpp"
+<<
+
 # Object files for target CatGameSDL
 CatGameSDL_OBJECTS = \
 "CMakeFiles\CatGameSDL.dir\SDL\main.cpp.obj" \
@@ -261,7 +356,12 @@ CatGameSDL_OBJECTS = \
 "CMakeFiles\CatGameSDL.dir\SDL\Graphics.cpp.obj" \
 "CMakeFiles\CatGameSDL.dir\SDL\InputManager.cpp.obj" \
 "CMakeFiles\CatGameSDL.dir\SDL\Texture.cpp.obj" \
-"CMakeFiles\CatGameSDL.dir\SDL\Timer.cpp.obj"
+"CMakeFiles\CatGameSDL.dir\SDL\Timer.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.obj"
 
 # External object files for target CatGameSDL
 CatGameSDL_EXTERNAL_OBJECTS =
@@ -276,9 +376,14 @@ CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\SDL\Graphics.cpp.obj
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\SDL\InputManager.cpp.obj
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\SDL\Texture.cpp.obj
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\SDL\Timer.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.obj
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\build.make
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable CatGameSDL.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable CatGameSDL.exe"
 	"E:\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\CatGameSDL.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\CatGameSDL.dir\objects1.rsp @<<
  /out:CatGameSDL.exe /implib:CatGameSDL.lib /pdb:"E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CatGameSDL.pdb" /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console   -LIBPATH:E:\SDL\SDL2-2.0.14\lib\x86  -LIBPATH:E:\SDL\SDL2-2.0.14\Images\lib\x86  -LIBPATH:E:\SDL\SDL2-2.0.14\Fonts\lib\x86  -LIBPATH:E:\SDL\SDL2-2.0.14\Audio\lib\x86  SDL2main.lib SDL2.lib SDL2_image.lib SDL2_ttf.lib SDL2_mixer.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

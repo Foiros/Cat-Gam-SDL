@@ -90,6 +90,36 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/Pathfinding.cpp">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/Pathfinding.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/PathfindingClosedList.cpp">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/PathfindingClosedList.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/PathfindingOpenList.cpp">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/PathfindingOpenList.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/SearchLevel.cpp">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/SearchLevel.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/SearchNode.cpp">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/SearchNode.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/AnimatedTexture.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>

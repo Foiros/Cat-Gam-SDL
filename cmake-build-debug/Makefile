@@ -126,6 +126,141 @@ CatGameSDL\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\build
 .PHONY : CatGameSDL\fast
 
+Pathfinding\Pathfinding.obj: Pathfinding\Pathfinding.cpp.obj
+
+.PHONY : Pathfinding\Pathfinding.obj
+
+# target to build an object file
+Pathfinding\Pathfinding.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.obj
+.PHONY : Pathfinding\Pathfinding.cpp.obj
+
+Pathfinding\Pathfinding.i: Pathfinding\Pathfinding.cpp.i
+
+.PHONY : Pathfinding\Pathfinding.i
+
+# target to preprocess a source file
+Pathfinding\Pathfinding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.i
+.PHONY : Pathfinding\Pathfinding.cpp.i
+
+Pathfinding\Pathfinding.s: Pathfinding\Pathfinding.cpp.s
+
+.PHONY : Pathfinding\Pathfinding.s
+
+# target to generate assembly for a file
+Pathfinding\Pathfinding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\Pathfinding.cpp.s
+.PHONY : Pathfinding\Pathfinding.cpp.s
+
+Pathfinding\PathfindingClosedList.obj: Pathfinding\PathfindingClosedList.cpp.obj
+
+.PHONY : Pathfinding\PathfindingClosedList.obj
+
+# target to build an object file
+Pathfinding\PathfindingClosedList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.obj
+.PHONY : Pathfinding\PathfindingClosedList.cpp.obj
+
+Pathfinding\PathfindingClosedList.i: Pathfinding\PathfindingClosedList.cpp.i
+
+.PHONY : Pathfinding\PathfindingClosedList.i
+
+# target to preprocess a source file
+Pathfinding\PathfindingClosedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.i
+.PHONY : Pathfinding\PathfindingClosedList.cpp.i
+
+Pathfinding\PathfindingClosedList.s: Pathfinding\PathfindingClosedList.cpp.s
+
+.PHONY : Pathfinding\PathfindingClosedList.s
+
+# target to generate assembly for a file
+Pathfinding\PathfindingClosedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingClosedList.cpp.s
+.PHONY : Pathfinding\PathfindingClosedList.cpp.s
+
+Pathfinding\PathfindingOpenList.obj: Pathfinding\PathfindingOpenList.cpp.obj
+
+.PHONY : Pathfinding\PathfindingOpenList.obj
+
+# target to build an object file
+Pathfinding\PathfindingOpenList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.obj
+.PHONY : Pathfinding\PathfindingOpenList.cpp.obj
+
+Pathfinding\PathfindingOpenList.i: Pathfinding\PathfindingOpenList.cpp.i
+
+.PHONY : Pathfinding\PathfindingOpenList.i
+
+# target to preprocess a source file
+Pathfinding\PathfindingOpenList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.i
+.PHONY : Pathfinding\PathfindingOpenList.cpp.i
+
+Pathfinding\PathfindingOpenList.s: Pathfinding\PathfindingOpenList.cpp.s
+
+.PHONY : Pathfinding\PathfindingOpenList.s
+
+# target to generate assembly for a file
+Pathfinding\PathfindingOpenList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\PathfindingOpenList.cpp.s
+.PHONY : Pathfinding\PathfindingOpenList.cpp.s
+
+Pathfinding\SearchLevel.obj: Pathfinding\SearchLevel.cpp.obj
+
+.PHONY : Pathfinding\SearchLevel.obj
+
+# target to build an object file
+Pathfinding\SearchLevel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.obj
+.PHONY : Pathfinding\SearchLevel.cpp.obj
+
+Pathfinding\SearchLevel.i: Pathfinding\SearchLevel.cpp.i
+
+.PHONY : Pathfinding\SearchLevel.i
+
+# target to preprocess a source file
+Pathfinding\SearchLevel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.i
+.PHONY : Pathfinding\SearchLevel.cpp.i
+
+Pathfinding\SearchLevel.s: Pathfinding\SearchLevel.cpp.s
+
+.PHONY : Pathfinding\SearchLevel.s
+
+# target to generate assembly for a file
+Pathfinding\SearchLevel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\SearchLevel.cpp.s
+.PHONY : Pathfinding\SearchLevel.cpp.s
+
+Pathfinding\SearchNode.obj: Pathfinding\SearchNode.cpp.obj
+
+.PHONY : Pathfinding\SearchNode.obj
+
+# target to build an object file
+Pathfinding\SearchNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.obj
+.PHONY : Pathfinding\SearchNode.cpp.obj
+
+Pathfinding\SearchNode.i: Pathfinding\SearchNode.cpp.i
+
+.PHONY : Pathfinding\SearchNode.i
+
+# target to preprocess a source file
+Pathfinding\SearchNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.i
+.PHONY : Pathfinding\SearchNode.cpp.i
+
+Pathfinding\SearchNode.s: Pathfinding\SearchNode.cpp.s
+
+.PHONY : Pathfinding\SearchNode.s
+
+# target to generate assembly for a file
+Pathfinding\SearchNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\Pathfinding\SearchNode.cpp.s
+.PHONY : Pathfinding\SearchNode.cpp.s
+
 SDL\AnimatedTexture.obj: SDL\AnimatedTexture.cpp.obj
 
 .PHONY : SDL\AnimatedTexture.obj
@@ -405,6 +540,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CatGameSDL
+	@echo ... Pathfinding/Pathfinding.obj
+	@echo ... Pathfinding/Pathfinding.i
+	@echo ... Pathfinding/Pathfinding.s
+	@echo ... Pathfinding/PathfindingClosedList.obj
+	@echo ... Pathfinding/PathfindingClosedList.i
+	@echo ... Pathfinding/PathfindingClosedList.s
+	@echo ... Pathfinding/PathfindingOpenList.obj
+	@echo ... Pathfinding/PathfindingOpenList.i
+	@echo ... Pathfinding/PathfindingOpenList.s
+	@echo ... Pathfinding/SearchLevel.obj
+	@echo ... Pathfinding/SearchLevel.i
+	@echo ... Pathfinding/SearchLevel.s
+	@echo ... Pathfinding/SearchNode.obj
+	@echo ... Pathfinding/SearchNode.i
+	@echo ... Pathfinding/SearchNode.s
 	@echo ... SDL/AnimatedTexture.obj
 	@echo ... SDL/AnimatedTexture.i
 	@echo ... SDL/AnimatedTexture.s

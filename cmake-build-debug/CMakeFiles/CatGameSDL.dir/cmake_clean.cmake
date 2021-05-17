@@ -1,4 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/CatGameSDL.dir/Pathfinding/Pathfinding.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/Pathfinding/PathfindingClosedList.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/Pathfinding/PathfindingOpenList.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/Pathfinding/SearchLevel.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/Pathfinding/SearchNode.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/SDL/AnimatedTexture.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/SDL/AssetManager.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/SDL/AudioManager.cpp.obj"
