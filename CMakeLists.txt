@@ -32,7 +32,7 @@ add_executable(CatGameSDL SDL/HeaderFiles/AnimatedTexture.h SDL/HeaderFiles/Asse
 
         Pathfinding/CPPFiles/PathfindingClosedList.cpp Pathfinding/HeaderFiles/PathfindingClosedList.h Pathfinding/CPPFiles/PathfindingOpenList.cpp
         Pathfinding/HeaderFiles/PathfindingOpenList.h Pathfinding/CPPFiles/Pathfinding.cpp Pathfinding/HeaderFiles/Pathfinding.h
-        Pathfinding/CPPFiles/SearchLevel.cpp Pathfinding/HeaderFiles/SearchLevel.h Pathfinding/CPPFiles/SearchNode.cpp Pathfinding/HeaderFiles/SearchNode.h)
+        Pathfinding/CPPFiles/SearchLevel.cpp Pathfinding/HeaderFiles/SearchLevel.h Pathfinding/CPPFiles/SearchNode.cpp Pathfinding/HeaderFiles/SearchNode.h CatGame/HeaderFiles/MainMenu.h CatGame/HeaderFiles/PlayScreen.h)
 
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2)

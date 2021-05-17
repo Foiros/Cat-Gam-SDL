@@ -5,152 +5,155 @@
 
 #include "../HeaderFiles/Graphics.h"
 
-Graphics* Graphics::sInstance = NULL;
-bool Graphics::sInitialized = false;
+namespace SDL{
 
-Graphics* Graphics::Instance() {
+    Graphics* Graphics::sInstance = NULL;
+    bool Graphics::sInitialized = false;
 
-    if(sInstance == NULL)
-        sInstance = new Graphics();
+    Graphics* Graphics::Instance() {
 
-    return sInstance;
-}
+        if(sInstance == NULL)
+            sInstance = new Graphics();
 
-void Graphics::Release() {
-    delete sInstance;
-    sInstance = NULL;
-
-    sInitialized = false;
-}
-
-bool Graphics::Initialized() {
-
-    return sInitialized;
-}
-
-Graphics::Graphics() {
-
-    mBackBuffer = NULL;
-
-    sInitialized = Init();
-}
-
-Graphics::~Graphics() {
-
-    SDL_DestroyWindow(mWindow);
-    mWindow = NULL;
-
-    SDL_DestroyRenderer(mRenderer);
-    mRenderer = NULL;
-
-    TTF_Quit();
-    IMG_Quit();
-    SDL_Quit();
-}
-
-bool Graphics::Init() {
-
-    if(SDL_Init(SDL_INIT_VIDEO) < 0){
-        printf("SDL Initialization error: $s\n", SDL_GetError());
-        return false;
+        return sInstance;
     }
 
-    mWindow = SDL_CreateWindow(WINDOW_TITLE, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+    void Graphics::Release() {
+        delete sInstance;
+        sInstance = NULL;
 
-    if(mWindow == NULL){
-
-        printf("Window Creation Error: $s\n", SDL_GetError());
-        return false;
+        sInitialized = false;
     }
 
-    mRenderer = SDL_CreateRenderer(mWindow, -1, SDL_RENDERER_ACCELERATED);
+    bool Graphics::Initialized() {
 
-    if(mRenderer == NULL){
-        printf("Renderer Creation Error: %s\n", SDL_GetError());
-        return false;
+        return sInitialized;
     }
 
-    SDL_SetRenderDrawColor(mRenderer, 0x00, 0x00, 0x00, 0xff);
+    Graphics::Graphics() {
 
-    int flags = IMG_INIT_PNG;
-    if(!(IMG_Init(flags) & flags)){
+        mBackBuffer = NULL;
 
-        printf("IMG Initialization Error: %s\n", IMG_GetError());
-        return false;
+        sInitialized = Init();
     }
 
-    if(TTF_Init() == -1){
+    Graphics::~Graphics() {
 
-        printf("TTF Initilization Error: %s\n", TTF_GetError());
-        return false;
+        SDL_DestroyWindow(mWindow);
+        mWindow = NULL;
+
+        SDL_DestroyRenderer(mRenderer);
+        mRenderer = NULL;
+
+        TTF_Quit();
+        IMG_Quit();
+        SDL_Quit();
     }
 
-    mBackBuffer = SDL_GetWindowSurface(mWindow);
+    bool Graphics::Init() {
 
-    return true;
-}
+        if(SDL_Init(SDL_INIT_VIDEO) < 0){
+            printf("SDL Initialization error: $s\n", SDL_GetError());
+            return false;
+        }
 
-SDL_Texture* Graphics::LoadTexture(std::string path) {
+        mWindow = SDL_CreateWindow(WINDOW_TITLE, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 
-    SDL_Texture* texture = NULL;
+        if(mWindow == NULL){
 
-    SDL_Surface* surface = IMG_Load(path.c_str());
-    if(surface == NULL){
-        printf("Image Load Error: Path(%s) - Error(%s)\n", path.c_str(), IMG_GetError());
+            printf("Window Creation Error: $s\n", SDL_GetError());
+            return false;
+        }
+
+        mRenderer = SDL_CreateRenderer(mWindow, -1, SDL_RENDERER_ACCELERATED);
+
+        if(mRenderer == NULL){
+            printf("Renderer Creation Error: %s\n", SDL_GetError());
+            return false;
+        }
+
+        SDL_SetRenderDrawColor(mRenderer, 0x00, 0x00, 0x00, 0xff);
+
+        int flags = IMG_INIT_PNG;
+        if(!(IMG_Init(flags) & flags)){
+
+            printf("IMG Initialization Error: %s\n", IMG_GetError());
+            return false;
+        }
+
+        if(TTF_Init() == -1){
+
+            printf("TTF Initilization Error: %s\n", TTF_GetError());
+            return false;
+        }
+
+        mBackBuffer = SDL_GetWindowSurface(mWindow);
+
+        return true;
+    }
+
+    SDL_Texture* Graphics::LoadTexture(std::string path) {
+
+        SDL_Texture* texture = NULL;
+
+        SDL_Surface* surface = IMG_Load(path.c_str());
+        if(surface == NULL){
+            printf("Image Load Error: Path(%s) - Error(%s)\n", path.c_str(), IMG_GetError());
+            return texture;
+        }
+
+        texture = SDL_CreateTextureFromSurface(mRenderer, surface);
+        if(texture == NULL){
+
+            printf("Create Texture Error: %s\n", SDL_GetError());
+            return texture;
+        }
+        // if neither triggers, we have created a texture.
+        SDL_FreeSurface(surface);
+
         return texture;
     }
 
-    texture = SDL_CreateTextureFromSurface(mRenderer, surface);
-    if(texture == NULL){
+    SDL_Texture* Graphics::CreateTextTexture(TTF_Font *font, std::string text, SDL_Color color) {
 
-        printf("Create Texture Error: %s\n", SDL_GetError());
+        SDL_Surface* surface = TTF_RenderText_Solid(font, text.c_str(), color);
+        if(surface == NULL){
+
+            printf("Text Render Error: %s\n", TTF_GetError());
+            return NULL;
+        }
+
+        SDL_Texture* texture = SDL_CreateTextureFromSurface(mRenderer, surface);
+        if(texture == NULL){
+
+            printf("Text Texture Creation Error: %s\n", SDL_GetError());
+            return NULL;
+        }
+
+        SDL_FreeSurface(surface);
+
         return texture;
     }
-    // if neither triggers, we have created a texture.
-    SDL_FreeSurface(surface);
 
-    return texture;
-}
+    void Graphics::ClearBackBuffer() {
 
-SDL_Texture* Graphics::CreateTextTexture(TTF_Font *font, std::string text, SDL_Color color) {
-
-    SDL_Surface* surface = TTF_RenderText_Solid(font, text.c_str(), color);
-    if(surface == NULL){
-
-        printf("Text Render Error: %s\n", TTF_GetError());
-        return NULL;
+        SDL_RenderClear(mRenderer);
     }
 
-    SDL_Texture* texture = SDL_CreateTextureFromSurface(mRenderer, surface);
-    if(texture == NULL){
+    void Graphics::DrawTexture(SDL_Texture* texture, SDL_Rect* clip,  SDL_Rect* rend, float angle, SDL_RendererFlip flip) {
 
-        printf("Text Texture Creation Error: %s\n", SDL_GetError());
-        return NULL;
+        SDL_RenderCopyEx(mRenderer, texture, clip, rend, angle, NULL, flip);
     }
 
-    SDL_FreeSurface(surface);
+    void Graphics::DrawLine(float startX, float startY, float endX, float endY) {
 
-    return texture;
-}
+        SDL_SetRenderDrawColor(mRenderer, 255, 255, 255, SDL_ALPHA_OPAQUE);
+        SDL_RenderDrawLine(mRenderer, startX, startY, endX, endY);
+        SDL_SetRenderDrawColor(mRenderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
+    }
 
-void Graphics::ClearBackBuffer() {
+    void Graphics::Render() {
 
-    SDL_RenderClear(mRenderer);
-}
-
-void Graphics::DrawTexture(SDL_Texture* texture, SDL_Rect* clip,  SDL_Rect* rend, float angle, SDL_RendererFlip flip) {
-
-    SDL_RenderCopyEx(mRenderer, texture, clip, rend, angle, NULL, flip);
-}
-
-void Graphics::DrawLine(float startX, float startY, float endX, float endY) {
-
-    SDL_SetRenderDrawColor(mRenderer, 255, 255, 255, SDL_ALPHA_OPAQUE);
-    SDL_RenderDrawLine(mRenderer, startX, startY, endX, endY);
-    SDL_SetRenderDrawColor(mRenderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
-}
-
-void Graphics::Render() {
-
-    SDL_RenderPresent(mRenderer);
+        SDL_RenderPresent(mRenderer);
+    }
 }

@@ -5,6 +5,8 @@
 #include <iostream>
 #include "../HeaderFiles/GameManager.h"
 
+using namespace SDL;
+
 int main(int argc, char* args[]) {
 
     GameManager* game = GameManager::Instance();
@@ -16,4 +18,3 @@ int main(int argc, char* args[]) {
 
     return 0;
 }
-

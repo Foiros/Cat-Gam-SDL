@@ -7,32 +7,34 @@
 
 #include "AssetManager.h"
 
-class AudioManager {
+namespace SDL{
 
-private:
+    class AudioManager {
 
-    static AudioManager* sInstance;
+    private:
 
-    AssetManager* mAssetManager;
+        static AudioManager* sInstance;
 
-public:
+        AssetManager* mAssetManager;
 
-    static AudioManager* Instance();
-    static void Release();
+    public:
 
-    // -1 loops the music
-    void PlayMusic(std::string filename, int loops = -1);
-    void PauseMusic();
-    void ResumeMusic();
+        static AudioManager* Instance();
+        static void Release();
 
-    // 0 plays music or sound effect once
-    void PlaySFX(std::string filename, int loops = 0, int channel = 0);
+        // -1 loops the music
+        void PlayMusic(std::string filename, int loops = -1);
+        void PauseMusic();
+        void ResumeMusic();
 
-private:
+        // 0 plays music or sound effect once
+        void PlaySFX(std::string filename, int loops = 0, int channel = 0);
 
-    AudioManager();
-    ~AudioManager();
-};
+    private:
 
+        AudioManager();
+        ~AudioManager();
+    };
+}
 
 #endif

@@ -7,49 +7,51 @@
 
 #include "MathHelper.h"
 
+namespace SDL{
 
-class GameEntity {
+    class GameEntity {
 
-    //Variables
-public:
+        //Variables
+    public:
 
-    enum SPACE {local = 0, world = 1};
+        enum SPACE {local = 0, world = 1};
 
-private:
+    private:
 
-    Vector2 mPos;
-    float mRotation;
-    Vector2 mScale;
+        Vector2 mPos;
+        float mRotation;
+        Vector2 mScale;
 
-    bool mActive;
-    GameEntity* mParent;
+        bool mActive;
+        GameEntity* mParent;
 
-    // Functions
-public:
+        // Functions
+    public:
 
-    GameEntity(Vector2 pos = VEC2_ZERO);
-    ~GameEntity();
+        GameEntity(Vector2 pos = VEC2_ZERO);
+        ~GameEntity();
 
-    void Pos(Vector2 pos);
-    Vector2 Pos(SPACE space = world);
+        void Pos(Vector2 pos);
+        Vector2 Pos(SPACE space = world);
 
-    void Rotation(float rotation);
-    float Rotation(SPACE space = world);
+        void Rotation(float rotation);
+        float Rotation(SPACE space = world);
 
-    void Scale(Vector2 scale);
-    Vector2 Scale(SPACE space = world);
+        void Scale(Vector2 scale);
+        Vector2 Scale(SPACE space = world);
 
-    void Active(bool active);
-    bool Active();
+        void Active(bool active);
+        bool Active();
 
-    void Parent(GameEntity* parent);
-    GameEntity* Parent();
+        void Parent(GameEntity* parent);
+        GameEntity* Parent();
 
-    void Translate(Vector2 vector, SPACE space);
-    void Rotate(float amount);
+        void Translate(Vector2 vector, SPACE space);
+        void Rotate(float amount);
 
-    virtual void Update();
-    virtual void Render();
-};
+        virtual void Update();
+        virtual void Render();
+    };
+}
 
 #endif

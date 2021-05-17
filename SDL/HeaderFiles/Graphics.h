@@ -11,45 +11,48 @@
 #include <stdio.h>
 #include <string>
 
-class Graphics{
+namespace SDL{
 
-    // Variables
-public:
-    static const int SCREEN_WIDTH = 1620;
-    static const int SCREEN_HEIGHT = 1080;
-    const char* WINDOW_TITLE = "Cat Game";
+    class Graphics{
 
-private:
-    static Graphics* sInstance;
-    static bool sInitialized;
+        // Variables
+    public:
+        static const int SCREEN_WIDTH = 1620;
+        static const int SCREEN_HEIGHT = 1080;
+        const char* WINDOW_TITLE = "Cat Game";
 
-    SDL_Window* mWindow;
-    SDL_Surface* mBackBuffer;
+    private:
+        static Graphics* sInstance;
+        static bool sInitialized;
 
-    SDL_Renderer* mRenderer;
+        SDL_Window* mWindow;
+        SDL_Surface* mBackBuffer;
 
-    // Functions
-public:
-    static Graphics* Instance();
-    static void Release();
-    static bool Initialized();
+        SDL_Renderer* mRenderer;
 
-    SDL_Texture* LoadTexture(std::string path);
-    SDL_Texture* CreateTextTexture(TTF_Font* font, std::string text, SDL_Color color);
+        // Functions
+    public:
+        static Graphics* Instance();
+        static void Release();
+        static bool Initialized();
 
-    void ClearBackBuffer();
+        SDL_Texture* LoadTexture(std::string path);
+        SDL_Texture* CreateTextTexture(TTF_Font* font, std::string text, SDL_Color color);
 
-    void DrawTexture(SDL_Texture* texture, SDL_Rect* clip = NULL, SDL_Rect* rend = NULL, float angle = 0.0f, SDL_RendererFlip flip = SDL_FLIP_NONE);
+        void ClearBackBuffer();
 
-    void DrawLine(float startX, float startY, float endX, float endY);
+        void DrawTexture(SDL_Texture* texture, SDL_Rect* clip = NULL, SDL_Rect* rend = NULL, float angle = 0.0f, SDL_RendererFlip flip = SDL_FLIP_NONE);
 
-    void Render();
+        void DrawLine(float startX, float startY, float endX, float endY);
 
-private:
-    Graphics();
-    ~Graphics();
+        void Render();
 
-    bool Init();
-};
+    private:
+        Graphics();
+        ~Graphics();
+
+        bool Init();
+    };
+}
 
 #endif

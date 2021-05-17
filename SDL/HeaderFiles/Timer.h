@@ -7,38 +7,39 @@
 
 #include <SDL.h>
 
+namespace SDL{
 
-class Timer {
+    class Timer {
 
-    // Variables
-private:
+        // Variables
+    private:
 
-    static Timer* sInstance;
+        static Timer* sInstance;
 
-    unsigned int mStartTicks;
-    unsigned int mElapsedTicks;
-    float mDeltaTime;
-    float mTimeScale;
+        unsigned int mStartTicks;
+        unsigned int mElapsedTicks;
+        float mDeltaTime;
+        float mTimeScale;
 
-    // Functions
-public:
+        // Functions
+    public:
 
-    static Timer* Instance();
-    static void Release();
+        static Timer* Instance();
+        static void Release();
 
-    void Reset();
-    float DeltaTime();
+        void Reset();
+        float DeltaTime();
 
-    void TimeScale(float t);
-    float TimeScale();
+        void TimeScale(float t);
+        float TimeScale();
 
-    void Update();
+        void Update();
 
-private:
+    private:
 
-    Timer();
-    ~Timer();
-};
-
+        Timer();
+        ~Timer();
+    };
+}
 
 #endif

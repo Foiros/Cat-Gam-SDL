@@ -682,117 +682,11 @@ E:/SDL/SDL2-2.0.14/include/begin_code.h
 
 E:/SDL/SDL2-2.0.14/include/close_code.h
 
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/CPPFiles/Pathfinding.cpp
-../HeaderFiles/Pathfinding.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/Pathfinding.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/CPPFiles/PathfindingClosedList.cpp
-../HeaderFiles/PathfindingClosedList.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/PathfindingClosedList.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/CPPFiles/PathfindingOpenList.cpp
-../HeaderFiles/PathfindingOpenList.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/PathfindingOpenList.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/CPPFiles/SearchLevel.cpp
-../HeaderFiles/SearchLevel.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/SearchLevel.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/CPPFiles/SearchNode.cpp
-../HeaderFiles/SearchNode.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/SearchNode.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/Pathfinding.h
-SearchLevel.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/SearchLevel.h
-PathfindingOpenList.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/PathfindingOpenList.h
-PathfindingClosedList.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/PathfindingClosedList.h
-stdint.h
--
-stdio.h
--
-cstdlib
--
-assert.h
--
-memory.h
--
-algorithm
--
-map
--
-vector
--
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/PathfindingClosedList.h
-SearchNode.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/SearchNode.h
-map
--
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/PathfindingOpenList.h
-algorithm
--
-SearchNode.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/SearchNode.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/SearchLevel.h
-SearchNode.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/SearchNode.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/SearchNode.h
-vector
--
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/AnimatedTexture.cpp
-../HeaderFiles/AnimatedTexture.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/AnimatedTexture.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/AssetManager.cpp
-../HeaderFiles/AssetManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/AssetManager.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/AudioManager.cpp
-../HeaderFiles/AudioManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/AudioManager.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/GameEntity.cpp
-../HeaderFiles/GameEntity.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/GameEntity.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/GameManager.cpp
-../HeaderFiles/GameManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/GameManager.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/Graphics.cpp
-../HeaderFiles/Graphics.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/Graphics.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/InputManager.cpp
-../HeaderFiles/InputManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/InputManager.h
-
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/SDLMain.cpp
 iostream
 -
 ../HeaderFiles/GameManager.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/GameManager.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/Texture.cpp
-../HeaderFiles/Texture.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/Texture.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/Timer.cpp
-../HeaderFiles/Timer.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/Timer.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/AnimatedTexture.h
-Timer.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/Timer.h
-Texture.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/Texture.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/AssetManager.h
 SDL_mixer.h
@@ -805,10 +699,6 @@ map
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/AudioManager.h
 AssetManager.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/AssetManager.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/GameEntity.h
-MathHelper.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/MathHelper.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/GameManager.h
 AudioManager.h
@@ -841,12 +731,6 @@ E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/MathHelper.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/MathHelper.h
 math.h
 -
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/Texture.h
-GameEntity.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/GameEntity.h
-AssetManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/AssetManager.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/Timer.h
 SDL.h

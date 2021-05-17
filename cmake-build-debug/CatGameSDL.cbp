@@ -90,6 +90,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/HeaderFiles/MainMenu.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/HeaderFiles/PlayScreen.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/CPPFiles/Pathfinding.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>

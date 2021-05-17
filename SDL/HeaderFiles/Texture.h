@@ -8,35 +8,37 @@
 #include "GameEntity.h"
 #include "AssetManager.h"
 
-class Texture : public GameEntity {
+namespace SDL{
 
-    // Variables
-protected:
+    class Texture : public GameEntity {
 
-    SDL_Texture* mTexture;
+        // Variables
+    protected:
 
-    Graphics* mGraphics;
+        SDL_Texture* mTexture;
 
-    int mWidth;
-    int mHeight;
+        Graphics* mGraphics;
 
-    bool mClipped;
-    SDL_Rect mRenderRect;
-    SDL_Rect mClipRect;
+        int mWidth;
+        int mHeight;
 
-    // Functions
-public:
+        bool mClipped;
+        SDL_Rect mRenderRect;
+        SDL_Rect mClipRect;
 
-    Texture(std::string fileName);
-    Texture(std::string fileName, int x, int y, int w, int h);
-    Texture(std::string text, std::string fontpath, int size, SDL_Color color);
-    ~Texture();
+        // Functions
+    public:
 
-    Vector2 ScaledDimensions();
+        Texture(std::string fileName);
+        Texture(std::string fileName, int x, int y, int w, int h);
+        Texture(std::string text, std::string fontpath, int size, SDL_Color color);
+        ~Texture();
 
-    virtual void Render();
+        Vector2 ScaledDimensions();
 
-};
+        virtual void Render();
 
+    };
+}
 
 #endif

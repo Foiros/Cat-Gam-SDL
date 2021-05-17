@@ -4,76 +4,75 @@
 
 #include "../HeaderFiles/AnimatedTexture.h"
 
-AnimatedTexture::AnimatedTexture(std::string fileName, int x, int y, int w, int h, int frameCount, float animationSpeed,ANIM_DIR animationDir)
-: Texture(fileName, x, y, w, h) {
+namespace SDL{
 
-    mTimer = Timer::Instance();
+    AnimatedTexture::AnimatedTexture(std::string fileName, int x, int y, int w, int h, int frameCount, float animationSpeed,ANIM_DIR animationDir)
+            : Texture(fileName, x, y, w, h) {
 
-    mStartX = x;
-    mStartY = y;
+        mTimer = Timer::Instance();
 
-    mFrameCount = frameCount;
-    mAnimationSpeed = animationSpeed;
-    mTimePerFrame = mAnimationSpeed / mFrameCount;
-    mAnimationTimer = 0.0f;
+        mStartX = x;
+        mStartY = y;
 
-    mAnimationDirection = animationDir;
+        mFrameCount = frameCount;
+        mAnimationSpeed = animationSpeed;
+        mTimePerFrame = mAnimationSpeed / mFrameCount;
+        mAnimationTimer = 0.0f;
 
-    mAnimationDone = false;
+        mAnimationDirection = animationDir;
 
-    mWrapMode = loop;
-}
+        mAnimationDone = false;
 
-AnimatedTexture::~AnimatedTexture() {
+        mWrapMode = loop;
+    }
 
-}
+    AnimatedTexture::~AnimatedTexture() {
 
-void AnimatedTexture::WrapMode(WRAP_MODE mode) {
+    }
 
-    mWrapMode = mode;
-}
+    void AnimatedTexture::WrapMode(WRAP_MODE mode) {
 
-void AnimatedTexture::ResetAnimation() {
+        mWrapMode = mode;
+    }
 
-    mAnimationTimer = 0.0f;
-    mAnimationDone = false;
-}
+    void AnimatedTexture::ResetAnimation() {
 
-bool AnimatedTexture::IsAnimating() {
+        mAnimationTimer = 0.0f;
+        mAnimationDone = false;
+    }
 
-    return !mAnimationDone;
-}
+    bool AnimatedTexture::IsAnimating() {
 
-void AnimatedTexture::Update(){
+        return !mAnimationDone;
+    }
 
-    if(!mAnimationDone){
+    void AnimatedTexture::Update(){
 
-        mAnimationTimer += mTimer->DeltaTime();
+        if(!mAnimationDone){
 
-        if(mAnimationTimer >= mAnimationSpeed){
+            mAnimationTimer += mTimer->DeltaTime();
 
-            if(mWrapMode == loop){
+            if(mAnimationTimer >= mAnimationSpeed){
 
-                mAnimationTimer -= mAnimationSpeed;
+                if(mWrapMode == loop){
+
+                    mAnimationTimer -= mAnimationSpeed;
+                }
+                else{
+
+                    mAnimationDone = true;
+                    mAnimationTimer = mAnimationSpeed - mTimePerFrame;
+                }
+            }
+
+            if(mAnimationDirection == horizontal){
+
+                mClipRect.x = mStartX + (int)(mAnimationTimer / mTimePerFrame) * mWidth;
             }
             else{
 
-                mAnimationDone = true;
-                mAnimationTimer = mAnimationSpeed - mTimePerFrame;
+                mClipRect.y = mStartY + (int)(mAnimationTimer / mTimePerFrame) * mHeight;
             }
-        }
-
-        if(mAnimationDirection == horizontal){
-
-            mClipRect.x = mStartX + (int)(mAnimationTimer / mTimePerFrame) * mWidth;
-        }
-        else{
-
-            mClipRect.y = mStartY + (int)(mAnimationTimer / mTimePerFrame) * mHeight;
         }
     }
 }
-
-
-
-

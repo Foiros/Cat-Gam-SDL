@@ -8,43 +8,46 @@
 #include "Timer.h"
 #include "Texture.h"
 
-class AnimatedTexture : public Texture {
+namespace SDL{
 
-public:
+    class AnimatedTexture : public Texture {
 
-    enum WRAP_MODE { once = 0, loop = 1};
-    enum ANIM_DIR { horizontal = 0, vertical = 1 };
+    public:
 
-private:
+        enum WRAP_MODE { once = 0, loop = 1};
+        enum ANIM_DIR { horizontal = 0, vertical = 1 };
 
-    Timer* mTimer;
+    private:
 
-    int mStartX;
-    int mStartY;
+        Timer* mTimer;
 
-    float mAnimationTimer;
-    float mAnimationSpeed;
-    float mTimePerFrame;
+        int mStartX;
+        int mStartY;
 
-    int mFrameCount;
+        float mAnimationTimer;
+        float mAnimationSpeed;
+        float mTimePerFrame;
 
-    WRAP_MODE mWrapMode;
-    ANIM_DIR mAnimationDirection;
+        int mFrameCount;
 
-    bool mAnimationDone;
+        WRAP_MODE mWrapMode;
+        ANIM_DIR mAnimationDirection;
 
-public:
+        bool mAnimationDone;
 
-    AnimatedTexture(std::string fileName, int x, int y, int w, int h, int frameCount, float animationSpeed, ANIM_DIR animationDir);
-    ~AnimatedTexture();
+    public:
 
-    void WrapMode(WRAP_MODE mode);
+        AnimatedTexture(std::string fileName, int x, int y, int w, int h, int frameCount, float animationSpeed, ANIM_DIR animationDir);
+        ~AnimatedTexture();
 
-    void ResetAnimation();
+        void WrapMode(WRAP_MODE mode);
 
-    bool IsAnimating();
+        void ResetAnimation();
 
-    void Update();
-};
+        bool IsAnimating();
+
+        void Update();
+    };
+}
 
 #endif

@@ -9,45 +9,47 @@
 #include "Timer.h"
 #include "InputManager.h"
 
-class GameManager {
+namespace SDL{
 
-    // Variables
-private:
+    class GameManager {
 
-    static GameManager* sInstance;
+        // Variables
+    private:
 
-    const int FRAME_RATE = 120;
+        static GameManager* sInstance;
 
-    bool mQuit;
-    Graphics* mGraphics;
-    AssetManager* mAssetManager;
-    InputManager* mInputManager;
-    AudioManager* mAudioManager;
+        const int FRAME_RATE = 120;
 
-    Timer* mTimer;
+        bool mQuit;
+        Graphics* mGraphics;
+        AssetManager* mAssetManager;
+        InputManager* mInputManager;
+        AudioManager* mAudioManager;
 
-    SDL_Event mEvents;
+        Timer* mTimer;
+
+        SDL_Event mEvents;
 
 
-    // Functions
-public:
+        // Functions
+    public:
 
-    static GameManager* Instance();
-    static void Release();
+        static GameManager* Instance();
+        static void Release();
 
-    void Run();
+        void Run();
 
-private:
+    private:
 
-    GameManager();
-    ~GameManager();
+        GameManager();
+        ~GameManager();
 
-    void EarlyUpdate();
-    void Update();
-    void LateUpdate();
+        void EarlyUpdate();
+        void Update();
+        void LateUpdate();
 
-    void Render();
-};
-
+        void Render();
+    };
+}
 
 #endif
