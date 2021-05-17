@@ -2,8 +2,7 @@
 // Created by Arttu Paldán on 11/05/2021.
 //
 
-#include "GameManager.h"
-
+#include "../HeaderFiles/GameManager.h"
 
 GameManager* GameManager::sInstance = NULL;
 

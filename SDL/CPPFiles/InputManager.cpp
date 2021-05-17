@@ -2,7 +2,7 @@
 // Created by arttu on 11/05/2021.
 //
 
-#include "InputManager.h"
+#include "../HeaderFiles/InputManager.h"
 
 InputManager* InputManager::sInstance = NULL;
 

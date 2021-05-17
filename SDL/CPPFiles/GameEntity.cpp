@@ -2,7 +2,7 @@
 // Created by Arttu Paldán on 11/05/2021.
 //
 
-#include "GameEntity.h"
+#include "../HeaderFiles/GameEntity.h"
 
 GameEntity::GameEntity(Vector2 pos) {
 

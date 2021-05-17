@@ -2,7 +2,7 @@
 // Created by Arttu Paldán on 11/05/2021.
 //
 
-#include "AssetManager.h"
+#include "../HeaderFiles/AssetManager.h"
 
 AssetManager* AssetManager::sInstance = NULL;
 

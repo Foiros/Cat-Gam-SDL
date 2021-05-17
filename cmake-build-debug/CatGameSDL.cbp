@@ -90,94 +90,94 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/Pathfinding.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/CPPFiles/Pathfinding.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/Pathfinding.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/CPPFiles/PathfindingClosedList.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/PathfindingClosedList.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/CPPFiles/PathfindingOpenList.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/PathfindingClosedList.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/CPPFiles/SearchLevel.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/PathfindingOpenList.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/CPPFiles/SearchNode.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/PathfindingOpenList.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/Pathfinding.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/SearchLevel.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/PathfindingClosedList.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/SearchLevel.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/PathfindingOpenList.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/SearchNode.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/SearchLevel.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/SearchNode.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/Pathfinding/HeaderFiles/SearchNode.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/AnimatedTexture.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/AnimatedTexture.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/AnimatedTexture.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/AssetManager.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/AssetManager.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/AudioManager.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/AssetManager.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/GameEntity.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/AudioManager.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/GameManager.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/AudioManager.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/Graphics.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/GameEntity.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/InputManager.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/GameEntity.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/SDLMain.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/GameManager.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/Texture.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/GameManager.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/CPPFiles/Timer.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/Graphics.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/AnimatedTexture.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/Graphics.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/AssetManager.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/InputManager.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/AudioManager.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/InputManager.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/GameEntity.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/MathHelper.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/GameManager.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/Texture.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/Graphics.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/Texture.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/InputManager.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/Timer.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/MathHelper.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/Timer.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/Texture.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/main.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/SDL/HeaderFiles/Timer.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CMakeLists.txt">

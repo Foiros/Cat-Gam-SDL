@@ -2,7 +2,7 @@
 // Created by arttu on 12/05/2021.
 //
 
-#include "AudioManager.h"
+#include "../HeaderFiles/AudioManager.h"
 
 AudioManager* AudioManager::sInstance = NULL;
 

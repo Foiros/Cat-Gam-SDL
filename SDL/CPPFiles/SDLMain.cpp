@@ -1,5 +1,9 @@
+//
+// Created by arttu on 17/05/2021.
+//
+
 #include <iostream>
-#include "GameManager.h"
+#include "../HeaderFiles/GameManager.h"
 
 int main(int argc, char* args[]) {
 
@@ -12,3 +16,4 @@ int main(int argc, char* args[]) {
 
     return 0;
 }
+

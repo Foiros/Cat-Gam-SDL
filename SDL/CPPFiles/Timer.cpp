@@ -2,7 +2,7 @@
 // Created by arttu on 11/05/2021.
 //
 
-#include "Timer.h"
+#include "../HeaderFiles/Timer.h"
 
 Timer* Timer::sInstance = NULL;
 

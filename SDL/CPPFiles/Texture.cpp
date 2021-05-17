@@ -2,7 +2,7 @@
 // Created by Arttu Paldán on 11/05/2021.
 //
 
-#include "Texture.h"
+#include "../HeaderFiles/Texture.h"
 
 Texture::Texture(std::string fileName) {
 

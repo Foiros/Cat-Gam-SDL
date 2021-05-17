@@ -2,7 +2,7 @@
 // Created by arttu on 11/05/2021.
 //
 
-#include "AnimatedTexture.h"
+#include "../HeaderFiles/AnimatedTexture.h"
 
 AnimatedTexture::AnimatedTexture(std::string fileName, int x, int y, int w, int h, int frameCount, float animationSpeed,ANIM_DIR animationDir)
 : Texture(fileName, x, y, w, h) {

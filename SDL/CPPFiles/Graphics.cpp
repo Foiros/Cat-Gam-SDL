@@ -2,7 +2,8 @@
 // Created by Arttu Paldán on 11/05/2021.
 //
 
-#include "Graphics.h"
+
+#include "../HeaderFiles/Graphics.h"
 
 Graphics* Graphics::sInstance = NULL;
 bool Graphics::sInitialized = false;
