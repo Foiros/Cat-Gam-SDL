@@ -123,6 +123,8 @@ CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\MotherCat.cpp.obj: E:\SDL\SDL2
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\MotherCat.cpp.obj: E:\SDL\SDL2-2.0.14\include\close_code.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\MotherCat.cpp.obj: ..\CatGame\CatGameCPPFiles\MotherCat.cpp
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\MotherCat.cpp.obj: ..\CatGame\CatGameHeaderFiles\MotherCat.h
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\MotherCat.cpp.obj: ..\CatGame\PathfindingHeaderFiles\Pathfinding.h
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\MotherCat.cpp.obj: ..\CatGame\PathfindingHeaderFiles\PathfindingGrid.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\MotherCat.cpp.obj: ..\CatGame\SDLHeaderFiles\AnimatedTexture.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\MotherCat.cpp.obj: ..\CatGame\SDLHeaderFiles\AssetManager.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\MotherCat.cpp.obj: ..\CatGame\SDLHeaderFiles\AudioManager.h

@@ -8,6 +8,7 @@
 #include <SDL.h>
 #include <string.h>
 #include "MathHelper.h"
+#include <iostream>
 
 namespace SDL{
 

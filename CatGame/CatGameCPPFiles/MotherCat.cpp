@@ -39,8 +39,9 @@ MotherCat::~MotherCat() {
     mRunAnimation = nullptr;
 }
 
-void MotherCat::Move() {
+void MotherCat::Move(Vector2 newPos) {
 
+    mMotherSprite->Translate(newPos, world);
 }
 
 void MotherCat::Visible(bool visible) {
@@ -55,10 +56,6 @@ bool MotherCat::IsAnimating() {
 
 void MotherCat::Update() {
 
-    if(Active()){
-
-        Move();
-    }
 }
 
 void MotherCat::Render() {

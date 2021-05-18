@@ -45,8 +45,8 @@ private:
     int width, height;
 
     // East, west, north, south
-    const ::std::set<GridLocation> directions = {GridLocation{1, 0}, GridLocation{-1, 0},
-                                                           GridLocation{0, -1},GridLocation{0, 1}};
+    const ::std::set<GridLocation> directions = {GridLocation{30, 0}, GridLocation{-30, 0},
+                                                           GridLocation{0, -30},GridLocation{0, 30}};
 
     std::unordered_set<GridLocation> harshLand;
 

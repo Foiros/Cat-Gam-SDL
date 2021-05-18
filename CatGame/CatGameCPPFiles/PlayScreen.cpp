@@ -56,23 +56,34 @@ void PlayScreen::Update() {
 
     if(mGameStarted){
 
-        if(InputManager::Instance()->KeyDown(SDL_SCANCODE_SPACE)){
+        if(InputManager::Instance()->MouseButtonDown(SDL::InputManager::left)){
 
-            int mMotherCatX = mMotherCat->Pos(world).x;
-            int mMotherCatY = mMotherCat->Pos(world).y;
+            Vector2 mousePos = Vector2(InputManager::Instance()->MousePos());
+            std::cout << "Mother cat new pos: " << mousePos.x << ", " << mousePos.y << "\n";
+            GridLocation destination = {(int) mousePos.x, (int) mousePos.y};
 
-            GridLocation mMotherCatLocation = { mMotherCatX, mMotherCatY };
-            GridLocation destination = {5, 5};
-            std::unordered_map<GridLocation, GridLocation> cameFrom;
-            std::unordered_map<GridLocation, double> costSoFar;
+            GridLocation mMotherCatLocation = { (int) mMotherCat->Pos(world).x, (int) mMotherCat->Pos(world).y};
 
-            Pathfinding::Instance()->FindPath(mGrid, mMotherCatLocation, destination, cameFrom, costSoFar);
-            std::vector<GridLocation> path = Pathfinding::Instance()->ReconstructPath(mMotherCatLocation, destination, cameFrom);
+            std::unordered_map<GridLocation, GridLocation> came_from;
+            std::unordered_map<GridLocation, double> cost_so_far;
 
-            Vector2 motherNewPos = Vector2(cameFrom.begin()->second.locationX, cameFrom.begin()->second.locationY);
-            mMotherCat->Translate(motherNewPos, world);
+            Pathfinding::Instance()->FindPath(mGrid, mMotherCatLocation, destination, came_from, cost_so_far);
+            path = Pathfinding::Instance()->ReconstructPath(mMotherCatLocation, destination, came_from);
 
-            std::cout << "Mother new pos: " << mMotherCat->Pos(world).x << "," << mMotherCat->Pos(world).y << "\n";
+            for(GridLocation node : path){
+
+                Vector2 newPos = Vector2(node.locationX, node.locationY);
+                std::cout << "Mother current pos: " << node.locationX << ", " << node.locationY << "\n";
+
+                mMotherCat->Translate(newPos, world);
+                mMotherCat->Move(newPos);
+
+                Render();
+            }
+
+            path.clear();
+            came_from.clear();
+            cost_so_far.clear();
         }
     }
     else{
@@ -93,13 +104,8 @@ void PlayScreen::Render() {
 
         mMotherCat->Render();
 
-        int mMotherCatX = mMotherCat->Pos(world).x;
-        int mMotherCatY = mMotherCat->Pos(world).y;
-
-        GridLocation mMotherCatLocation = { mMotherCatX, mMotherCatY };
-
+        GridLocation mMotherCatLocation = { (int) mMotherCat->Pos(world).x, (int) mMotherCat->Pos(world).y};
         mGrid->Render(mMotherCatLocation, path);
-        path.clear();
     }
 }
 

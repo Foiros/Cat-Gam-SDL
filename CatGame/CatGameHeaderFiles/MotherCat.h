@@ -8,6 +8,7 @@
 #include "../SDLHeaderFiles/GameEntity.h"
 #include "../SDLHeaderFiles/AnimatedTexture.h"
 #include "../SDLHeaderFiles/Texture.h"
+#include "../PathfindingHeaderFiles/Pathfinding.h"
 
 using namespace SDL;
 
@@ -28,12 +29,12 @@ private:
     float mMoveSpeed;
     Vector2 mMoveBounds;
 
-private:
-    void Move();
 
 public:
     MotherCat();
     ~MotherCat();
+
+    void Move(Vector2 newPos);
 
     void Visible(bool visible);
 
