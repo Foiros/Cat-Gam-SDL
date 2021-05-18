@@ -10,7 +10,9 @@
 #include <iostream>
 #include <vector>
 #include <set>
+#include <unordered_set>
 #include <map>
+#include <unordered_map>
 #include <iterator>
 #include <algorithm>
 
@@ -46,17 +48,21 @@ private:
     const ::std::set<GridLocation> directions = {GridLocation{1, 0}, GridLocation{-1, 0},
                                                            GridLocation{0, -1},GridLocation{0, 1}};
 
+    std::unordered_set<GridLocation> harshLand;
+
 private:
     bool InBounds(GridLocation id);
     bool Passable(GridLocation id);
-
-    std::vector<GridLocation> GetNeighbors(GridLocation id);
 
 public:
     PathfindingGrid(int _width, int height);
     ~PathfindingGrid();
 
-    void Render();
+    std::vector<GridLocation> GetNeighbors(GridLocation id);
+
+    double GetCost(GridLocation fromNode, GridLocation toNode);
+
+    void Render(GridLocation motherCatLocation, std::vector<GridLocation> path);
 };
 
 inline bool operator == (GridLocation a, GridLocation b) {

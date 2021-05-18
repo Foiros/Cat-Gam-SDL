@@ -23,6 +23,8 @@ PlayScreen::PlayScreen() {
     mGrid = new PathfindingGrid(1620.0f, 1080.0f);
 
     mMotherCat = new MotherCat();
+    mMotherCat->Parent(this);
+    mMotherCat->Pos(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f));
 }
 
 PlayScreen::~PlayScreen() {
@@ -54,7 +56,24 @@ void PlayScreen::Update() {
 
     if(mGameStarted){
 
+        if(InputManager::Instance()->KeyDown(SDL_SCANCODE_SPACE)){
 
+            int mMotherCatX = mMotherCat->Pos(world).x;
+            int mMotherCatY = mMotherCat->Pos(world).y;
+
+            GridLocation mMotherCatLocation = { mMotherCatX, mMotherCatY };
+            GridLocation destination = {5, 5};
+            std::unordered_map<GridLocation, GridLocation> cameFrom;
+            std::unordered_map<GridLocation, double> costSoFar;
+
+            Pathfinding::Instance()->FindPath(mGrid, mMotherCatLocation, destination, cameFrom, costSoFar);
+            std::vector<GridLocation> path = Pathfinding::Instance()->ReconstructPath(mMotherCatLocation, destination, cameFrom);
+
+            Vector2 motherNewPos = Vector2(cameFrom.begin()->second.locationX, cameFrom.begin()->second.locationY);
+            mMotherCat->Translate(motherNewPos, world);
+
+            std::cout << "Mother new pos: " << mMotherCat->Pos(world).x << "," << mMotherCat->Pos(world).y << "\n";
+        }
     }
     else{
 
@@ -68,12 +87,19 @@ void PlayScreen::Update() {
 
 void PlayScreen::Render() {
 
-    mBackground->Render();
+    // mBackground->Render();
 
-    if(mGameStarted)
+    if(mGameStarted){
+
         mMotherCat->Render();
 
-    if(mMotherCat->Active() && mGameStarted)
-        mGrid->Render();
+        int mMotherCatX = mMotherCat->Pos(world).x;
+        int mMotherCatY = mMotherCat->Pos(world).y;
+
+        GridLocation mMotherCatLocation = { mMotherCatX, mMotherCatY };
+
+        mGrid->Render(mMotherCatLocation, path);
+        path.clear();
+    }
 }
 

@@ -12,6 +12,7 @@
 #include "../SDLHeaderFiles/Texture.h"
 #include "../CatGameHeaderFiles/MotherCat.h"
 #include "../PathfindingHeaderFiles/PathfindingGrid.h"
+#include "../PathfindingHeaderFiles/Pathfinding.h"
 
 using namespace SDL;
 
@@ -31,6 +32,9 @@ private:
     PathfindingGrid* mGrid;
 
     MotherCat* mMotherCat;
+
+    std::vector<GridLocation> path;
+
 
 public:
     PlayScreen();

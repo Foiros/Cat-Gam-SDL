@@ -32,7 +32,9 @@ add_executable(CatGameSDL CatGame/SDLHeaderFiles/AnimatedTexture.h CatGame/SDLHe
 
         CatGame/CatGameHeaderFiles/MainMenu.h CatGame/CatGameHeaderFiles/PlayScreen.h CatGame/CatGameCPPFiles/MainMenu.cpp CatGame/CatGameCPPFiles/PlayScreen.cpp CatGame/CatGameHeaderFiles/MotherCat.h CatGame/CatGameCPPFiles/MotherCat.cpp
 
-        CatGame/PathfindingHeaderFiles/PathfindingGrid.h CatGame/PathfindingCPPFiles/PathfindingGrid.cpp CatGame/PathfindingCPPFiles/Pathfinding.cpp CatGame/PathfindingHeaderFiles/Pathfinding.h)
+        CatGame/PathfindingHeaderFiles/PathfindingGrid.h CatGame/PathfindingCPPFiles/PathfindingGrid.cpp
+        CatGame/PathfindingCPPFiles/Pathfinding.cpp CatGame/PathfindingHeaderFiles/Pathfinding.h
+        )
 
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2)

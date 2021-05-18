@@ -45,7 +45,7 @@ namespace SDL{
 
         void DrawLine(float startX, float startY, float endX, float endY);
 
-        void DrawDot(float x, float y);
+        void DrawDot(float x, float y, int r, int g, int b);
 
         void Render();
 

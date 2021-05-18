@@ -157,9 +157,9 @@ namespace SDL{
         SDL_RenderPresent(mRenderer);
     }
 
-    void Graphics::DrawDot(float x, float y) {
+    void Graphics::DrawDot(float x, float y, int r, int g, int b) {
 
-        SDL_SetRenderDrawColor(mRenderer, 105, 105, 105, SDL_ALPHA_OPAQUE);
+        SDL_SetRenderDrawColor(mRenderer, r, g, b, SDL_ALPHA_OPAQUE);
         SDL_RenderDrawPoint(mRenderer, x, y);
         SDL_SetRenderDrawColor(mRenderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
     }
