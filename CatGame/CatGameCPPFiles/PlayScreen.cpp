@@ -4,6 +4,7 @@
 
 #include "../CatGameHeaderFiles/PlayScreen.h"
 
+
 PlayScreen::PlayScreen() {
 
     mTimer = Timer::Instance();
@@ -17,7 +18,9 @@ PlayScreen::PlayScreen() {
     mBackground = new Texture("LevelBackground.png");
     mBackground->Parent(this);
     mBackground->Pos(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f));
-    mBackground->Scale(Vector2(1920.0f, 1080.0f));
+    mBackground->Scale(Vector2(1620.0f, 1080.0f));
+
+    mGrid = new PathfindingGrid(1620.0f, 1080.0f);
 
     mMotherCat = new MotherCat();
 }
@@ -29,6 +32,9 @@ PlayScreen::~PlayScreen() {
 
     delete mBackground;
     mBackground = nullptr;
+
+    delete mGrid;
+    mGrid = nullptr;
 }
 
 void PlayScreen::StartGame() {
@@ -66,5 +72,8 @@ void PlayScreen::Render() {
 
     if(mGameStarted)
         mMotherCat->Render();
+
+    if(mMotherCat->Active() && mGameStarted)
+        mGrid->Render();
 }
 

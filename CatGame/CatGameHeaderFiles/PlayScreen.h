@@ -5,12 +5,13 @@
 #ifndef CATGAMESDL_PLAYSCREEN_H
 #define CATGAMESDL_PLAYSCREEN_H
 
-#include "../SDLFramework/SDLHeaderFiles/GameEntity.h"
-#include "../SDLFramework/SDLHeaderFiles/Timer.h"
-#include "../SDLFramework/SDLHeaderFiles/InputManager.h"
-#include "../SDLFramework/SDLHeaderFiles/AudioManager.h"
-#include "../SDLFramework/SDLHeaderFiles/Texture.h"
+#include "../SDLHeaderFiles/GameEntity.h"
+#include "../SDLHeaderFiles/Timer.h"
+#include "../SDLHeaderFiles/InputManager.h"
+#include "../SDLHeaderFiles/AudioManager.h"
+#include "../SDLHeaderFiles/Texture.h"
 #include "../CatGameHeaderFiles/MotherCat.h"
+#include "../PathfindingHeaderFiles/PathfindingGrid.h"
 
 using namespace SDL;
 
@@ -26,6 +27,8 @@ private:
     bool mGameStarted;
 
     Texture* mBackground;
+
+    PathfindingGrid* mGrid;
 
     MotherCat* mMotherCat;
 

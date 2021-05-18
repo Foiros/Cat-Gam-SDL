@@ -5,9 +5,9 @@
 #ifndef SDLTUTORIAL_GAMEMANAGER_H
 #define SDLTUTORIAL_GAMEMANAGER_H
 
-#include "../SDLFramework/SDLHeaderFiles/AudioManager.h"
-#include "../SDLFramework/SDLHeaderFiles/Timer.h"
-#include "../SDLFramework/SDLHeaderFiles/InputManager.h"
+#include "../SDLHeaderFiles/AudioManager.h"
+#include "../SDLHeaderFiles/Timer.h"
+#include "../SDLHeaderFiles/InputManager.h"
 #include "../CatGameHeaderFiles/PlayScreen.h"
 
 namespace SDL{

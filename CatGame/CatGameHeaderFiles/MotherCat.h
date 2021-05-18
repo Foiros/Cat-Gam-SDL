@@ -5,9 +5,9 @@
 #ifndef CATGAMESDL_MOTHERCAT_H
 #define CATGAMESDL_MOTHERCAT_H
 
-#include "../SDLFramework/SDLHeaderFiles/GameEntity.h"
-#include "../SDLFramework/SDLHeaderFiles/AnimatedTexture.h"
-#include "../SDLFramework/SDLHeaderFiles/Texture.h"
+#include "../SDLHeaderFiles/GameEntity.h"
+#include "../SDLHeaderFiles/AnimatedTexture.h"
+#include "../SDLHeaderFiles/Texture.h"
 
 using namespace SDL;
 

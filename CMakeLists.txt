@@ -23,18 +23,16 @@ include_directories(${SDL2_INCLUDE_DIR} ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_FONT_IN
 link_directories(${SDL2_LIB_DIR} ${SDL2_IMAGE_LIB_DIR} ${SDL2_FONT_LIB_DIR} ${SDL2_AUDIO_LIB_DIR})
 
 
-add_executable(CatGameSDL CatGame/SDLFramework/SDLHeaderFiles/AnimatedTexture.h CatGame/SDLFramework/SDLHeaderFiles/AssetManager.h CatGame/SDLFramework/SDLHeaderFiles/AudioManager.h CatGame/SDLFramework/SDLHeaderFiles/GameEntity.h
-        CatGame/CatGameHeaderFiles/GameManager.h CatGame/SDLFramework/SDLHeaderFiles/Graphics.h CatGame/SDLFramework/SDLHeaderFiles/InputManager.h CatGame/SDLFramework/SDLHeaderFiles/MathHelper.h CatGame/SDLFramework/SDLHeaderFiles/Texture.h
-        CatGame/SDLFramework/SDLHeaderFiles/Timer.h
+add_executable(CatGameSDL CatGame/SDLHeaderFiles/AnimatedTexture.h CatGame/SDLHeaderFiles/AssetManager.h CatGame/SDLHeaderFiles/AudioManager.h CatGame/SDLHeaderFiles/GameEntity.h
+        CatGame/CatGameHeaderFiles/GameManager.h CatGame/SDLHeaderFiles/Graphics.h CatGame/SDLHeaderFiles/InputManager.h CatGame/SDLHeaderFiles/MathHelper.h CatGame/SDLHeaderFiles/Texture.h
+        CatGame/SDLHeaderFiles/Timer.h
 
-        CatGame/SDLFramework/SDLCPPFiles/AnimatedTexture.cpp CatGame/SDLFramework/SDLCPPFiles/AssetManager.cpp CatGame/SDLFramework/SDLCPPFiles/AudioManager.cpp CatGame/SDLFramework/SDLCPPFiles/GameEntity.cpp CatGame/CatGameHeaderFiles/GameManager.cpp
-        CatGame/SDLFramework/SDLCPPFiles/Graphics.cpp CatGame/SDLFramework/SDLCPPFiles/InputManager.cpp CatGame/SDLFramework/SDLCPPFiles/Texture.cpp CatGame/SDLFramework/SDLCPPFiles/Timer.cpp CatGame/SDLFramework/SDLCPPFiles/SDLMain.cpp
+        CatGame/SDLCPPFiles/AnimatedTexture.cpp CatGame/SDLCPPFiles/AssetManager.cpp CatGame/SDLCPPFiles/AudioManager.cpp CatGame/SDLCPPFiles/GameEntity.cpp CatGame/CatGameCPPFiles/GameManager.cpp
+        CatGame/SDLCPPFiles/Graphics.cpp CatGame/SDLCPPFiles/InputManager.cpp CatGame/SDLCPPFiles/Texture.cpp CatGame/SDLCPPFiles/Timer.cpp CatGame/SDLCPPFiles/SDLMain.cpp
 
-        CatGame/Pathfinding/PathfindingCPPFiles/PathfindingClosedList.cpp CatGame/Pathfinding/PathfindingHeaderFiles/PathfindingClosedList.h CatGame/Pathfinding/PathfindingCPPFiles/PathfindingOpenList.cpp
-        CatGame/Pathfinding/PathfindingHeaderFiles/PathfindingOpenList.h CatGame/Pathfinding/PathfindingCPPFiles/Pathfinding.cpp CatGame/Pathfinding/PathfindingHeaderFiles/Pathfinding.h
-        CatGame/Pathfinding/PathfindingCPPFiles/SearchLevel.cpp CatGame/Pathfinding/PathfindingHeaderFiles/SearchLevel.h CatGame/Pathfinding/PathfindingCPPFiles/SearchNode.cpp CatGame/Pathfinding/PathfindingHeaderFiles/SearchNode.h
+        CatGame/CatGameHeaderFiles/MainMenu.h CatGame/CatGameHeaderFiles/PlayScreen.h CatGame/CatGameCPPFiles/MainMenu.cpp CatGame/CatGameCPPFiles/PlayScreen.cpp CatGame/CatGameHeaderFiles/MotherCat.h CatGame/CatGameCPPFiles/MotherCat.cpp
 
-        CatGame/CatGameHeaderFiles/MainMenu.h CatGame/CatGameHeaderFiles/PlayScreen.h CatGame/CatGameCPPFiles/MainMenu.cpp CatGame/CatGameCPPFiles/PlayScreen.cpp CatGame/CatGameHeaderFiles/MotherCat.h CatGame/CatGameCPPFiles/MotherCat.cpp)
+        CatGame/PathfindingHeaderFiles/PathfindingGrid.h CatGame/PathfindingCPPFiles/PathfindingGrid.cpp CatGame/PathfindingCPPFiles/Pathfinding.cpp CatGame/PathfindingHeaderFiles/Pathfinding.h)
 
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2)

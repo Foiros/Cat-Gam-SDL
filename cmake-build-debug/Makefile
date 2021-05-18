@@ -126,6 +126,33 @@ CatGameSDL\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\build
 .PHONY : CatGameSDL\fast
 
+CatGame\CatGameCPPFiles\GameManager.obj: CatGame\CatGameCPPFiles\GameManager.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\GameManager.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\GameManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\GameManager.cpp.obj
+
+CatGame\CatGameCPPFiles\GameManager.i: CatGame\CatGameCPPFiles\GameManager.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\GameManager.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\GameManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\GameManager.cpp.i
+
+CatGame\CatGameCPPFiles\GameManager.s: CatGame\CatGameCPPFiles\GameManager.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\GameManager.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\GameManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\GameManager.cpp.s
+
 CatGame\CatGameCPPFiles\MainMenu.obj: CatGame\CatGameCPPFiles\MainMenu.cpp.obj
 
 .PHONY : CatGame\CatGameCPPFiles\MainMenu.obj
@@ -207,410 +234,302 @@ CatGame\CatGameCPPFiles\PlayScreen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.s
 .PHONY : CatGame\CatGameCPPFiles\PlayScreen.cpp.s
 
-CatGame\CatGameHeaderFiles\GameManager.obj: CatGame\CatGameHeaderFiles\GameManager.cpp.obj
+CatGame\PathfindingCPPFiles\Pathfinding.obj: CatGame\PathfindingCPPFiles\Pathfinding.cpp.obj
 
-.PHONY : CatGame\CatGameHeaderFiles\GameManager.obj
-
-# target to build an object file
-CatGame\CatGameHeaderFiles\GameManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameHeaderFiles\GameManager.cpp.obj
-.PHONY : CatGame\CatGameHeaderFiles\GameManager.cpp.obj
-
-CatGame\CatGameHeaderFiles\GameManager.i: CatGame\CatGameHeaderFiles\GameManager.cpp.i
-
-.PHONY : CatGame\CatGameHeaderFiles\GameManager.i
-
-# target to preprocess a source file
-CatGame\CatGameHeaderFiles\GameManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameHeaderFiles\GameManager.cpp.i
-.PHONY : CatGame\CatGameHeaderFiles\GameManager.cpp.i
-
-CatGame\CatGameHeaderFiles\GameManager.s: CatGame\CatGameHeaderFiles\GameManager.cpp.s
-
-.PHONY : CatGame\CatGameHeaderFiles\GameManager.s
-
-# target to generate assembly for a file
-CatGame\CatGameHeaderFiles\GameManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameHeaderFiles\GameManager.cpp.s
-.PHONY : CatGame\CatGameHeaderFiles\GameManager.cpp.s
-
-CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.obj: CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.obj
-
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.obj
+.PHONY : CatGame\PathfindingCPPFiles\Pathfinding.obj
 
 # target to build an object file
-CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.obj
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.obj
+CatGame\PathfindingCPPFiles\Pathfinding.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\Pathfinding.cpp.obj
+.PHONY : CatGame\PathfindingCPPFiles\Pathfinding.cpp.obj
 
-CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.i: CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.i
+CatGame\PathfindingCPPFiles\Pathfinding.i: CatGame\PathfindingCPPFiles\Pathfinding.cpp.i
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.i
+.PHONY : CatGame\PathfindingCPPFiles\Pathfinding.i
 
 # target to preprocess a source file
-CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.i
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.i
+CatGame\PathfindingCPPFiles\Pathfinding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\Pathfinding.cpp.i
+.PHONY : CatGame\PathfindingCPPFiles\Pathfinding.cpp.i
 
-CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.s: CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.s
+CatGame\PathfindingCPPFiles\Pathfinding.s: CatGame\PathfindingCPPFiles\Pathfinding.cpp.s
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.s
+.PHONY : CatGame\PathfindingCPPFiles\Pathfinding.s
 
 # target to generate assembly for a file
-CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.s
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\Pathfinding.cpp.s
+CatGame\PathfindingCPPFiles\Pathfinding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\Pathfinding.cpp.s
+.PHONY : CatGame\PathfindingCPPFiles\Pathfinding.cpp.s
 
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.obj: CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.obj
+CatGame\PathfindingCPPFiles\PathfindingGrid.obj: CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.obj
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.obj
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingGrid.obj
 
 # target to build an object file
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.obj
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.obj
+CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.obj
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.obj
 
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.i: CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.i
+CatGame\PathfindingCPPFiles\PathfindingGrid.i: CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.i
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.i
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingGrid.i
 
 # target to preprocess a source file
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.i
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.i
+CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.i
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.i
 
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.s: CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.s
+CatGame\PathfindingCPPFiles\PathfindingGrid.s: CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.s
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.s
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingGrid.s
 
 # target to generate assembly for a file
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.s
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingClosedList.cpp.s
+CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.s
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.s
 
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.obj: CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.obj
+CatGame\SDLCPPFiles\AnimatedTexture.obj: CatGame\SDLCPPFiles\AnimatedTexture.cpp.obj
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.obj
+.PHONY : CatGame\SDLCPPFiles\AnimatedTexture.obj
 
 # target to build an object file
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.obj
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.obj
+CatGame\SDLCPPFiles\AnimatedTexture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\AnimatedTexture.cpp.obj
+.PHONY : CatGame\SDLCPPFiles\AnimatedTexture.cpp.obj
 
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.i: CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.i
+CatGame\SDLCPPFiles\AnimatedTexture.i: CatGame\SDLCPPFiles\AnimatedTexture.cpp.i
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.i
+.PHONY : CatGame\SDLCPPFiles\AnimatedTexture.i
 
 # target to preprocess a source file
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.i
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.i
+CatGame\SDLCPPFiles\AnimatedTexture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\AnimatedTexture.cpp.i
+.PHONY : CatGame\SDLCPPFiles\AnimatedTexture.cpp.i
 
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.s: CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.s
+CatGame\SDLCPPFiles\AnimatedTexture.s: CatGame\SDLCPPFiles\AnimatedTexture.cpp.s
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.s
+.PHONY : CatGame\SDLCPPFiles\AnimatedTexture.s
 
 # target to generate assembly for a file
-CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.s
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\PathfindingOpenList.cpp.s
+CatGame\SDLCPPFiles\AnimatedTexture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\AnimatedTexture.cpp.s
+.PHONY : CatGame\SDLCPPFiles\AnimatedTexture.cpp.s
 
-CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.obj: CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.obj
+CatGame\SDLCPPFiles\AssetManager.obj: CatGame\SDLCPPFiles\AssetManager.cpp.obj
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.obj
+.PHONY : CatGame\SDLCPPFiles\AssetManager.obj
 
 # target to build an object file
-CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.obj
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.obj
+CatGame\SDLCPPFiles\AssetManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\AssetManager.cpp.obj
+.PHONY : CatGame\SDLCPPFiles\AssetManager.cpp.obj
 
-CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.i: CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.i
+CatGame\SDLCPPFiles\AssetManager.i: CatGame\SDLCPPFiles\AssetManager.cpp.i
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.i
+.PHONY : CatGame\SDLCPPFiles\AssetManager.i
 
 # target to preprocess a source file
-CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.i
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.i
+CatGame\SDLCPPFiles\AssetManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\AssetManager.cpp.i
+.PHONY : CatGame\SDLCPPFiles\AssetManager.cpp.i
 
-CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.s: CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.s
+CatGame\SDLCPPFiles\AssetManager.s: CatGame\SDLCPPFiles\AssetManager.cpp.s
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.s
+.PHONY : CatGame\SDLCPPFiles\AssetManager.s
 
 # target to generate assembly for a file
-CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.s
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchLevel.cpp.s
+CatGame\SDLCPPFiles\AssetManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\AssetManager.cpp.s
+.PHONY : CatGame\SDLCPPFiles\AssetManager.cpp.s
 
-CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.obj: CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.obj
+CatGame\SDLCPPFiles\AudioManager.obj: CatGame\SDLCPPFiles\AudioManager.cpp.obj
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.obj
+.PHONY : CatGame\SDLCPPFiles\AudioManager.obj
 
 # target to build an object file
-CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.obj
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.obj
+CatGame\SDLCPPFiles\AudioManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\AudioManager.cpp.obj
+.PHONY : CatGame\SDLCPPFiles\AudioManager.cpp.obj
 
-CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.i: CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.i
+CatGame\SDLCPPFiles\AudioManager.i: CatGame\SDLCPPFiles\AudioManager.cpp.i
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.i
+.PHONY : CatGame\SDLCPPFiles\AudioManager.i
 
 # target to preprocess a source file
-CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.i
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.i
+CatGame\SDLCPPFiles\AudioManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\AudioManager.cpp.i
+.PHONY : CatGame\SDLCPPFiles\AudioManager.cpp.i
 
-CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.s: CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.s
+CatGame\SDLCPPFiles\AudioManager.s: CatGame\SDLCPPFiles\AudioManager.cpp.s
 
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.s
+.PHONY : CatGame\SDLCPPFiles\AudioManager.s
 
 # target to generate assembly for a file
-CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.s
-.PHONY : CatGame\Pathfinding\PathfindingCPPFiles\SearchNode.cpp.s
+CatGame\SDLCPPFiles\AudioManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\AudioManager.cpp.s
+.PHONY : CatGame\SDLCPPFiles\AudioManager.cpp.s
 
-CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.obj: CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.obj
+CatGame\SDLCPPFiles\GameEntity.obj: CatGame\SDLCPPFiles\GameEntity.cpp.obj
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.obj
+.PHONY : CatGame\SDLCPPFiles\GameEntity.obj
 
 # target to build an object file
-CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.obj
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.obj
+CatGame\SDLCPPFiles\GameEntity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\GameEntity.cpp.obj
+.PHONY : CatGame\SDLCPPFiles\GameEntity.cpp.obj
 
-CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.i: CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.i
+CatGame\SDLCPPFiles\GameEntity.i: CatGame\SDLCPPFiles\GameEntity.cpp.i
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.i
+.PHONY : CatGame\SDLCPPFiles\GameEntity.i
 
 # target to preprocess a source file
-CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.i
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.i
+CatGame\SDLCPPFiles\GameEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\GameEntity.cpp.i
+.PHONY : CatGame\SDLCPPFiles\GameEntity.cpp.i
 
-CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.s: CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.s
+CatGame\SDLCPPFiles\GameEntity.s: CatGame\SDLCPPFiles\GameEntity.cpp.s
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.s
+.PHONY : CatGame\SDLCPPFiles\GameEntity.s
 
 # target to generate assembly for a file
-CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.s
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AnimatedTexture.cpp.s
+CatGame\SDLCPPFiles\GameEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\GameEntity.cpp.s
+.PHONY : CatGame\SDLCPPFiles\GameEntity.cpp.s
 
-CatGame\SDLFramework\SDLCPPFiles\AssetManager.obj: CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.obj
+CatGame\SDLCPPFiles\Graphics.obj: CatGame\SDLCPPFiles\Graphics.cpp.obj
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AssetManager.obj
+.PHONY : CatGame\SDLCPPFiles\Graphics.obj
 
 # target to build an object file
-CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.obj
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.obj
+CatGame\SDLCPPFiles\Graphics.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\Graphics.cpp.obj
+.PHONY : CatGame\SDLCPPFiles\Graphics.cpp.obj
 
-CatGame\SDLFramework\SDLCPPFiles\AssetManager.i: CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.i
+CatGame\SDLCPPFiles\Graphics.i: CatGame\SDLCPPFiles\Graphics.cpp.i
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AssetManager.i
+.PHONY : CatGame\SDLCPPFiles\Graphics.i
 
 # target to preprocess a source file
-CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.i
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.i
+CatGame\SDLCPPFiles\Graphics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\Graphics.cpp.i
+.PHONY : CatGame\SDLCPPFiles\Graphics.cpp.i
 
-CatGame\SDLFramework\SDLCPPFiles\AssetManager.s: CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.s
+CatGame\SDLCPPFiles\Graphics.s: CatGame\SDLCPPFiles\Graphics.cpp.s
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AssetManager.s
+.PHONY : CatGame\SDLCPPFiles\Graphics.s
 
 # target to generate assembly for a file
-CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.s
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AssetManager.cpp.s
+CatGame\SDLCPPFiles\Graphics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\Graphics.cpp.s
+.PHONY : CatGame\SDLCPPFiles\Graphics.cpp.s
 
-CatGame\SDLFramework\SDLCPPFiles\AudioManager.obj: CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.obj
+CatGame\SDLCPPFiles\InputManager.obj: CatGame\SDLCPPFiles\InputManager.cpp.obj
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AudioManager.obj
+.PHONY : CatGame\SDLCPPFiles\InputManager.obj
 
 # target to build an object file
-CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.obj
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.obj
+CatGame\SDLCPPFiles\InputManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\InputManager.cpp.obj
+.PHONY : CatGame\SDLCPPFiles\InputManager.cpp.obj
 
-CatGame\SDLFramework\SDLCPPFiles\AudioManager.i: CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.i
+CatGame\SDLCPPFiles\InputManager.i: CatGame\SDLCPPFiles\InputManager.cpp.i
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AudioManager.i
+.PHONY : CatGame\SDLCPPFiles\InputManager.i
 
 # target to preprocess a source file
-CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.i
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.i
+CatGame\SDLCPPFiles\InputManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\InputManager.cpp.i
+.PHONY : CatGame\SDLCPPFiles\InputManager.cpp.i
 
-CatGame\SDLFramework\SDLCPPFiles\AudioManager.s: CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.s
+CatGame\SDLCPPFiles\InputManager.s: CatGame\SDLCPPFiles\InputManager.cpp.s
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AudioManager.s
+.PHONY : CatGame\SDLCPPFiles\InputManager.s
 
 # target to generate assembly for a file
-CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.s
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\AudioManager.cpp.s
+CatGame\SDLCPPFiles\InputManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\InputManager.cpp.s
+.PHONY : CatGame\SDLCPPFiles\InputManager.cpp.s
 
-CatGame\SDLFramework\SDLCPPFiles\GameEntity.obj: CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.obj
+CatGame\SDLCPPFiles\SDLMain.obj: CatGame\SDLCPPFiles\SDLMain.cpp.obj
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\GameEntity.obj
+.PHONY : CatGame\SDLCPPFiles\SDLMain.obj
 
 # target to build an object file
-CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.obj
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.obj
+CatGame\SDLCPPFiles\SDLMain.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj
+.PHONY : CatGame\SDLCPPFiles\SDLMain.cpp.obj
 
-CatGame\SDLFramework\SDLCPPFiles\GameEntity.i: CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.i
+CatGame\SDLCPPFiles\SDLMain.i: CatGame\SDLCPPFiles\SDLMain.cpp.i
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\GameEntity.i
+.PHONY : CatGame\SDLCPPFiles\SDLMain.i
 
 # target to preprocess a source file
-CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.i
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.i
+CatGame\SDLCPPFiles\SDLMain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.i
+.PHONY : CatGame\SDLCPPFiles\SDLMain.cpp.i
 
-CatGame\SDLFramework\SDLCPPFiles\GameEntity.s: CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.s
+CatGame\SDLCPPFiles\SDLMain.s: CatGame\SDLCPPFiles\SDLMain.cpp.s
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\GameEntity.s
+.PHONY : CatGame\SDLCPPFiles\SDLMain.s
 
 # target to generate assembly for a file
-CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.s
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\GameEntity.cpp.s
+CatGame\SDLCPPFiles\SDLMain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.s
+.PHONY : CatGame\SDLCPPFiles\SDLMain.cpp.s
 
-CatGame\SDLFramework\SDLCPPFiles\Graphics.obj: CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.obj
+CatGame\SDLCPPFiles\Texture.obj: CatGame\SDLCPPFiles\Texture.cpp.obj
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Graphics.obj
+.PHONY : CatGame\SDLCPPFiles\Texture.obj
 
 # target to build an object file
-CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.obj
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.obj
+CatGame\SDLCPPFiles\Texture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\Texture.cpp.obj
+.PHONY : CatGame\SDLCPPFiles\Texture.cpp.obj
 
-CatGame\SDLFramework\SDLCPPFiles\Graphics.i: CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.i
+CatGame\SDLCPPFiles\Texture.i: CatGame\SDLCPPFiles\Texture.cpp.i
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Graphics.i
+.PHONY : CatGame\SDLCPPFiles\Texture.i
 
 # target to preprocess a source file
-CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.i
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.i
+CatGame\SDLCPPFiles\Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\Texture.cpp.i
+.PHONY : CatGame\SDLCPPFiles\Texture.cpp.i
 
-CatGame\SDLFramework\SDLCPPFiles\Graphics.s: CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.s
+CatGame\SDLCPPFiles\Texture.s: CatGame\SDLCPPFiles\Texture.cpp.s
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Graphics.s
+.PHONY : CatGame\SDLCPPFiles\Texture.s
 
 # target to generate assembly for a file
-CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.s
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Graphics.cpp.s
+CatGame\SDLCPPFiles\Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\Texture.cpp.s
+.PHONY : CatGame\SDLCPPFiles\Texture.cpp.s
 
-CatGame\SDLFramework\SDLCPPFiles\InputManager.obj: CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.obj
+CatGame\SDLCPPFiles\Timer.obj: CatGame\SDLCPPFiles\Timer.cpp.obj
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\InputManager.obj
+.PHONY : CatGame\SDLCPPFiles\Timer.obj
 
 # target to build an object file
-CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.obj
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.obj
+CatGame\SDLCPPFiles\Timer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\Timer.cpp.obj
+.PHONY : CatGame\SDLCPPFiles\Timer.cpp.obj
 
-CatGame\SDLFramework\SDLCPPFiles\InputManager.i: CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.i
+CatGame\SDLCPPFiles\Timer.i: CatGame\SDLCPPFiles\Timer.cpp.i
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\InputManager.i
-
-# target to preprocess a source file
-CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.i
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.i
-
-CatGame\SDLFramework\SDLCPPFiles\InputManager.s: CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.s
-
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\InputManager.s
-
-# target to generate assembly for a file
-CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.s
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\InputManager.cpp.s
-
-CatGame\SDLFramework\SDLCPPFiles\SDLMain.obj: CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.obj
-
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\SDLMain.obj
-
-# target to build an object file
-CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.obj
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.obj
-
-CatGame\SDLFramework\SDLCPPFiles\SDLMain.i: CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.i
-
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\SDLMain.i
+.PHONY : CatGame\SDLCPPFiles\Timer.i
 
 # target to preprocess a source file
-CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.i
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.i
+CatGame\SDLCPPFiles\Timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\Timer.cpp.i
+.PHONY : CatGame\SDLCPPFiles\Timer.cpp.i
 
-CatGame\SDLFramework\SDLCPPFiles\SDLMain.s: CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.s
+CatGame\SDLCPPFiles\Timer.s: CatGame\SDLCPPFiles\Timer.cpp.s
 
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\SDLMain.s
-
-# target to generate assembly for a file
-CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.s
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\SDLMain.cpp.s
-
-CatGame\SDLFramework\SDLCPPFiles\Texture.obj: CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.obj
-
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Texture.obj
-
-# target to build an object file
-CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.obj
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.obj
-
-CatGame\SDLFramework\SDLCPPFiles\Texture.i: CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.i
-
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Texture.i
-
-# target to preprocess a source file
-CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.i
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.i
-
-CatGame\SDLFramework\SDLCPPFiles\Texture.s: CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.s
-
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Texture.s
+.PHONY : CatGame\SDLCPPFiles\Timer.s
 
 # target to generate assembly for a file
-CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.s
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Texture.cpp.s
-
-CatGame\SDLFramework\SDLCPPFiles\Timer.obj: CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.obj
-
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Timer.obj
-
-# target to build an object file
-CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.obj
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.obj
-
-CatGame\SDLFramework\SDLCPPFiles\Timer.i: CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.i
-
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Timer.i
-
-# target to preprocess a source file
-CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.i
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.i
-
-CatGame\SDLFramework\SDLCPPFiles\Timer.s: CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.s
-
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Timer.s
-
-# target to generate assembly for a file
-CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.s
-.PHONY : CatGame\SDLFramework\SDLCPPFiles\Timer.cpp.s
+CatGame\SDLCPPFiles\Timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\Timer.cpp.s
+.PHONY : CatGame\SDLCPPFiles\Timer.cpp.s
 
 # Help Target
 help:
@@ -621,6 +540,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CatGameSDL
+	@echo ... CatGame/CatGameCPPFiles/GameManager.obj
+	@echo ... CatGame/CatGameCPPFiles/GameManager.i
+	@echo ... CatGame/CatGameCPPFiles/GameManager.s
 	@echo ... CatGame/CatGameCPPFiles/MainMenu.obj
 	@echo ... CatGame/CatGameCPPFiles/MainMenu.i
 	@echo ... CatGame/CatGameCPPFiles/MainMenu.s
@@ -630,51 +552,39 @@ help:
 	@echo ... CatGame/CatGameCPPFiles/PlayScreen.obj
 	@echo ... CatGame/CatGameCPPFiles/PlayScreen.i
 	@echo ... CatGame/CatGameCPPFiles/PlayScreen.s
-	@echo ... CatGame/CatGameHeaderFiles/GameManager.obj
-	@echo ... CatGame/CatGameHeaderFiles/GameManager.i
-	@echo ... CatGame/CatGameHeaderFiles/GameManager.s
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/Pathfinding.obj
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/Pathfinding.i
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/Pathfinding.s
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/PathfindingClosedList.obj
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/PathfindingClosedList.i
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/PathfindingClosedList.s
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/PathfindingOpenList.obj
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/PathfindingOpenList.i
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/PathfindingOpenList.s
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/SearchLevel.obj
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/SearchLevel.i
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/SearchLevel.s
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/SearchNode.obj
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/SearchNode.i
-	@echo ... CatGame/Pathfinding/PathfindingCPPFiles/SearchNode.s
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/AnimatedTexture.obj
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/AnimatedTexture.i
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/AnimatedTexture.s
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/AssetManager.obj
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/AssetManager.i
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/AssetManager.s
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/AudioManager.obj
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/AudioManager.i
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/AudioManager.s
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/GameEntity.obj
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/GameEntity.i
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/GameEntity.s
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/Graphics.obj
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/Graphics.i
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/Graphics.s
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/InputManager.obj
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/InputManager.i
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/InputManager.s
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/SDLMain.obj
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/SDLMain.i
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/SDLMain.s
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/Texture.obj
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/Texture.i
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/Texture.s
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/Timer.obj
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/Timer.i
-	@echo ... CatGame/SDLFramework/SDLCPPFiles/Timer.s
+	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.obj
+	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.i
+	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.s
+	@echo ... CatGame/PathfindingCPPFiles/PathfindingGrid.obj
+	@echo ... CatGame/PathfindingCPPFiles/PathfindingGrid.i
+	@echo ... CatGame/PathfindingCPPFiles/PathfindingGrid.s
+	@echo ... CatGame/SDLCPPFiles/AnimatedTexture.obj
+	@echo ... CatGame/SDLCPPFiles/AnimatedTexture.i
+	@echo ... CatGame/SDLCPPFiles/AnimatedTexture.s
+	@echo ... CatGame/SDLCPPFiles/AssetManager.obj
+	@echo ... CatGame/SDLCPPFiles/AssetManager.i
+	@echo ... CatGame/SDLCPPFiles/AssetManager.s
+	@echo ... CatGame/SDLCPPFiles/AudioManager.obj
+	@echo ... CatGame/SDLCPPFiles/AudioManager.i
+	@echo ... CatGame/SDLCPPFiles/AudioManager.s
+	@echo ... CatGame/SDLCPPFiles/GameEntity.obj
+	@echo ... CatGame/SDLCPPFiles/GameEntity.i
+	@echo ... CatGame/SDLCPPFiles/GameEntity.s
+	@echo ... CatGame/SDLCPPFiles/Graphics.obj
+	@echo ... CatGame/SDLCPPFiles/Graphics.i
+	@echo ... CatGame/SDLCPPFiles/Graphics.s
+	@echo ... CatGame/SDLCPPFiles/InputManager.obj
+	@echo ... CatGame/SDLCPPFiles/InputManager.i
+	@echo ... CatGame/SDLCPPFiles/InputManager.s
+	@echo ... CatGame/SDLCPPFiles/SDLMain.obj
+	@echo ... CatGame/SDLCPPFiles/SDLMain.i
+	@echo ... CatGame/SDLCPPFiles/SDLMain.s
+	@echo ... CatGame/SDLCPPFiles/Texture.obj
+	@echo ... CatGame/SDLCPPFiles/Texture.i
+	@echo ... CatGame/SDLCPPFiles/Texture.s
+	@echo ... CatGame/SDLCPPFiles/Timer.obj
+	@echo ... CatGame/SDLCPPFiles/Timer.i
+	@echo ... CatGame/SDLCPPFiles/Timer.s
 .PHONY : help
 
 
