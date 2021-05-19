@@ -21,8 +21,6 @@ MotherCat::MotherCat() {
     mRunAnimation = new AnimatedTexture("MotherCatWalkAnimation.png", 0, 0, 100, 100, 4, 1.0f, AnimatedTexture::horizontal);
     mRunAnimation->Parent(this);
     mRunAnimation->WrapMode(AnimatedTexture::once);
-
-    mFollowingPath = false;
 }
 
 MotherCat::~MotherCat() {
@@ -38,45 +36,34 @@ MotherCat::~MotherCat() {
     mRunAnimation = nullptr;
 }
 
-void MotherCat::Move(PathfindingGrid* mGrid) {
+void MotherCat::Move() {
 
-//    Vector2 mousePos = Vector2(InputManager::Instance()->MousePos());
-//    GridLocation destination = {(int) mousePos.x, (int) mousePos.y};
-    printf("Finding a path...");
-    int random1 = rand() % (mGrid->width - 1);
-    int random2 = rand() % (mGrid->height -1);
-    std::cout << random1 << ", " << random2;
-    destination = { random1, random2};
+    if(mInputManager->KeyDown(SDL_SCANCODE_D)){
 
-    GridLocation mMotherCatLocation = { (int) mMotherSprite->Pos(local).x, (int) mMotherSprite->Pos(local).y};
-
-    std::unordered_map<GridLocation, GridLocation> came_from;
-    std::unordered_map<GridLocation, double> cost_so_far;
-
-    Pathfinding::Instance()->FindPath(mGrid, mMotherCatLocation, destination, came_from, cost_so_far);
-    path = Pathfinding::Instance()->ReconstructPath(mMotherCatLocation, destination, came_from);
-
-    mFollowingPath = true;
-
-    came_from.clear();
-    cost_so_far.clear();
-}
-
-void MotherCat::FollowPath(std::vector<GridLocation> path) {
-
-    GridLocation node = {path.begin()->locationX, path.begin()->locationY};
-    path.erase(path.begin());
-    this->path = path;
-    Vector2 newPos = Vector2(node.locationX, node.locationY);
-    mMotherSprite->Translate(newPos, world);
-
-    if(node == destination){
-
-        mFollowingPath = false;
-        path.clear();
-        printf("Path traversed!");
+        Translate(VEC2_RIGHT * mMoveSpeed * mTimer->DeltaTime(), local);
     }
+    else if(mInputManager->KeyDown(SDL_SCANCODE_A)){
+
+        Translate(-VEC2_RIGHT * mMoveSpeed * mTimer->DeltaTime(), local);
+    }
+    else if(mInputManager->KeyDown(SDL_SCANCODE_W)){
+
+        Translate(-VEC2_UP * mMoveSpeed * mTimer->DeltaTime(), local);
+    }
+    else if(mInputManager->KeyDown(SDL_SCANCODE_S)){
+
+        Translate(VEC2_UP * mMoveSpeed * mTimer->DeltaTime(), local);
+    }
+
+//    Vector2 pos = Pos(local);
+////    if(pos.x < mMoveBounds.x)
+////        pos.x = mMoveBounds.x;
+////    else if(pos.x > mMoveBounds.y)
+////        pos.x = mMoveBounds.y;
+//
+//    Pos(pos);
 }
+
 
 void MotherCat::Visible(bool visible) {
 
@@ -88,16 +75,10 @@ bool MotherCat::IsAnimating() {
     return mAnimating;
 }
 
-void MotherCat::Update(PathfindingGrid* mGrid) {
+void MotherCat::Update() {
 
-    if(!mFollowingPath){
-
-        Move(mGrid);
-    }
-    else if(mFollowingPath){
-
-        FollowPath(path);
-    }
+    if(Active())
+        Move();
 }
 
 void MotherCat::Render() {

@@ -11,6 +11,7 @@
 #include "../SDLHeaderFiles/AudioManager.h"
 #include "../SDLHeaderFiles/Texture.h"
 #include "../CatGameHeaderFiles/MotherCat.h"
+#include "../CatGameHeaderFiles/Kitten.h"
 #include "../PathfindingHeaderFiles/PathfindingGrid.h"
 #include "../PathfindingHeaderFiles/Pathfinding.h"
 
@@ -32,6 +33,7 @@ private:
     PathfindingGrid* mGrid;
 
     MotherCat* mMotherCat;
+    Kitten* mKitten;
 
 
 public:

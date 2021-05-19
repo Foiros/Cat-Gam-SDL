@@ -8,7 +8,6 @@
 #include "../SDLHeaderFiles/GameEntity.h"
 #include "../SDLHeaderFiles/AnimatedTexture.h"
 #include "../SDLHeaderFiles/Texture.h"
-#include "../PathfindingHeaderFiles/Pathfinding.h"
 
 using namespace SDL;
 
@@ -27,24 +26,18 @@ private:
     AnimatedTexture* mRunAnimation;
 
     float mMoveSpeed;
-    GridLocation destination;
 
-    std::vector<GridLocation> path;
-    bool mFollowingPath;
+private:
+    void Move();
 
 public:
     MotherCat();
     ~MotherCat();
 
-    void Move(PathfindingGrid* mGrid);
-    void FollowPath(std::vector<GridLocation> path);
-
     void Visible(bool visible);
-
     bool IsAnimating();
 
-    void Update(PathfindingGrid* mGrid);
-
+    void Update();
     void Render();
 };
 

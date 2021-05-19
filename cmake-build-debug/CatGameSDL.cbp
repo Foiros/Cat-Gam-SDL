@@ -93,6 +93,9 @@
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/GameManager.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Kitten.cpp">
+			<Option target="CatGameSDL"/>
+		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/MainMenu.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
@@ -103,6 +106,9 @@
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/GameManager.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Kitten.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/MainMenu.h">
@@ -120,10 +126,16 @@
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingCPPFiles/PathfindingGrid.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingCPPFiles/PathfindingUnit.cpp">
+			<Option target="CatGameSDL"/>
+		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingGrid.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingUnit.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLCPPFiles/AnimatedTexture.cpp">

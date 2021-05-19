@@ -5,11 +5,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/GameManager.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/GameManager.cpp.obj"
+  "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Kitten.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Kitten.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/MainMenu.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/MainMenu.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/MotherCat.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/MotherCat.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/PlayScreen.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/PlayScreen.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingCPPFiles/Pathfinding.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/PathfindingCPPFiles/Pathfinding.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingCPPFiles/PathfindingGrid.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/PathfindingCPPFiles/PathfindingGrid.cpp.obj"
+  "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingCPPFiles/PathfindingUnit.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/PathfindingCPPFiles/PathfindingUnit.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLCPPFiles/AnimatedTexture.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/SDLCPPFiles/AnimatedTexture.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLCPPFiles/AssetManager.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/SDLCPPFiles/AssetManager.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLCPPFiles/AudioManager.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/SDLCPPFiles/AudioManager.cpp.obj"

@@ -27,6 +27,10 @@ PlayScreen::PlayScreen() {
     mMotherCat = new MotherCat();
     mMotherCat->Parent(this);
     mMotherCat->Pos(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f));
+
+    mKitten = new Kitten();
+    mKitten->Parent(this);
+    mKitten->Pos(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f));
 }
 
 PlayScreen::~PlayScreen() {
@@ -44,6 +48,7 @@ PlayScreen::~PlayScreen() {
 void PlayScreen::StartGame() {
 
     mMotherCat->Visible(true);
+    mKitten->Visible(true);
     mGameStarted = true;
     mGameStartTimer = 0.0f;
 }
@@ -58,7 +63,8 @@ void PlayScreen::Update() {
 
     if(mGameStarted){
 
-        mMotherCat->Update(mGrid);
+        mMotherCat->Update();
+        mKitten->Update(mGrid);
     }
     else{
 
@@ -77,9 +83,7 @@ void PlayScreen::Render() {
     if(mGameStarted){
 
         mMotherCat->Render();
-
-        // GridLocation mMotherCatLocation = { (int) mMotherCat->Pos(world).x, (int) mMotherCat->Pos(world).y};
-        // mGrid->Render(mMotherCatLocation);
+        mKitten->Render();
     }
 }
 

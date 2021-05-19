@@ -153,6 +153,33 @@ CatGame\CatGameCPPFiles\GameManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.s
 .PHONY : CatGame\CatGameCPPFiles\GameManager.cpp.s
 
+CatGame\CatGameCPPFiles\Kitten.obj: CatGame\CatGameCPPFiles\Kitten.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\Kitten.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\Kitten.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Kitten.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\Kitten.cpp.obj
+
+CatGame\CatGameCPPFiles\Kitten.i: CatGame\CatGameCPPFiles\Kitten.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\Kitten.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\Kitten.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Kitten.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\Kitten.cpp.i
+
+CatGame\CatGameCPPFiles\Kitten.s: CatGame\CatGameCPPFiles\Kitten.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\Kitten.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\Kitten.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Kitten.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\Kitten.cpp.s
+
 CatGame\CatGameCPPFiles\MainMenu.obj: CatGame\CatGameCPPFiles\MainMenu.cpp.obj
 
 .PHONY : CatGame\CatGameCPPFiles\MainMenu.obj
@@ -287,6 +314,33 @@ CatGame\PathfindingCPPFiles\PathfindingGrid.s: CatGame\PathfindingCPPFiles\Pathf
 CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.s
 .PHONY : CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.s
+
+CatGame\PathfindingCPPFiles\PathfindingUnit.obj: CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.obj
+
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingUnit.obj
+
+# target to build an object file
+CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.obj
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.obj
+
+CatGame\PathfindingCPPFiles\PathfindingUnit.i: CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.i
+
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingUnit.i
+
+# target to preprocess a source file
+CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.i
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.i
+
+CatGame\PathfindingCPPFiles\PathfindingUnit.s: CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.s
+
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingUnit.s
+
+# target to generate assembly for a file
+CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.s
+.PHONY : CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.s
 
 CatGame\SDLCPPFiles\AnimatedTexture.obj: CatGame\SDLCPPFiles\AnimatedTexture.cpp.obj
 
@@ -543,6 +597,9 @@ help:
 	@echo ... CatGame/CatGameCPPFiles/GameManager.obj
 	@echo ... CatGame/CatGameCPPFiles/GameManager.i
 	@echo ... CatGame/CatGameCPPFiles/GameManager.s
+	@echo ... CatGame/CatGameCPPFiles/Kitten.obj
+	@echo ... CatGame/CatGameCPPFiles/Kitten.i
+	@echo ... CatGame/CatGameCPPFiles/Kitten.s
 	@echo ... CatGame/CatGameCPPFiles/MainMenu.obj
 	@echo ... CatGame/CatGameCPPFiles/MainMenu.i
 	@echo ... CatGame/CatGameCPPFiles/MainMenu.s
@@ -558,6 +615,9 @@ help:
 	@echo ... CatGame/PathfindingCPPFiles/PathfindingGrid.obj
 	@echo ... CatGame/PathfindingCPPFiles/PathfindingGrid.i
 	@echo ... CatGame/PathfindingCPPFiles/PathfindingGrid.s
+	@echo ... CatGame/PathfindingCPPFiles/PathfindingUnit.obj
+	@echo ... CatGame/PathfindingCPPFiles/PathfindingUnit.i
+	@echo ... CatGame/PathfindingCPPFiles/PathfindingUnit.s
 	@echo ... CatGame/SDLCPPFiles/AnimatedTexture.obj
 	@echo ... CatGame/SDLCPPFiles/AnimatedTexture.i
 	@echo ... CatGame/SDLCPPFiles/AnimatedTexture.s

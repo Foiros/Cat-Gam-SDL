@@ -682,19 +682,9 @@ E:/SDL/SDL2-2.0.14/include/begin_code.h
 
 E:/SDL/SDL2-2.0.14/include/close_code.h
 
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/MotherCat.cpp
-../CatGameHeaderFiles/MotherCat.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/MotherCat.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/MotherCat.h
-../SDLHeaderFiles/GameEntity.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/GameEntity.h
-../SDLHeaderFiles/AnimatedTexture.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AnimatedTexture.h
-../SDLHeaderFiles/Texture.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Texture.h
-../PathfindingHeaderFiles/Pathfinding.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingCPPFiles/PathfindingUnit.cpp
+../PathfindingHeaderFiles/PathfindingUnit.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingUnit.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h
 PathfindingGrid.h
@@ -742,11 +732,13 @@ iterator
 algorithm
 -
 
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AnimatedTexture.h
-Timer.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Timer.h
-Texture.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingUnit.h
+../SDLHeaderFiles/GameEntity.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/GameEntity.h
+../SDLHeaderFiles/Texture.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Texture.h
+../PathfindingHeaderFiles/Pathfinding.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AssetManager.h
 SDL_mixer.h
