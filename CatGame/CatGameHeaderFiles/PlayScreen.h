@@ -33,8 +33,6 @@ private:
 
     MotherCat* mMotherCat;
 
-    std::vector<GridLocation> path;
-
 
 public:
     PlayScreen();

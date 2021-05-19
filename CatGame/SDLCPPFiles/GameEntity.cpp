@@ -115,7 +115,8 @@ namespace SDL{
 
         if(space == world){
 
-            mPos += vector;
+            mPos = vector;
+            // mPos += vector;
         }
         else{
 

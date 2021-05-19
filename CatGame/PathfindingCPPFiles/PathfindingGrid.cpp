@@ -46,7 +46,15 @@ PathfindingGrid::~PathfindingGrid() {
 
 bool PathfindingGrid::InBounds(GridLocation id) {
 
-    return 0 <= id.locationX && id.locationX < width && 0 <= id.locationY && id.locationY < height;
+    if(id.locationX <= width && id.locationX >= -width && id.locationY <= height && id.locationY >= -height){
+
+        return true;
+    }
+    else{
+
+        return false;
+    }
+    //return 0 <= id.locationX && id.locationX < width && 0 <= id.locationY && id.locationY < height;
 }
 
 bool PathfindingGrid::Passable(GridLocation id) {

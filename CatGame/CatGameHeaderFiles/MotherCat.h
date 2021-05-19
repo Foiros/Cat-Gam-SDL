@@ -27,20 +27,23 @@ private:
     AnimatedTexture* mRunAnimation;
 
     float mMoveSpeed;
-    Vector2 mMoveBounds;
+    GridLocation destination;
 
+    std::vector<GridLocation> path;
+    bool mFollowingPath;
 
 public:
     MotherCat();
     ~MotherCat();
 
-    void Move(Vector2 newPos);
+    void Move(PathfindingGrid* mGrid);
+    void FollowPath(std::vector<GridLocation> path);
 
     void Visible(bool visible);
 
     bool IsAnimating();
 
-    void Update();
+    void Update(PathfindingGrid* mGrid);
 
     void Render();
 };

@@ -20,7 +20,9 @@ PlayScreen::PlayScreen() {
     mBackground->Pos(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f));
     mBackground->Scale(Vector2(1620.0f, 1080.0f));
 
-    mGrid = new PathfindingGrid(1620.0f, 1080.0f);
+    mGrid = new PathfindingGrid(mBackground->Scale(world).x, mBackground->Scale(world).y);
+    mGrid->Parent(this);
+    mGrid->Pos(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f));
 
     mMotherCat = new MotherCat();
     mMotherCat->Parent(this);
@@ -56,35 +58,7 @@ void PlayScreen::Update() {
 
     if(mGameStarted){
 
-        if(InputManager::Instance()->MouseButtonDown(SDL::InputManager::left)){
-
-            Vector2 mousePos = Vector2(InputManager::Instance()->MousePos());
-            std::cout << "Mother cat new pos: " << mousePos.x << ", " << mousePos.y << "\n";
-            GridLocation destination = {(int) mousePos.x, (int) mousePos.y};
-
-            GridLocation mMotherCatLocation = { (int) mMotherCat->Pos(world).x, (int) mMotherCat->Pos(world).y};
-
-            std::unordered_map<GridLocation, GridLocation> came_from;
-            std::unordered_map<GridLocation, double> cost_so_far;
-
-            Pathfinding::Instance()->FindPath(mGrid, mMotherCatLocation, destination, came_from, cost_so_far);
-            path = Pathfinding::Instance()->ReconstructPath(mMotherCatLocation, destination, came_from);
-
-            for(GridLocation node : path){
-
-                Vector2 newPos = Vector2(node.locationX, node.locationY);
-                std::cout << "Mother current pos: " << node.locationX << ", " << node.locationY << "\n";
-
-                mMotherCat->Translate(newPos, world);
-                mMotherCat->Move(newPos);
-
-                Render();
-            }
-
-            path.clear();
-            came_from.clear();
-            cost_so_far.clear();
-        }
+        mMotherCat->Update(mGrid);
     }
     else{
 
@@ -98,14 +72,14 @@ void PlayScreen::Update() {
 
 void PlayScreen::Render() {
 
-    // mBackground->Render();
+    mBackground->Render();
 
     if(mGameStarted){
 
         mMotherCat->Render();
 
-        GridLocation mMotherCatLocation = { (int) mMotherCat->Pos(world).x, (int) mMotherCat->Pos(world).y};
-        mGrid->Render(mMotherCatLocation, path);
+        // GridLocation mMotherCatLocation = { (int) mMotherCat->Pos(world).x, (int) mMotherCat->Pos(world).y};
+        // mGrid->Render(mMotherCatLocation);
     }
 }
 

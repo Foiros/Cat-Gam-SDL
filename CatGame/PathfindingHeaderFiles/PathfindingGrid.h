@@ -38,15 +38,15 @@ namespace std{
     };
 }
 
-class PathfindingGrid{
+class PathfindingGrid : public GameEntity{
 
 private:
 
-    int width, height;
+
 
     // East, west, north, south
-    const ::std::set<GridLocation> directions = {GridLocation{30, 0}, GridLocation{-30, 0},
-                                                           GridLocation{0, -30},GridLocation{0, 30}};
+    const ::std::set<GridLocation> directions = {GridLocation{1, 0}, GridLocation{-1, 0},
+                                                           GridLocation{0, -1},GridLocation{0, 1}};
 
     std::unordered_set<GridLocation> harshLand;
 
@@ -55,6 +55,9 @@ private:
     bool Passable(GridLocation id);
 
 public:
+
+    int width, height;
+
     PathfindingGrid(int _width, int height);
     ~PathfindingGrid();
 
@@ -79,6 +82,5 @@ inline bool operator < (GridLocation a, GridLocation b) {
 
     return ::std::tie(a.locationX, a.locationY) < ::std::tie(b.locationX, b.locationY);
 }
-
 
 #endif //CATGAMESDL_PATHFINDINGGRID_H

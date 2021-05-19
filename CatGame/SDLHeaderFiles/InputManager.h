@@ -27,6 +27,8 @@ namespace SDL{
         const Uint8* mKeyboardState;
         int mKeyLength;
 
+        SDL_Cursor* cursor;
+
         Uint32  mPrevMouseState;
         Uint32  mMouseState;
 
