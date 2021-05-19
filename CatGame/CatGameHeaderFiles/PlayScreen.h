@@ -29,6 +29,13 @@ private:
     bool mGameStarted;
 
     Texture* mBackground;
+    Texture* mPlayerMeat;
+    Texture* mPlayerWater;
+    Texture* mNestMeat;
+    Texture* mNestWater;
+    Texture* mKittenHunger;
+    Texture* mKittenThirst;
+    Texture* mKittenLove;
 
     PathfindingGrid* mGrid;
 
@@ -40,11 +47,16 @@ public:
     PlayScreen();
     ~PlayScreen();
 
+    void SetUpPlayScreen();
+    void SetUpGrid();
+    void SetUpGameObjects();
+
     void StartGame();
 
     bool GameOver();
 
     void Update();
+    void UpdateTexts();
 
     void Render();
 };
