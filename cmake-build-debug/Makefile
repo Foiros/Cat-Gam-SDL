@@ -126,6 +126,60 @@ CatGameSDL\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\build
 .PHONY : CatGameSDL\fast
 
+CatGame\CatGameCPPFiles\Activity.obj: CatGame\CatGameCPPFiles\Activity.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\Activity.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\Activity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\Activity.cpp.obj
+
+CatGame\CatGameCPPFiles\Activity.i: CatGame\CatGameCPPFiles\Activity.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\Activity.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\Activity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\Activity.cpp.i
+
+CatGame\CatGameCPPFiles\Activity.s: CatGame\CatGameCPPFiles\Activity.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\Activity.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\Activity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\Activity.cpp.s
+
+CatGame\CatGameCPPFiles\Flower.obj: CatGame\CatGameCPPFiles\Flower.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\Flower.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\Flower.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\Flower.cpp.obj
+
+CatGame\CatGameCPPFiles\Flower.i: CatGame\CatGameCPPFiles\Flower.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\Flower.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\Flower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\Flower.cpp.i
+
+CatGame\CatGameCPPFiles\Flower.s: CatGame\CatGameCPPFiles\Flower.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\Flower.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\Flower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\Flower.cpp.s
+
 CatGame\CatGameCPPFiles\GameManager.obj: CatGame\CatGameCPPFiles\GameManager.cpp.obj
 
 .PHONY : CatGame\CatGameCPPFiles\GameManager.obj
@@ -207,6 +261,33 @@ CatGame\CatGameCPPFiles\MainMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\MainMenu.cpp.s
 .PHONY : CatGame\CatGameCPPFiles\MainMenu.cpp.s
 
+CatGame\CatGameCPPFiles\Meat.obj: CatGame\CatGameCPPFiles\Meat.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\Meat.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\Meat.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\Meat.cpp.obj
+
+CatGame\CatGameCPPFiles\Meat.i: CatGame\CatGameCPPFiles\Meat.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\Meat.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\Meat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\Meat.cpp.i
+
+CatGame\CatGameCPPFiles\Meat.s: CatGame\CatGameCPPFiles\Meat.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\Meat.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\Meat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\Meat.cpp.s
+
 CatGame\CatGameCPPFiles\MotherCat.obj: CatGame\CatGameCPPFiles\MotherCat.cpp.obj
 
 .PHONY : CatGame\CatGameCPPFiles\MotherCat.obj
@@ -234,6 +315,60 @@ CatGame\CatGameCPPFiles\MotherCat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\MotherCat.cpp.s
 .PHONY : CatGame\CatGameCPPFiles\MotherCat.cpp.s
 
+CatGame\CatGameCPPFiles\Mouse.obj: CatGame\CatGameCPPFiles\Mouse.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\Mouse.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\Mouse.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\Mouse.cpp.obj
+
+CatGame\CatGameCPPFiles\Mouse.i: CatGame\CatGameCPPFiles\Mouse.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\Mouse.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\Mouse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\Mouse.cpp.i
+
+CatGame\CatGameCPPFiles\Mouse.s: CatGame\CatGameCPPFiles\Mouse.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\Mouse.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\Mouse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\Mouse.cpp.s
+
+CatGame\CatGameCPPFiles\Nest.obj: CatGame\CatGameCPPFiles\Nest.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\Nest.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\Nest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\Nest.cpp.obj
+
+CatGame\CatGameCPPFiles\Nest.i: CatGame\CatGameCPPFiles\Nest.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\Nest.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\Nest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\Nest.cpp.i
+
+CatGame\CatGameCPPFiles\Nest.s: CatGame\CatGameCPPFiles\Nest.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\Nest.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\Nest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\Nest.cpp.s
+
 CatGame\CatGameCPPFiles\PlayScreen.obj: CatGame\CatGameCPPFiles\PlayScreen.cpp.obj
 
 .PHONY : CatGame\CatGameCPPFiles\PlayScreen.obj
@@ -260,6 +395,87 @@ CatGame\CatGameCPPFiles\PlayScreen.s: CatGame\CatGameCPPFiles\PlayScreen.cpp.s
 CatGame\CatGameCPPFiles\PlayScreen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.s
 .PHONY : CatGame\CatGameCPPFiles\PlayScreen.cpp.s
+
+CatGame\CatGameCPPFiles\Resource.obj: CatGame\CatGameCPPFiles\Resource.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\Resource.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\Resource.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\Resource.cpp.obj
+
+CatGame\CatGameCPPFiles\Resource.i: CatGame\CatGameCPPFiles\Resource.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\Resource.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\Resource.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\Resource.cpp.i
+
+CatGame\CatGameCPPFiles\Resource.s: CatGame\CatGameCPPFiles\Resource.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\Resource.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\Resource.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\Resource.cpp.s
+
+CatGame\CatGameCPPFiles\Tree.obj: CatGame\CatGameCPPFiles\Tree.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\Tree.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\Tree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\Tree.cpp.obj
+
+CatGame\CatGameCPPFiles\Tree.i: CatGame\CatGameCPPFiles\Tree.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\Tree.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\Tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\Tree.cpp.i
+
+CatGame\CatGameCPPFiles\Tree.s: CatGame\CatGameCPPFiles\Tree.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\Tree.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\Tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\Tree.cpp.s
+
+CatGame\CatGameCPPFiles\Water.obj: CatGame\CatGameCPPFiles\Water.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\Water.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\Water.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\Water.cpp.obj
+
+CatGame\CatGameCPPFiles\Water.i: CatGame\CatGameCPPFiles\Water.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\Water.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\Water.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\Water.cpp.i
+
+CatGame\CatGameCPPFiles\Water.s: CatGame\CatGameCPPFiles\Water.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\Water.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\Water.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\Water.cpp.s
 
 CatGame\PathfindingCPPFiles\Pathfinding.obj: CatGame\PathfindingCPPFiles\Pathfinding.cpp.obj
 
@@ -594,6 +810,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CatGameSDL
+	@echo ... CatGame/CatGameCPPFiles/Activity.obj
+	@echo ... CatGame/CatGameCPPFiles/Activity.i
+	@echo ... CatGame/CatGameCPPFiles/Activity.s
+	@echo ... CatGame/CatGameCPPFiles/Flower.obj
+	@echo ... CatGame/CatGameCPPFiles/Flower.i
+	@echo ... CatGame/CatGameCPPFiles/Flower.s
 	@echo ... CatGame/CatGameCPPFiles/GameManager.obj
 	@echo ... CatGame/CatGameCPPFiles/GameManager.i
 	@echo ... CatGame/CatGameCPPFiles/GameManager.s
@@ -603,12 +825,30 @@ help:
 	@echo ... CatGame/CatGameCPPFiles/MainMenu.obj
 	@echo ... CatGame/CatGameCPPFiles/MainMenu.i
 	@echo ... CatGame/CatGameCPPFiles/MainMenu.s
+	@echo ... CatGame/CatGameCPPFiles/Meat.obj
+	@echo ... CatGame/CatGameCPPFiles/Meat.i
+	@echo ... CatGame/CatGameCPPFiles/Meat.s
 	@echo ... CatGame/CatGameCPPFiles/MotherCat.obj
 	@echo ... CatGame/CatGameCPPFiles/MotherCat.i
 	@echo ... CatGame/CatGameCPPFiles/MotherCat.s
+	@echo ... CatGame/CatGameCPPFiles/Mouse.obj
+	@echo ... CatGame/CatGameCPPFiles/Mouse.i
+	@echo ... CatGame/CatGameCPPFiles/Mouse.s
+	@echo ... CatGame/CatGameCPPFiles/Nest.obj
+	@echo ... CatGame/CatGameCPPFiles/Nest.i
+	@echo ... CatGame/CatGameCPPFiles/Nest.s
 	@echo ... CatGame/CatGameCPPFiles/PlayScreen.obj
 	@echo ... CatGame/CatGameCPPFiles/PlayScreen.i
 	@echo ... CatGame/CatGameCPPFiles/PlayScreen.s
+	@echo ... CatGame/CatGameCPPFiles/Resource.obj
+	@echo ... CatGame/CatGameCPPFiles/Resource.i
+	@echo ... CatGame/CatGameCPPFiles/Resource.s
+	@echo ... CatGame/CatGameCPPFiles/Tree.obj
+	@echo ... CatGame/CatGameCPPFiles/Tree.i
+	@echo ... CatGame/CatGameCPPFiles/Tree.s
+	@echo ... CatGame/CatGameCPPFiles/Water.obj
+	@echo ... CatGame/CatGameCPPFiles/Water.i
+	@echo ... CatGame/CatGameCPPFiles/Water.s
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.obj
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.i
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.s

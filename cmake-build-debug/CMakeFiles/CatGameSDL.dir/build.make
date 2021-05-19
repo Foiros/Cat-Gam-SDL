@@ -383,6 +383,158 @@ CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.s: cma
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\PathfindingCPPFiles\PathfindingUnit.cpp"
 <<
 
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameCPPFiles\Nest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Nest.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Nest.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Nest.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Nest.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Nest.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Nest.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.obj: ..\CatGame\CatGameCPPFiles\Resource.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Resource.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Resource.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Resource.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Resource.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Resource.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Resource.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.obj: ..\CatGame\CatGameCPPFiles\Meat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Meat.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Meat.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Meat.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Meat.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Meat.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Meat.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.obj: ..\CatGame\CatGameCPPFiles\Water.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Water.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Water.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Water.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Water.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Water.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Water.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.obj: ..\CatGame\CatGameCPPFiles\Activity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Activity.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Activity.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Activity.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Activity.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Activity.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Activity.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.obj: ..\CatGame\CatGameCPPFiles\Flower.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Flower.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Flower.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Flower.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Flower.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Flower.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Flower.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.obj: ..\CatGame\CatGameCPPFiles\Mouse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Mouse.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Mouse.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Mouse.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Mouse.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Mouse.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Mouse.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.obj: ..\CatGame\CatGameCPPFiles\Tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Tree.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Tree.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Tree.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Tree.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Tree.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Tree.cpp"
+<<
+
 # Object files for target CatGameSDL
 CatGameSDL_OBJECTS = \
 "CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\AnimatedTexture.cpp.obj" \
@@ -401,7 +553,15 @@ CatGameSDL_OBJECTS = \
 "CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingGrid.cpp.obj" \
 "CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\Pathfinding.cpp.obj" \
 "CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Kitten.cpp.obj" \
-"CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.obj"
+"CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.obj"
 
 # External object files for target CatGameSDL
 CatGameSDL_EXTERNAL_OBJECTS =
@@ -423,9 +583,17 @@ CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\Pathfindin
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\Pathfinding.cpp.obj
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Kitten.cpp.obj
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\PathfindingCPPFiles\PathfindingUnit.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Meat.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Flower.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Mouse.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Tree.cpp.obj
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\build.make
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable CatGameSDL.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable CatGameSDL.exe"
 	"E:\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\CatGameSDL.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\CatGameSDL.dir\objects1.rsp @<<
  /out:CatGameSDL.exe /implib:CatGameSDL.lib /pdb:"E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CatGameSDL.pdb" /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console   -LIBPATH:E:\SDL\SDL2-2.0.14\lib\x86  -LIBPATH:E:\SDL\SDL2-2.0.14\Images\lib\x86  -LIBPATH:E:\SDL\SDL2-2.0.14\Fonts\lib\x86  -LIBPATH:E:\SDL\SDL2-2.0.14\Audio\lib\x86  SDL2main.lib SDL2.lib SDL2_image.lib SDL2_ttf.lib SDL2_mixer.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
