@@ -135,9 +135,6 @@
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/PlayScreen.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Resource.cpp">
-			<Option target="CatGameSDL"/>
-		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Tree.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
@@ -190,9 +187,6 @@
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PlayScreen.h">
-			<Option target="CatGameSDL"/>
-		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Resource.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Tree.h">

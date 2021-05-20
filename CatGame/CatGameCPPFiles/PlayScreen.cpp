@@ -54,6 +54,7 @@ void PlayScreen::Update() {
         UpdateTexts();
         mMotherCat->Update();
         mKitten->Update(mGrid);
+        mNest->Update();
     }
     else{
 
@@ -156,11 +157,7 @@ void PlayScreen::SetUpGameObjects() {
 
 void PlayScreen::UpdateTexts() {
 
-    std::string newText = "100";
-
-    std::string theText = "PlayerMeat: ";
-
-    std::string theWholeThing = theText + newText;
+    std::string theWholeThing = "Player Meat: 100";
 
     mPlayerMeat = new Texture(theWholeThing, "ARCADE_N.ttf", 20, {150, 0, 0});
     mPlayerMeat->Pos(Vector2(200, 50));

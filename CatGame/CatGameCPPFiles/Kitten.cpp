@@ -53,6 +53,7 @@ bool Kitten::IgnoreCollisions() {
 
 void Kitten::ContactWithOtherCollider(PhysicsEntity *other) {
 
+
 }
 
 void Kitten::Update(PathfindingGrid* grid) {
@@ -72,7 +73,6 @@ void Kitten::Render() {
 
     if(mVisible)
         mKittenSprite->Render();
-        mBroadPhaseCollider->Render();
 }
 
 

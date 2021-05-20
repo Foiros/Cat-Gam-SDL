@@ -5,19 +5,24 @@
 #include "../CatGameHeaderFiles/Meat.h"
 
 
-Meat::Meat() : Resource() {
+Meat::Meat() {
 
     name = "Meat";
+
+    int random = rand() % 50;
+    value = random;
+
     sprite = new Texture("Meat.png");
     sprite->Parent(this);
 
     AddCollider(new BoxCollider(Vector2(50.0f, 50.0f)));
-    mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Resource);
+    mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Meat);
 }
 
 Meat::~Meat() {
 
-    Resource::~Resource();
+    delete sprite;
+    sprite = nullptr;
 }
 
 bool Meat::IgnoreCollisions() {
@@ -27,7 +32,6 @@ bool Meat::IgnoreCollisions() {
 
 void Meat::ContactWithOtherCollider(PhysicsEntity *other) {
 
-    printf("Gathering Meat...");
     GatherResource();
 }
 
@@ -35,4 +39,11 @@ void Meat::GatherResource() {
 
     printf("Gathering Meat...");
     Parent(nullptr);
+}
+
+void Meat::Render() {
+
+    sprite->Render();
+
+    // mBroadPhaseCollider->Render();
 }

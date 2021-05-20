@@ -5,9 +5,16 @@
 #ifndef CATGAMESDL_WATER_H
 #define CATGAMESDL_WATER_H
 
-#include "Resource.h"
+#include "../CatGameHeaderFiles/PhysicsEntity.h"
+#include "../CatGameHeaderFiles/PhysicsManager.h"
 
-class Water : public Resource{
+class Water : public PhysicsEntity{
+
+private:
+    std::string name;
+    int value;
+
+    Texture* sprite;
 
 public:
     Water();
@@ -17,6 +24,8 @@ public:
     void ContactWithOtherCollider(PhysicsEntity* other) override;
 
     void GatherResource();
+
+    void Render();
 };
 
 #endif //CATGAMESDL_WATER_H

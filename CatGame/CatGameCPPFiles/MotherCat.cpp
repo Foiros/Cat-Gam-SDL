@@ -88,7 +88,6 @@ void MotherCat::ContactWithOtherCollider(PhysicsEntity *other) {
 
 }
 
-
 void MotherCat::Update() {
 
     if(Active())
@@ -99,7 +98,6 @@ void MotherCat::Render() {
 
     if(mVisible)
         mMotherSprite->Render();
-        mBroadPhaseCollider->Render();
 }
 
 

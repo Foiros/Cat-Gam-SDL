@@ -531,33 +531,6 @@ CatGame\CatGameCPPFiles\PlayScreen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.s
 .PHONY : CatGame\CatGameCPPFiles\PlayScreen.cpp.s
 
-CatGame\CatGameCPPFiles\Resource.obj: CatGame\CatGameCPPFiles\Resource.cpp.obj
-
-.PHONY : CatGame\CatGameCPPFiles\Resource.obj
-
-# target to build an object file
-CatGame\CatGameCPPFiles\Resource.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.obj
-.PHONY : CatGame\CatGameCPPFiles\Resource.cpp.obj
-
-CatGame\CatGameCPPFiles\Resource.i: CatGame\CatGameCPPFiles\Resource.cpp.i
-
-.PHONY : CatGame\CatGameCPPFiles\Resource.i
-
-# target to preprocess a source file
-CatGame\CatGameCPPFiles\Resource.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.i
-.PHONY : CatGame\CatGameCPPFiles\Resource.cpp.i
-
-CatGame\CatGameCPPFiles\Resource.s: CatGame\CatGameCPPFiles\Resource.cpp.s
-
-.PHONY : CatGame\CatGameCPPFiles\Resource.s
-
-# target to generate assembly for a file
-CatGame\CatGameCPPFiles\Resource.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Resource.cpp.s
-.PHONY : CatGame\CatGameCPPFiles\Resource.cpp.s
-
 CatGame\CatGameCPPFiles\Tree.obj: CatGame\CatGameCPPFiles\Tree.cpp.obj
 
 .PHONY : CatGame\CatGameCPPFiles\Tree.obj
@@ -990,9 +963,6 @@ help:
 	@echo ... CatGame/CatGameCPPFiles/PlayScreen.obj
 	@echo ... CatGame/CatGameCPPFiles/PlayScreen.i
 	@echo ... CatGame/CatGameCPPFiles/PlayScreen.s
-	@echo ... CatGame/CatGameCPPFiles/Resource.obj
-	@echo ... CatGame/CatGameCPPFiles/Resource.i
-	@echo ... CatGame/CatGameCPPFiles/Resource.s
 	@echo ... CatGame/CatGameCPPFiles/Tree.obj
 	@echo ... CatGame/CatGameCPPFiles/Tree.i
 	@echo ... CatGame/CatGameCPPFiles/Tree.s

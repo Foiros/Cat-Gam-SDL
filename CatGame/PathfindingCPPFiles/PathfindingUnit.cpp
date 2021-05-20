@@ -6,11 +6,11 @@
 
 void PathfindingUnit::FindPath(PathfindingGrid *mGrid) {
 
-    int random1 = rand() % (500);
-    int random2 = rand() % (500);
-    destination = { random1, random2};
+//    int random1 = rand() % (500);
+//    int random2 = rand() % (500);
+//    destination = { random1, random2};
 
-    // destination = { 810, 540};
+    destination = { 810, 540};
 
     GridLocation mKittenLocation = { (int) Pos(world).x, (int) Pos(world).y};
 

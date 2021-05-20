@@ -14,7 +14,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/PhysicsEntity.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/PhysicsManager.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/PlayScreen.cpp.obj"
-  "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Resource.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Tree.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Water.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/PathfindingCPPFiles/Pathfinding.cpp.obj"

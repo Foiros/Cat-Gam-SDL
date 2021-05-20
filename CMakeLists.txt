@@ -36,10 +36,13 @@ add_executable(CatGameSDL CatGame/SDLHeaderFiles/AnimatedTexture.h CatGame/SDLHe
         CatGame/PathfindingCPPFiles/Pathfinding.cpp CatGame/PathfindingHeaderFiles/Pathfinding.h
         CatGame/CatGameHeaderFiles/Kitten.h CatGame/CatGameCPPFiles/Kitten.cpp CatGame/PathfindingHeaderFiles/PathfindingUnit.h
         CatGame/PathfindingCPPFiles/PathfindingUnit.cpp CatGame/CatGameHeaderFiles/Nest.h CatGame/CatGameCPPFiles/Nest.cpp
-        CatGame/CatGameHeaderFiles/Resource.h CatGame/CatGameCPPFiles/Resource.cpp CatGame/CatGameHeaderFiles/Meat.h CatGame/CatGameHeaderFiles/Water.h
+        CatGame/CatGameHeaderFiles/Meat.h CatGame/CatGameHeaderFiles/Water.h
         CatGame/CatGameCPPFiles/Meat.cpp CatGame/CatGameCPPFiles/Water.cpp CatGame/CatGameHeaderFiles/Activity.h CatGame/CatGameCPPFiles/Activity.cpp
         CatGame/CatGameHeaderFiles/Tree.h CatGame/CatGameHeaderFiles/Mouse.h CatGame/CatGameHeaderFiles/Flower.h CatGame/CatGameCPPFiles/Flower.cpp
-        CatGame/CatGameCPPFiles/Mouse.cpp CatGame/CatGameCPPFiles/Tree.cpp CatGame/CatGameHeaderFiles/Collider.h CatGame/CatGameCPPFiles/Collider.cpp CatGame/CatGameHeaderFiles/BoxCollider.h CatGame/CatGameCPPFiles/BoxCollider.cpp CatGame/CatGameHeaderFiles/PhysicsEntity.h CatGame/CatGameHeaderFiles/PhysicsHelper.h CatGame/CatGameCPPFiles/PhysicsEntity.cpp CatGame/CatGameHeaderFiles/PhysicsManager.h CatGame/CatGameCPPFiles/PhysicsManager.cpp CatGame/CatGameHeaderFiles/CircleCollider.h CatGame/CatGameCPPFiles/CircleCollider.cpp)
+        CatGame/CatGameCPPFiles/Mouse.cpp CatGame/CatGameCPPFiles/Tree.cpp CatGame/CatGameHeaderFiles/Collider.h CatGame/CatGameCPPFiles/Collider.cpp
+        CatGame/CatGameHeaderFiles/BoxCollider.h CatGame/CatGameCPPFiles/BoxCollider.cpp CatGame/CatGameHeaderFiles/PhysicsEntity.h
+        CatGame/CatGameHeaderFiles/PhysicsHelper.h CatGame/CatGameCPPFiles/PhysicsEntity.cpp CatGame/CatGameHeaderFiles/PhysicsManager.h
+        CatGame/CatGameCPPFiles/PhysicsManager.cpp CatGame/CatGameHeaderFiles/CircleCollider.h CatGame/CatGameCPPFiles/CircleCollider.cpp)
 
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2)

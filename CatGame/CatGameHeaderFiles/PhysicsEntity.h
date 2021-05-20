@@ -13,7 +13,7 @@
 class PhysicsEntity : public GameEntity{
 
 protected:
-    unsigned  long mID;
+    unsigned long mID;
 
     std::vector<Collider*> mColliders;
 

@@ -14,7 +14,6 @@
 #include "../CatGameHeaderFiles/Kitten.h"
 #include "../PathfindingHeaderFiles/PathfindingGrid.h"
 #include "../PathfindingHeaderFiles/Pathfinding.h"
-#include "../CatGameHeaderFiles/Resource.h"
 #include "../CatGameHeaderFiles/Meat.h"
 #include "../CatGameHeaderFiles/Water.h"
 #include "../CatGameHeaderFiles/Nest.h"

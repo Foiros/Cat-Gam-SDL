@@ -5,19 +5,24 @@
 #include "../CatGameHeaderFiles/Water.h"
 
 
-Water::Water() : Resource() {
+Water::Water(){
 
     name = "Water";
+
+    int random = rand() % 50;
+    value = random;
+
     sprite = new Texture("Water.png");
     sprite->Parent(this);
 
     AddCollider(new BoxCollider(Vector2(50.0f, 50.0f)));
-    mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Resource);
+    mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Water);
 }
 
 Water::~Water() {
 
-    Resource::~Resource();
+    delete sprite;
+    sprite = nullptr;
 }
 
 bool Water::IgnoreCollisions() {
@@ -25,9 +30,8 @@ bool Water::IgnoreCollisions() {
     return false;
 }
 
-void Water::ContactWithOtherCollider(PhysicsEntity *other) {
+void Water::ContactWithOtherCollider(PhysicsEntity* other) {
 
-    printf("Gathering Water...");
     GatherResource();
 }
 
@@ -35,4 +39,11 @@ void Water::GatherResource() {
 
     printf("Gathering Water...");
     Parent(nullptr);
+}
+
+void Water::Render() {
+
+    sprite->Render();
+
+    // mBroadPhaseCollider->Render();
 }

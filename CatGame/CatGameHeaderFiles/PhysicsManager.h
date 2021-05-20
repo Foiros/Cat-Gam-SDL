@@ -17,7 +17,8 @@ public:
         MotherCat = 0,
         Kitten,
         Nest,
-        Resource,
+        Meat,
+        Water,
         Activity,
         Wolf,
 
@@ -30,9 +31,10 @@ public:
         MotherCat = 0x01,
         Kitten = 0x02,
         Nest = 0x03,
-        Resource = 0x04,
-        Activity = 0x05,
-        Wolf = 0x06
+        Meat = 0x08,
+        Water = 0x10,
+        Activity = 0x11,
+        Wolf = 0x12
     };
 
 private:
@@ -69,4 +71,4 @@ inline PhysicsManager::CollisionFlags operator &(PhysicsManager::CollisionFlags 
     return static_cast<PhysicsManager::CollisionFlags>(static_cast<unsigned int>(a) & static_cast<unsigned int>(b));
 }
 
-#endif //CATGAMESDL_PHYSICSMANAGER_H
+#endif

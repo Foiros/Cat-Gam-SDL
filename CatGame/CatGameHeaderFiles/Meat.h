@@ -5,9 +5,16 @@
 #ifndef CATGAMESDL_MEAT_H
 #define CATGAMESDL_MEAT_H
 
-#include "Resource.h"
+#include "../CatGameHeaderFiles/PhysicsEntity.h"
+#include "../CatGameHeaderFiles/PhysicsManager.h"
 
-class Meat : public Resource{
+class Meat : public PhysicsEntity{
+
+private:
+    std::string name;
+    int value;
+
+    Texture* sprite;
 
 public:
     Meat();
@@ -17,6 +24,8 @@ public:
     void ContactWithOtherCollider(PhysicsEntity* other) override;
 
     void GatherResource();
+
+    void Render();
 };
 
 #endif
