@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Activity.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Activity.cpp.obj"
+  "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/BoxCollider.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/BoxCollider.cpp.obj"
+  "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Collider.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Collider.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Flower.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Flower.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/GameManager.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/GameManager.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Kitten.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Kitten.cpp.obj"
@@ -13,6 +15,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/MotherCat.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/MotherCat.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Mouse.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Mouse.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Nest.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Nest.cpp.obj"
+  "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/PhysicsEntity.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/PhysicsEntity.cpp.obj"
+  "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/PhysicsManager.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/PhysicsManager.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/PlayScreen.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/PlayScreen.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Resource.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Resource.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Tree.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Tree.cpp.obj"

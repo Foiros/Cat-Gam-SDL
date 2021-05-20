@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Activity.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/BoxCollider.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Collider.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Flower.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/GameManager.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Kitten.cpp.obj"
@@ -8,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/MotherCat.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Mouse.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Nest.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/PhysicsEntity.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/PhysicsManager.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/PlayScreen.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Resource.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Tree.cpp.obj"

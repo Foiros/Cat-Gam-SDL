@@ -39,7 +39,7 @@ add_executable(CatGameSDL CatGame/SDLHeaderFiles/AnimatedTexture.h CatGame/SDLHe
         CatGame/CatGameHeaderFiles/Resource.h CatGame/CatGameCPPFiles/Resource.cpp CatGame/CatGameHeaderFiles/Meat.h CatGame/CatGameHeaderFiles/Water.h
         CatGame/CatGameCPPFiles/Meat.cpp CatGame/CatGameCPPFiles/Water.cpp CatGame/CatGameHeaderFiles/Activity.h CatGame/CatGameCPPFiles/Activity.cpp
         CatGame/CatGameHeaderFiles/Tree.h CatGame/CatGameHeaderFiles/Mouse.h CatGame/CatGameHeaderFiles/Flower.h CatGame/CatGameCPPFiles/Flower.cpp
-        CatGame/CatGameCPPFiles/Mouse.cpp CatGame/CatGameCPPFiles/Tree.cpp)
+        CatGame/CatGameCPPFiles/Mouse.cpp CatGame/CatGameCPPFiles/Tree.cpp CatGame/CatGameHeaderFiles/Collider.h CatGame/CatGameCPPFiles/Collider.cpp CatGame/CatGameHeaderFiles/BoxCollider.h CatGame/CatGameCPPFiles/BoxCollider.cpp CatGame/CatGameHeaderFiles/PhysicsEntity.h CatGame/CatGameHeaderFiles/PhysicsHelper.h CatGame/CatGameCPPFiles/PhysicsEntity.cpp CatGame/CatGameHeaderFiles/PhysicsManager.h CatGame/CatGameCPPFiles/PhysicsManager.cpp)
 
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2)
