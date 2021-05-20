@@ -3,7 +3,7 @@
 //
 
 #include "../CatGameHeaderFiles/PhysicsEntity.h"
-
+#include "../CatGameHeaderFiles/PhysicsManager.h"
 
 PhysicsEntity::PhysicsEntity() {
 
@@ -29,6 +29,7 @@ PhysicsEntity::~PhysicsEntity() {
 
     if(mID != 0){
 
+        PhysicsManager::Instance()->UnRegisterEntity(mID);
     }
 }
 
@@ -47,8 +48,7 @@ bool PhysicsEntity::CheckCollision(PhysicsEntity *other) {
 }
 
 
-
-void PhysicsEntity::GotHit(PhysicsEntity *other) {
+void PhysicsEntity::ContactWithOtherCollider(PhysicsEntity *other) {
 
 }
 
@@ -78,10 +78,10 @@ void PhysicsEntity::AddCollider(Collider *collider, Vector2 localPos) {
             }
         }
 
-//        delete mBroadPhaseCollider;
-//        mBroadPhaseCollider = new CircleCollider(furthestDist, true);
-//        mBroadPhaseCollider->Parent(this);
-//        mBroadPhaseCollider->Pos(VEC2_ZERO);
+        delete mBroadPhaseCollider;
+        mBroadPhaseCollider = new CircleCollider(furthestDistance, true);
+        mBroadPhaseCollider->Parent(this);
+        mBroadPhaseCollider->Pos(VEC2_ZERO);
     }
 }
 

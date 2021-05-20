@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Activity.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Activity.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/BoxCollider.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/BoxCollider.cpp.obj"
+  "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/CircleCollider.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/CircleCollider.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Collider.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Collider.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Flower.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Flower.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/GameManager.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/GameManager.cpp.obj"

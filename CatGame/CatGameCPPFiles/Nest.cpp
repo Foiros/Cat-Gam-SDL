@@ -11,6 +11,9 @@ Nest::Nest() {
 
     sprite = new Texture("Nest.png");
     sprite->Parent(this);
+
+    AddCollider(new BoxCollider(Vector2(50.0f, 50.0f)));
+    mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Nest);
 }
 
 Nest::~Nest() {
@@ -27,6 +30,7 @@ void Nest::Update() {
 void Nest::Render() {
 
     sprite->Render();
+    mBroadPhaseCollider->Render();
 }
 
 int Nest::NestMeat() {
@@ -37,6 +41,11 @@ int Nest::NestMeat() {
 int Nest::NestWater() {
 
     return water;
+}
+
+bool Nest::IgnoreCollisions() {
+
+    return false;
 }
 
 void Nest::AddResourcesToNest(int _meat, int _water) {

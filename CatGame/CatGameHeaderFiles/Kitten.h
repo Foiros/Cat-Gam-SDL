@@ -10,6 +10,7 @@
 #include "../SDLHeaderFiles/AnimatedTexture.h"
 #include "../SDLHeaderFiles/AudioManager.h"
 #include "../PathfindingHeaderFiles//Pathfinding.h"
+#include "../CatGameHeaderFiles/PhysicsManager.h"
 
 using namespace SDL;
 
@@ -27,11 +28,16 @@ private:
 
     AnimatedTexture* mRunAnimation;
 
+private:
+    bool IgnoreCollisions() override;
+
 public:
     Kitten();
     ~Kitten();
 
     void Visible(bool visible);
+
+    void ContactWithOtherCollider(PhysicsEntity* other) override;
 
     void Update(PathfindingGrid* grid);
     void Render();

@@ -9,6 +9,7 @@
 #include "../SDLHeaderFiles/Timer.h"
 #include "../SDLHeaderFiles/InputManager.h"
 #include "../CatGameHeaderFiles/PlayScreen.h"
+#include "../CatGameHeaderFiles/PhysicsManager.h"
 
 namespace SDL{
 
@@ -26,6 +27,7 @@ namespace SDL{
         AssetManager* mAssetManager;
         InputManager* mInputManager;
         AudioManager* mAudioManager;
+        PhysicsManager* mPhysicsManager;
         Timer* mTimer;
 
         PlayScreen* mPlayScreen;

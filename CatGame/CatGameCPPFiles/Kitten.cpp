@@ -22,6 +22,9 @@ Kitten::Kitten() {
     mRunAnimation->Parent(this);
     mRunAnimation->WrapMode(AnimatedTexture::once);
 
+    AddCollider(new BoxCollider(Vector2(50.0f, 50.0f)));
+    mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Kitten);
+
     mFollowingPath = false;
 }
 
@@ -43,16 +46,25 @@ void Kitten::Visible(bool visible) {
     mVisible = visible;
 }
 
+bool Kitten::IgnoreCollisions() {
+
+    return !mVisible;
+}
+
+void Kitten::ContactWithOtherCollider(PhysicsEntity *other) {
+
+}
+
 void Kitten::Update(PathfindingGrid* grid) {
 
     if(!PathfindingUnit::mFollowingPath){
 
-        PathfindingUnit::FindPath(mKittenSprite, grid);
+        PathfindingUnit::FindPath(grid);
 
     }
     else{
 
-        PathfindingUnit::FollowPath(mKittenSprite, path);
+        PathfindingUnit::FollowPath(path);
     }
 }
 
@@ -60,6 +72,7 @@ void Kitten::Render() {
 
     if(mVisible)
         mKittenSprite->Render();
+        mBroadPhaseCollider->Render();
 }
 
 

@@ -5,7 +5,7 @@
 #ifndef CATGAMESDL_PHYSICSMANAGER_H
 #define CATGAMESDL_PHYSICSMANAGER_H
 
-#include "PhysicsEntity.h"
+#include "../CatGameHeaderFiles/PhysicsEntity.h"
 #include <bitset>
 #include <vector>
 
@@ -29,7 +29,7 @@ public:
         None = 0x00,
         MotherCat = 0x01,
         Kitten = 0x02,
-        Next = 0x03,
+        Nest = 0x03,
         Resource = 0x04,
         Activity = 0x05,
         Wolf = 0x06

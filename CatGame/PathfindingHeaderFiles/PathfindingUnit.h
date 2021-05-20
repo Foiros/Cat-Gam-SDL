@@ -5,13 +5,13 @@
 #ifndef CATGAMESDL_PATHFINDINGUNIT_H
 #define CATGAMESDL_PATHFINDINGUNIT_H
 
-#include "../SDLHeaderFiles/GameEntity.h"
+#include "../CatGameHeaderFiles/PhysicsEntity.h"
 #include "../SDLHeaderFiles/Texture.h"
 #include "../PathfindingHeaderFiles/Pathfinding.h"
 
 using namespace SDL;
 
-class PathfindingUnit : public GameEntity{
+class PathfindingUnit : public PhysicsEntity{
 
 protected:
     float mMoveSpeed;
@@ -21,8 +21,8 @@ protected:
     bool mFollowingPath;
 
 protected:
-    void FindPath(Texture* sprite, PathfindingGrid* mGrid);
-    void FollowPath(Texture* sprite, std::vector<GridLocation> path);
+    void FindPath(PathfindingGrid* mGrid);
+    void FollowPath(std::vector<GridLocation> path);
 };
 
 #endif //CATGAMESDL_PATHFINDINGUNIT_H

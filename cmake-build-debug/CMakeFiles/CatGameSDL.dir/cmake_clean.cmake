@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Activity.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/BoxCollider.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/CircleCollider.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Collider.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Flower.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/GameManager.cpp.obj"

@@ -84,8 +84,8 @@ void PhysicsManager::Update() {
 
                         if(mCollisionLayers[i][k]->CheckCollision(mCollisionLayers[j][l])){
 
-                            mCollisionLayers[i][k]->GotHit(mCollisionLayers[j][l]);
-                            mCollisionLayers[j][l]->GotHit(mCollisionLayers[i][k]);
+                            mCollisionLayers[i][k]->ContactWithOtherCollider(mCollisionLayers[j][l]);
+                            mCollisionLayers[j][l]->ContactWithOtherCollider(mCollisionLayers[i][k]);
                         }
                     }
                 }

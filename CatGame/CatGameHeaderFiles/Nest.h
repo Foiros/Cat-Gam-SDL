@@ -5,12 +5,12 @@
 #ifndef CATGAMESDL_NEST_H
 #define CATGAMESDL_NEST_H
 
-#include "../SDLHeaderFiles/Texture.h"
-#include "../SDLHeaderFiles/GameEntity.h"
+#include "../CatGameHeaderFiles/PhysicsEntity.h"
+#include "../CatGameHeaderFiles/PhysicsManager.h"
 
 using namespace SDL;
 
-class Nest : public GameEntity{
+class Nest : public PhysicsEntity{
 
 private:
     int meat, water;
@@ -26,6 +26,8 @@ public:
 
     int NestMeat();
     int NestWater();
+
+    bool IgnoreCollisions() override;
 
     void AddResourcesToNest(int _meat, int _water);
     void UseResources(int reducedMeat, int reducedWater);

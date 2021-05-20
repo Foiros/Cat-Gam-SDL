@@ -180,6 +180,33 @@ CatGame\CatGameCPPFiles\BoxCollider.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\BoxCollider.cpp.s
 .PHONY : CatGame\CatGameCPPFiles\BoxCollider.cpp.s
 
+CatGame\CatGameCPPFiles\CircleCollider.obj: CatGame\CatGameCPPFiles\CircleCollider.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\CircleCollider.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\CircleCollider.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\CircleCollider.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\CircleCollider.cpp.obj
+
+CatGame\CatGameCPPFiles\CircleCollider.i: CatGame\CatGameCPPFiles\CircleCollider.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\CircleCollider.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\CircleCollider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\CircleCollider.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\CircleCollider.cpp.i
+
+CatGame\CatGameCPPFiles\CircleCollider.s: CatGame\CatGameCPPFiles\CircleCollider.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\CircleCollider.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\CircleCollider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\CircleCollider.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\CircleCollider.cpp.s
+
 CatGame\CatGameCPPFiles\Collider.obj: CatGame\CatGameCPPFiles\Collider.cpp.obj
 
 .PHONY : CatGame\CatGameCPPFiles\Collider.obj
@@ -924,6 +951,9 @@ help:
 	@echo ... CatGame/CatGameCPPFiles/BoxCollider.obj
 	@echo ... CatGame/CatGameCPPFiles/BoxCollider.i
 	@echo ... CatGame/CatGameCPPFiles/BoxCollider.s
+	@echo ... CatGame/CatGameCPPFiles/CircleCollider.obj
+	@echo ... CatGame/CatGameCPPFiles/CircleCollider.i
+	@echo ... CatGame/CatGameCPPFiles/CircleCollider.s
 	@echo ... CatGame/CatGameCPPFiles/Collider.obj
 	@echo ... CatGame/CatGameCPPFiles/Collider.i
 	@echo ... CatGame/CatGameCPPFiles/Collider.s

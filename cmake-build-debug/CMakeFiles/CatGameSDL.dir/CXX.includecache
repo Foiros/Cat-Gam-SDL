@@ -686,13 +686,27 @@ E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/GameMan
 ../CatGameHeaderFiles/GameManager.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/GameManager.h
 
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Kitten.cpp
-../CatGameHeaderFiles/Kitten.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Kitten.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Nest.cpp
+../CatGameHeaderFiles/Nest.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Nest.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/PlayScreen.cpp
 ../CatGameHeaderFiles/PlayScreen.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PlayScreen.h
+
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/BoxCollider.h
+../CatGameHeaderFiles/Collider.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Collider.h
+
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/CircleCollider.h
+Collider.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Collider.h
+
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Collider.h
+../SDLHeaderFiles/GameEntity.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/GameEntity.h
+../SDLHeaderFiles/Texture.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Texture.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/GameManager.h
 ../SDLHeaderFiles/AudioManager.h
@@ -703,6 +717,8 @@ E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Timer.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/InputManager.h
 ../CatGameHeaderFiles/PlayScreen.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PlayScreen.h
+../CatGameHeaderFiles/PhysicsManager.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsManager.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Kitten.h
 ../PathfindingHeaderFiles/PathfindingUnit.h
@@ -715,14 +731,52 @@ E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Animated
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AudioManager.h
 ../PathfindingHeaderFiles/Pathfinding.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h
+../CatGameHeaderFiles/PhysicsManager.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsManager.h
+
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Meat.h
+Resource.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Resource.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/MotherCat.h
-../SDLHeaderFiles/GameEntity.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/GameEntity.h
 ../SDLHeaderFiles/AnimatedTexture.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AnimatedTexture.h
 ../SDLHeaderFiles/Texture.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Texture.h
+../CatGameHeaderFiles/PhysicsEntity.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsEntity.h
+../CatGameHeaderFiles/PhysicsManager.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsManager.h
+
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Nest.h
+../CatGameHeaderFiles/PhysicsEntity.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsEntity.h
+../CatGameHeaderFiles/PhysicsManager.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsManager.h
+
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsEntity.h
+../SDLHeaderFiles/GameEntity.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/GameEntity.h
+../CatGameHeaderFiles/PhysicsHelper.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsHelper.h
+vector
+-
+
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsHelper.h
+../CatGameHeaderFiles/BoxCollider.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/BoxCollider.h
+../CatGameHeaderFiles/CircleCollider.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/CircleCollider.h
+../SDLHeaderFiles/MathHelper.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/MathHelper.h
+
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsManager.h
+../CatGameHeaderFiles/PhysicsEntity.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsEntity.h
+bitset
+-
+vector
+-
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PlayScreen.h
 ../SDLHeaderFiles/GameEntity.h
@@ -743,18 +797,26 @@ E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Kitt
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingGrid.h
 ../PathfindingHeaderFiles/Pathfinding.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h
+../CatGameHeaderFiles/Resource.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Resource.h
+../CatGameHeaderFiles/Meat.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Meat.h
+../CatGameHeaderFiles/Water.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Water.h
+../CatGameHeaderFiles/Nest.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Nest.h
 
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingCPPFiles/Pathfinding.cpp
-../PathfindingHeaderFiles/Pathfinding.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Resource.h
+../CatGameHeaderFiles/PhysicsEntity.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsEntity.h
+../CatGameHeaderFiles/PhysicsManager.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsManager.h
+string
+-
 
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingCPPFiles/PathfindingGrid.cpp
-../PathfindingHeaderFiles/PathfindingGrid.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingGrid.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingCPPFiles/PathfindingUnit.cpp
-../PathfindingHeaderFiles/PathfindingUnit.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingUnit.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Water.h
+Resource.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Resource.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h
 PathfindingGrid.h
@@ -803,8 +865,8 @@ algorithm
 -
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingUnit.h
-../SDLHeaderFiles/GameEntity.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/GameEntity.h
+../CatGameHeaderFiles/PhysicsEntity.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PhysicsEntity.h
 ../SDLHeaderFiles/Texture.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Texture.h
 ../PathfindingHeaderFiles/Pathfinding.h

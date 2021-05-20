@@ -5,13 +5,14 @@
 #ifndef CATGAMESDL_MOTHERCAT_H
 #define CATGAMESDL_MOTHERCAT_H
 
-#include "../SDLHeaderFiles/GameEntity.h"
 #include "../SDLHeaderFiles/AnimatedTexture.h"
 #include "../SDLHeaderFiles/Texture.h"
+#include "../CatGameHeaderFiles/PhysicsEntity.h"
+#include "../CatGameHeaderFiles/PhysicsManager.h"
 
 using namespace SDL;
 
-class MotherCat : public GameEntity {
+class MotherCat : public PhysicsEntity{
 
 private:
     Timer* mTimer;
@@ -28,11 +29,14 @@ private:
     float mMoveSpeed;
 
 private:
+    bool IgnoreCollisions() override;
     void Move();
 
 public:
     MotherCat();
     ~MotherCat();
+
+    void ContactWithOtherCollider(PhysicsEntity* other) override;
 
     void Visible(bool visible);
     bool IsAnimating();

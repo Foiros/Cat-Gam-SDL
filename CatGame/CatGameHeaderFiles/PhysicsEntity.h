@@ -7,8 +7,8 @@
 
 #include "../SDLHeaderFiles/GameEntity.h"
 #include "../CatGameHeaderFiles/PhysicsHelper.h"
-#include "../CatGameHeaderFiles/Collider.h"
 #include <vector>
+
 
 class PhysicsEntity : public GameEntity{
 
@@ -27,7 +27,7 @@ public:
 
     bool CheckCollision(PhysicsEntity* other);
 
-    virtual void GotHit(PhysicsEntity* other);
+    virtual void ContactWithOtherCollider(PhysicsEntity* other);
 
     virtual void Render();
 

@@ -24,17 +24,17 @@ Collider::ColliderType Collider::GetType() {
     return mType;
 }
 
+void Collider::SetDebugTexture(Texture *texture) {
+
+    delete mDebugTexture;
+    mDebugTexture = texture;
+    mDebugTexture->Parent(this);
+}
+
 void Collider::Render() {
 
     if(DEBUG_COLLIDERS){
 
         mDebugTexture->Render();
     }
-}
-
-void Collider::SetDebugTexture(Texture *texture) {
-
-    delete mDebugTexture;
-    mDebugTexture = texture;
-    mDebugTexture->Parent(this);
 }

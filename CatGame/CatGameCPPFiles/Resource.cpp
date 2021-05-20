@@ -5,6 +5,7 @@
 #include "../CatGameHeaderFiles/Resource.h"
 
 
+
 Resource::Resource() {
 
     int random = rand() % 50;
@@ -16,6 +17,12 @@ Resource::~Resource() {
     delete sprite;
     sprite = nullptr;
 }
+
+bool Resource::IgnoreCollisions() {
+
+    return false;
+}
+
 
 int Resource::GatherResource() {
 
@@ -29,4 +36,5 @@ void Resource::Update() {
 void Resource::Render() {
 
     sprite->Render();
+    mBroadPhaseCollider->Render();
 }

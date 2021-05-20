@@ -38,10 +38,21 @@ namespace SDL{
         mAudioManager = AudioManager::Instance();
         mTimer = Timer::Instance();
 
+        mPhysicsManager = PhysicsManager::Instance();
+        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::MotherCat, PhysicsManager::CollisionFlags::Nest | PhysicsManager::CollisionFlags::Resource | PhysicsManager::CollisionFlags::Wolf | PhysicsManager::CollisionFlags::Kitten);
+        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Nest, PhysicsManager::CollisionFlags::MotherCat | PhysicsManager::CollisionFlags::Kitten);
+        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Resource, PhysicsManager::CollisionFlags::MotherCat);
+        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Kitten, PhysicsManager::CollisionFlags::Activity | PhysicsManager::CollisionFlags::Nest | PhysicsManager::CollisionFlags::Wolf | PhysicsManager::CollisionFlags::MotherCat);
+        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Activity, PhysicsManager::CollisionFlags::Kitten);
+        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Wolf, PhysicsManager::CollisionFlags::Kitten | PhysicsManager::CollisionFlags::MotherCat);
+
         mPlayScreen = new PlayScreen();
     }
 
     GameManager::~GameManager() {
+
+        PhysicsManager::Release();
+        mPhysicsManager = nullptr;
 
         AudioManager::Release();
         mAudioManager = NULL;
@@ -68,6 +79,7 @@ namespace SDL{
 
     void GameManager::LateUpdate() {
 
+        mPhysicsManager->Update();
         mInputManager->UpdatePrevInput();
         mTimer->Reset();
     }

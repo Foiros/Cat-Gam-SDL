@@ -9,6 +9,10 @@ Meat::Meat() : Resource() {
 
     name = "Meat";
     sprite = new Texture("Meat.png");
+    sprite->Parent(this);
+
+    AddCollider(new BoxCollider(Vector2(50.0f, 50.0f)));
+    mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Resource);
 }
 
 Meat::~Meat() {

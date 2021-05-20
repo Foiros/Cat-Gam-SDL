@@ -15,11 +15,9 @@ namespace SDL{
     class GameEntity {
 
         //Variables
-    public:
+    protected:
 
         enum SPACE {local = 0, world = 1};
-
-        void Parent(GameEntity* parent);
 
     private:
 
@@ -55,6 +53,8 @@ namespace SDL{
 
         virtual void Update();
         virtual void Render();
+
+        void Parent(GameEntity* parent);
     };
 }
 

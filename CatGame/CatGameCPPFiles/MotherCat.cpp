@@ -21,6 +21,9 @@ MotherCat::MotherCat() {
     mRunAnimation = new AnimatedTexture("MotherCatWalkAnimation.png", 0, 0, 100, 100, 4, 1.0f, AnimatedTexture::horizontal);
     mRunAnimation->Parent(this);
     mRunAnimation->WrapMode(AnimatedTexture::once);
+
+    AddCollider(new BoxCollider(Vector2(50.0f, 50.0f)));
+    mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::MotherCat);
 }
 
 MotherCat::~MotherCat() {
@@ -75,6 +78,16 @@ bool MotherCat::IsAnimating() {
     return mAnimating;
 }
 
+bool MotherCat::IgnoreCollisions() {
+
+    return !mVisible;
+}
+
+void MotherCat::ContactWithOtherCollider(PhysicsEntity *other) {
+
+}
+
+
 void MotherCat::Update() {
 
     if(Active())
@@ -85,6 +98,7 @@ void MotherCat::Render() {
 
     if(mVisible)
         mMotherSprite->Render();
+        mBroadPhaseCollider->Render();
 }
 
 
