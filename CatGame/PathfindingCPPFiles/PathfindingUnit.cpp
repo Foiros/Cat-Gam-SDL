@@ -10,6 +10,8 @@ void PathfindingUnit::FindPath(PathfindingGrid *mGrid) {
     int random2 = rand() % (500);
     destination = { random1, random2};
 
+    // destination = { 810, 540};
+
     GridLocation mKittenLocation = { (int) Pos(world).x, (int) Pos(world).y};
 
     std::unordered_map<GridLocation, GridLocation> came_from;

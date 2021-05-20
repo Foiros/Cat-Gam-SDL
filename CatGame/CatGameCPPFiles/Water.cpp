@@ -19,3 +19,20 @@ Water::~Water() {
 
     Resource::~Resource();
 }
+
+bool Water::IgnoreCollisions() {
+
+    return false;
+}
+
+void Water::ContactWithOtherCollider(PhysicsEntity *other) {
+
+    printf("Gathering Water...");
+    GatherResource();
+}
+
+void Water::GatherResource() {
+
+    printf("Gathering Water...");
+    Parent(nullptr);
+}

@@ -85,6 +85,7 @@ bool MotherCat::IgnoreCollisions() {
 
 void MotherCat::ContactWithOtherCollider(PhysicsEntity *other) {
 
+
 }
 
 

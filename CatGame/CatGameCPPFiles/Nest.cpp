@@ -48,6 +48,13 @@ bool Nest::IgnoreCollisions() {
     return false;
 }
 
+void Nest::ContactWithOtherCollider(PhysicsEntity *other) {
+
+
+    printf("Adding resources to base...");
+    AddResourcesToNest(100, 100);
+}
+
 void Nest::AddResourcesToNest(int _meat, int _water) {
 
     if(_meat != 0){

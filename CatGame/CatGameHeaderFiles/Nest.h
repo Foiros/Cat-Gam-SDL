@@ -7,6 +7,7 @@
 
 #include "../CatGameHeaderFiles/PhysicsEntity.h"
 #include "../CatGameHeaderFiles/PhysicsManager.h"
+#include "../CatGameHeaderFiles/MotherCat.h"
 
 using namespace SDL;
 
@@ -28,6 +29,7 @@ public:
     int NestWater();
 
     bool IgnoreCollisions() override;
+    void ContactWithOtherCollider(PhysicsEntity* other) override;
 
     void AddResourcesToNest(int _meat, int _water);
     void UseResources(int reducedMeat, int reducedWater);

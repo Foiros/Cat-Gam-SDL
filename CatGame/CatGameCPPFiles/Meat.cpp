@@ -19,3 +19,20 @@ Meat::~Meat() {
 
     Resource::~Resource();
 }
+
+bool Meat::IgnoreCollisions() {
+
+    return false;
+}
+
+void Meat::ContactWithOtherCollider(PhysicsEntity *other) {
+
+    printf("Gathering Meat...");
+    GatherResource();
+}
+
+void Meat::GatherResource() {
+
+    printf("Gathering Meat...");
+    Parent(nullptr);
+}

@@ -23,12 +23,8 @@ public:
     Resource();
     ~Resource();
 
-    // Collision functions
-    bool IgnoreCollisions() override;
+    void GatherResource();
 
-    int GatherResource();
-
-    void Update();
     void Render();
 };
 

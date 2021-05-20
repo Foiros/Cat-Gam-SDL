@@ -12,6 +12,11 @@ class Water : public Resource{
 public:
     Water();
     ~Water();
+
+    bool IgnoreCollisions() override;
+    void ContactWithOtherCollider(PhysicsEntity* other) override;
+
+    void GatherResource();
 };
 
 #endif //CATGAMESDL_WATER_H

@@ -12,6 +12,11 @@ class Meat : public Resource{
 public:
     Meat();
     ~Meat();
+
+    bool IgnoreCollisions() override;
+    void ContactWithOtherCollider(PhysicsEntity* other) override;
+
+    void GatherResource();
 };
 
 #endif

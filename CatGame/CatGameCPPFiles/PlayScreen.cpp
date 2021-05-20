@@ -135,11 +135,11 @@ void PlayScreen::SetUpGameObjects() {
 
     mMotherCat = new MotherCat();
     mMotherCat->Parent(this);
-    mMotherCat->Pos(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f));
+    mMotherCat->Pos(Vector2(300, 300));
 
     mKitten = new Kitten();
     mKitten->Parent(this);
-    mKitten->Pos(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f));
+    mKitten->Pos(Vector2(200, 200));
 
     mNest = new Nest();
     mNest->Parent(this);
@@ -147,11 +147,11 @@ void PlayScreen::SetUpGameObjects() {
 
     mMeat = new Meat();
     mMeat->Parent(this);
-    mMeat->Pos(Vector2(500, 500));
+    mMeat->Pos(Vector2(500.0f, 500.0f));
 
     mWater = new Water();
     mWater->Parent(this);
-    mWater->Pos(Vector2(100, 100));
+    mWater->Pos(Vector2(100.0f, 100.0f));
 }
 
 void PlayScreen::UpdateTexts() {

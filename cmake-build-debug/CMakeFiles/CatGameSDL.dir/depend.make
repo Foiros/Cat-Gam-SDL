@@ -541,10 +541,12 @@ CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGa
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameHeaderFiles\BoxCollider.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameHeaderFiles\CircleCollider.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameHeaderFiles\Collider.h
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameHeaderFiles\MotherCat.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameHeaderFiles\Nest.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameHeaderFiles\PhysicsEntity.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameHeaderFiles\PhysicsHelper.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameHeaderFiles\PhysicsManager.h
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\SDLHeaderFiles\AnimatedTexture.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\SDLHeaderFiles\AssetManager.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\SDLHeaderFiles\AudioManager.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\SDLHeaderFiles\GameEntity.h
