@@ -20,9 +20,10 @@ protected:
     std::vector<GridLocation> path;
     GridLocation destination;
     bool mFollowingPath;
+    bool mDoingAction;
 
 protected:
-    void FindPath(PathfindingGrid* mGrid);
+    void FindPath(PathfindingGrid* mGrid, GridLocation destination);
     void FollowPath(std::vector<GridLocation> path);
 };
 

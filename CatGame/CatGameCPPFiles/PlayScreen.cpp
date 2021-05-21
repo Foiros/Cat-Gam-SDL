@@ -112,9 +112,6 @@ namespace CatGame{
             mResourcesAddedToNest = false;
         }
 
-        mKittenNeeds->ReduceNeed(0);
-        mKittenNeeds->ReduceNeed(1);
-
         if(mResourcesTakenFromNest){
 
             mNest->UseResources(reduceAmount, reduceAmount);
@@ -163,7 +160,7 @@ namespace CatGame{
             HandleResources();
             UpdateTexts();
             mMotherCat->Update();
-            mKitten->Update(mGrid);
+            mKitten->Update(mKittenNeeds, mNest, mGrid);
             mNest->Update();
         }
         else{

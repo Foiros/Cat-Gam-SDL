@@ -19,6 +19,7 @@
 #include "../CatGameHeaderFiles/Nest.h"
 #include "../CatGameHeaderFiles/PlayerResources.h"
 #include "../CatGameHeaderFiles/KittenNeeds.h"
+#include "../FSMHeaderFiles/FSM.h"
 
 using namespace SDL;
 
@@ -73,7 +74,6 @@ namespace CatGame{
 
         void HandleResources();
         void UpdateTexts();
-
 
     public:
         PlayScreen();

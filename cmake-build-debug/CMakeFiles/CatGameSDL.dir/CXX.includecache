@@ -682,109 +682,31 @@ E:/SDL/SDL2-2.0.14/include/begin_code.h
 
 E:/SDL/SDL2-2.0.14/include/close_code.h
 
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/GameManager.cpp
-../CatGameHeaderFiles/GameManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/GameManager.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/KittenNeeds.h
+string
+-
 
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/MainMenu.cpp
-../CatGameHeaderFiles/MainMenu.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/MainMenu.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/GameManager.h
-../SDLHeaderFiles/AudioManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AudioManager.h
-../SDLHeaderFiles/Timer.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Timer.h
-../SDLHeaderFiles/InputManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/InputManager.h
-../CatGameHeaderFiles/PlayScreen.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PlayScreen.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Nest.h
+../PhysicsEngineHeaderFiles/PhysicsEntity.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsEntity.h
 ../PhysicsEngineHeaderFiles/PhysicsManager.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsManager.h
 
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Kitten.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/FSMAgent.cpp
+../FSMHeaderFiles/FSMAgent.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSMAgent.h
+
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSM.h
+
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSMAgent.h
 ../PathfindingHeaderFiles/PathfindingUnit.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingUnit.h
-../SDLHeaderFiles/Texture.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Texture.h
-../SDLHeaderFiles/AnimatedTexture.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AnimatedTexture.h
-../SDLHeaderFiles/AudioManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AudioManager.h
-../PathfindingHeaderFiles/Pathfinding.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h
-../PhysicsEngineHeaderFiles/PhysicsManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsManager.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/KittenNeeds.h
-string
--
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/MainMenu.h
-../SDLHeaderFiles/GameEntity.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/GameEntity.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Meat.h
-../PhysicsEngineHeaderFiles/PhysicsEntity.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsEntity.h
-../PhysicsEngineHeaderFiles/PhysicsManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsManager.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/MotherCat.h
-../SDLHeaderFiles/AnimatedTexture.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AnimatedTexture.h
-../SDLHeaderFiles/Texture.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Texture.h
-../PhysicsEngineHeaderFiles/PhysicsEntity.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsEntity.h
-../PhysicsEngineHeaderFiles/PhysicsManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsManager.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Nest.h
-../PhysicsEngineHeaderFiles/PhysicsEntity.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsEntity.h
-../PhysicsEngineHeaderFiles/PhysicsManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsManager.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PlayScreen.h
-../SDLHeaderFiles/GameEntity.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/GameEntity.h
-../SDLHeaderFiles/Timer.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Timer.h
-../SDLHeaderFiles/InputManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/InputManager.h
-../SDLHeaderFiles/AudioManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AudioManager.h
-../SDLHeaderFiles/Texture.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Texture.h
-../CatGameHeaderFiles/MotherCat.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/MotherCat.h
-../CatGameHeaderFiles/Kitten.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Kitten.h
-../PathfindingHeaderFiles/PathfindingGrid.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingGrid.h
-../PathfindingHeaderFiles/Pathfinding.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h
-../CatGameHeaderFiles/Meat.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Meat.h
-../CatGameHeaderFiles/Water.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Water.h
-../CatGameHeaderFiles/Nest.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Nest.h
-../CatGameHeaderFiles/PlayerResources.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PlayerResources.h
+FSM.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSM.h
 ../CatGameHeaderFiles/KittenNeeds.h
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/KittenNeeds.h
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/PlayerResources.h
-string
--
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Water.h
-../PhysicsEngineHeaderFiles/PhysicsEntity.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsEntity.h
-../PhysicsEngineHeaderFiles/PhysicsManager.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsManager.h
+../CatGameHeaderFiles/Nest.h
+E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Nest.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h
 PathfindingGrid.h
@@ -877,12 +799,6 @@ bitset
 -
 vector
 -
-
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AnimatedTexture.h
-Timer.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Timer.h
-Texture.h
-E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Texture.h
 
 E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AssetManager.h
 SDL_mixer.h

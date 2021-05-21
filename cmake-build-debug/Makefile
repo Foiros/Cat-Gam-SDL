@@ -504,6 +504,60 @@ CatGame\CatGameCPPFiles\Water.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.s
 .PHONY : CatGame\CatGameCPPFiles\Water.cpp.s
 
+CatGame\FSMCPPFiles\FSM.obj: CatGame\FSMCPPFiles\FSM.cpp.obj
+
+.PHONY : CatGame\FSMCPPFiles\FSM.obj
+
+# target to build an object file
+CatGame\FSMCPPFiles\FSM.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSM.cpp.obj
+.PHONY : CatGame\FSMCPPFiles\FSM.cpp.obj
+
+CatGame\FSMCPPFiles\FSM.i: CatGame\FSMCPPFiles\FSM.cpp.i
+
+.PHONY : CatGame\FSMCPPFiles\FSM.i
+
+# target to preprocess a source file
+CatGame\FSMCPPFiles\FSM.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSM.cpp.i
+.PHONY : CatGame\FSMCPPFiles\FSM.cpp.i
+
+CatGame\FSMCPPFiles\FSM.s: CatGame\FSMCPPFiles\FSM.cpp.s
+
+.PHONY : CatGame\FSMCPPFiles\FSM.s
+
+# target to generate assembly for a file
+CatGame\FSMCPPFiles\FSM.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSM.cpp.s
+.PHONY : CatGame\FSMCPPFiles\FSM.cpp.s
+
+CatGame\FSMCPPFiles\FSMAgent.obj: CatGame\FSMCPPFiles\FSMAgent.cpp.obj
+
+.PHONY : CatGame\FSMCPPFiles\FSMAgent.obj
+
+# target to build an object file
+CatGame\FSMCPPFiles\FSMAgent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMAgent.cpp.obj
+.PHONY : CatGame\FSMCPPFiles\FSMAgent.cpp.obj
+
+CatGame\FSMCPPFiles\FSMAgent.i: CatGame\FSMCPPFiles\FSMAgent.cpp.i
+
+.PHONY : CatGame\FSMCPPFiles\FSMAgent.i
+
+# target to preprocess a source file
+CatGame\FSMCPPFiles\FSMAgent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMAgent.cpp.i
+.PHONY : CatGame\FSMCPPFiles\FSMAgent.cpp.i
+
+CatGame\FSMCPPFiles\FSMAgent.s: CatGame\FSMCPPFiles\FSMAgent.cpp.s
+
+.PHONY : CatGame\FSMCPPFiles\FSMAgent.s
+
+# target to generate assembly for a file
+CatGame\FSMCPPFiles\FSMAgent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMAgent.cpp.s
+.PHONY : CatGame\FSMCPPFiles\FSMAgent.cpp.s
+
 CatGame\PathfindingCPPFiles\Pathfinding.obj: CatGame\PathfindingCPPFiles\Pathfinding.cpp.obj
 
 .PHONY : CatGame\PathfindingCPPFiles\Pathfinding.obj
@@ -1014,6 +1068,12 @@ help:
 	@echo ... CatGame/CatGameCPPFiles/Water.obj
 	@echo ... CatGame/CatGameCPPFiles/Water.i
 	@echo ... CatGame/CatGameCPPFiles/Water.s
+	@echo ... CatGame/FSMCPPFiles/FSM.obj
+	@echo ... CatGame/FSMCPPFiles/FSM.i
+	@echo ... CatGame/FSMCPPFiles/FSM.s
+	@echo ... CatGame/FSMCPPFiles/FSMAgent.obj
+	@echo ... CatGame/FSMCPPFiles/FSMAgent.i
+	@echo ... CatGame/FSMCPPFiles/FSMAgent.s
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.obj
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.i
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.s

@@ -11,13 +11,16 @@
 #include "../SDLHeaderFiles/AudioManager.h"
 #include "../PathfindingHeaderFiles//Pathfinding.h"
 #include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
+#include "../FSMHeaderFiles/FSMAgent.h"
+#include "../CatGameHeaderFiles/KittenNeeds.h"
 
 using namespace SDL;
 using namespace PhysicsEngine;
+using namespace FSM;
 
 namespace CatGame{
 
-    class Kitten : public PathfindingUnit {
+    class Kitten : public FSMAgent {
 
     private:
         Timer* mTimer;
@@ -42,7 +45,7 @@ namespace CatGame{
 
         void ContactWithOtherCollider(PhysicsEntity* other) override;
 
-        void Update(PathfindingGrid* grid);
+        void Update(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid);
         void Render();
     };
 }

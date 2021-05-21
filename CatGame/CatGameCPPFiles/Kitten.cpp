@@ -28,6 +28,7 @@ namespace CatGame{
         mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Kitten);
 
         mFollowingPath = false;
+        mDoingAction = false;
     }
 
     Kitten::~Kitten() {
@@ -55,20 +56,11 @@ namespace CatGame{
 
     void Kitten::ContactWithOtherCollider(PhysicsEntity *other) {
 
-
     }
 
-    void Kitten::Update(PathfindingGrid* grid) {
+    void Kitten::Update(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid) {
 
-        if(!PathfindingUnit::mFollowingPath){
-
-            PathfindingUnit::FindPath(grid);
-
-        }
-        else{
-
-            PathfindingUnit::FollowPath(path);
-        }
+        CheckState(needs, nest, grid);
     }
 
     void Kitten::Render() {

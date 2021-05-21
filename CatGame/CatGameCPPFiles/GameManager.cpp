@@ -41,13 +41,18 @@ namespace SDL{
         mTimer = Timer::Instance();
 
         mPhysicsManager = PhysicsManager::Instance();
-        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::MotherCat, PhysicsManager::CollisionFlags::Nest | PhysicsManager::CollisionFlags::Meat | PhysicsManager::CollisionFlags::Water | PhysicsManager::CollisionFlags::Wolf | PhysicsManager::CollisionFlags::Kitten);
-        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Nest, PhysicsManager::CollisionFlags::MotherCat | PhysicsManager::CollisionFlags::Kitten);
+        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::MotherCat, PhysicsManager::CollisionFlags::Nest
+        | PhysicsManager::CollisionFlags::Meat | PhysicsManager::CollisionFlags::Water | PhysicsManager::CollisionFlags::Wolf |
+        PhysicsManager::CollisionFlags::Kitten);
+        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Nest, PhysicsManager::CollisionFlags::MotherCat
+        | PhysicsManager::CollisionFlags::Kitten);
         mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Meat, PhysicsManager::CollisionFlags::MotherCat);
         mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Water, PhysicsManager::CollisionFlags::MotherCat);
-        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Kitten, PhysicsManager::CollisionFlags::Activity | PhysicsManager::CollisionFlags::Nest | PhysicsManager::CollisionFlags::Wolf | PhysicsManager::CollisionFlags::MotherCat);
+        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Kitten, PhysicsManager::CollisionFlags::Activity
+        | PhysicsManager::CollisionFlags::Nest | PhysicsManager::CollisionFlags::Wolf | PhysicsManager::CollisionFlags::MotherCat);
         mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Activity, PhysicsManager::CollisionFlags::Kitten);
-        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Wolf, PhysicsManager::CollisionFlags::Kitten | PhysicsManager::CollisionFlags::MotherCat);
+        mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Wolf, PhysicsManager::CollisionFlags::Kitten
+        | PhysicsManager::CollisionFlags::MotherCat);
 
         mPlayScreen = new PlayScreen();
     }

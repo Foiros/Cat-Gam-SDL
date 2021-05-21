@@ -4,13 +4,7 @@
 
 #include "../PathfindingHeaderFiles/PathfindingUnit.h"
 
-void PathfindingUnit::FindPath(PathfindingGrid *mGrid) {
-
-//    int random1 = rand() % (500);
-//    int random2 = rand() % (500);
-//    destination = { random1, random2};
-
-    destination = { 810, 540};
+void PathfindingUnit::FindPath(PathfindingGrid *mGrid, GridLocation destination) {
 
     GridLocation mKittenLocation = { (int) Pos(world).x, (int) Pos(world).y};
 
@@ -21,6 +15,7 @@ void PathfindingUnit::FindPath(PathfindingGrid *mGrid) {
     path = Pathfinding::Instance()->ReconstructPath(mKittenLocation, destination, came_from);
 
     mFollowingPath = true;
+    this->destination = destination;
 
     came_from.clear();
     cost_so_far.clear();
@@ -29,6 +24,7 @@ void PathfindingUnit::FindPath(PathfindingGrid *mGrid) {
 void PathfindingUnit::FollowPath(std::vector<GridLocation> path) {
 
     GridLocation node = { path.begin()->locationX, path.begin()->locationY };
+
     path.erase(path.begin());
     this->path = path;
 
@@ -38,6 +34,7 @@ void PathfindingUnit::FollowPath(std::vector<GridLocation> path) {
     if(node == destination){
 
         mFollowingPath = false;
+        mDoingAction = true;
         path.clear();
     }
 }

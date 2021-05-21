@@ -9,13 +9,30 @@ namespace FSM{
 
     class FSM{
 
+    public:
+
         enum class States{
 
             Idle,
-            Moving,
-            Action,
+            NeedToScratch,
+            Curious,
+            Playful,
+            Hungry,
+            Thirsty,
             Dead
         };
+
+    private:
+        States mCurrentState;
+
+    public:
+        FSM(States startingState);
+        ~FSM();
+
+        void GiveState(int stateID);
+        void SetState(States newState);
+
+        States CurrentState();
     };
 }
 
