@@ -4,7 +4,7 @@
 
 #include "../PathfindingHeaderFiles/PathfindingUnit.h"
 
-void PathfindingUnit::FindPath(PathfindingGrid *mGrid, GridLocation destination) {
+void PathfindingUnit::FindPath(PathfindingGrid *mGrid) {
 
     GridLocation mKittenLocation = { (int) Pos(world).x, (int) Pos(world).y};
 
@@ -15,7 +15,6 @@ void PathfindingUnit::FindPath(PathfindingGrid *mGrid, GridLocation destination)
     path = Pathfinding::Instance()->ReconstructPath(mKittenLocation, destination, came_from);
 
     mFollowingPath = true;
-    this->destination = destination;
 
     came_from.clear();
     cost_so_far.clear();

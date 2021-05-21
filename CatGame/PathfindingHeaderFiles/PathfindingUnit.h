@@ -23,7 +23,7 @@ protected:
     bool mDoingAction;
 
 protected:
-    void FindPath(PathfindingGrid* mGrid, GridLocation destination);
+    void FindPath(PathfindingGrid* mGrid);
     void FollowPath(std::vector<GridLocation> path);
 };
 
