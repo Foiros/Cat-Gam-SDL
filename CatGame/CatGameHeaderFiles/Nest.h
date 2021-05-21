@@ -23,6 +23,9 @@ private:
 
     Texture* sprite;
 
+private:
+    void CorrectResources();
+
 public:
     Nest();
     ~Nest();

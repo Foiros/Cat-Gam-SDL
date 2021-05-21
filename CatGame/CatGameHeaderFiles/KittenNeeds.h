@@ -12,17 +12,29 @@ class KittenNeeds{
 private:
     int hunger, thirst, love;
 
+    const int kittenNeedMax = 100;
+    const int kittenNeedMin = 0;
+    const int kittenLoveStart = 25;
+
+    const int reduceAmount = 3;
+    const int loveIncrease = 3;
+
+    bool hasGrownUp;
+    bool hatesMom;
+
+private:
+    void CorrectNeeds();
+
 public:
     KittenNeeds();
     ~KittenNeeds();
 
-    int GetNeed(std::string resource);
+    int GetNeed(int need);
+    void ReduceNeed(int need);
+    void IncreaseNeed(int need, int amount);
 
-    void UpdateNeed();
-    int ReduceNeed();
-    int IncreaseNeed();
-
-    void HasGrownUp();
+    bool HasGrownUp();
+    bool HatesMom();
 };
 
 #endif

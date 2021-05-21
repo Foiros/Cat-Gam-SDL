@@ -59,21 +59,25 @@ private:
     PlayerResources* mPlayerResources;
     KittenNeeds* mKittenNeeds;
 
-public:
-    PlayScreen();
-    ~PlayScreen();
+    const int reduceAmount = 10;
 
+private:
     void SetUpPlayScreen();
     void SetUpGrid();
     void SetUpGameObjects();
 
     void StartGame();
-
     bool GameOver();
 
-    void Update();
+    void HandleResources();
     void UpdateTexts();
 
+
+public:
+    PlayScreen();
+    ~PlayScreen();
+
+    void Update();
     void Render();
 };
 

@@ -30,6 +30,8 @@ void PlayerResources::AddResources(int addedMeat, int addedWater) {
 
     if(addedWater != 0 && collectedWater != playerMaxResource)
         collectedWater += addedWater;
+
+    CorrectResources();
 }
 
 void PlayerResources::ReduceResources(int reducedMeat, int reducedWater) {
@@ -40,9 +42,18 @@ void PlayerResources::ReduceResources(int reducedMeat, int reducedWater) {
     if(reducedWater != 0 && collectedWater > playerMinResource)
         collectedWater -= reducedWater;
 
-    if(collectedMeat < playerMinResource)
-        collectedMeat = 0;
+    CorrectResources();
+}
 
-    if(collectedWater < playerMinResource)
-        collectedWater = 0;
+void PlayerResources::CorrectResources() {
+
+    if(collectedMeat > playerMaxResource)
+        collectedMeat = playerMaxResource;
+    else if(collectedMeat < playerMinResource)
+        collectedMeat = playerMinResource;
+
+    if(collectedWater > playerMaxResource)
+        collectedWater = playerMaxResource;
+    else if(collectedWater < playerMinResource)
+        collectedWater = playerMinResource;
 }

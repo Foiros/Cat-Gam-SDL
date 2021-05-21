@@ -65,6 +65,8 @@ void Nest::AddResourcesToNest(int _meat, int _water) {
     if(_water != 0 && water != nestMaxResource)
         water += _water;
 
+    CorrectResources();
+
     motherVisited = false;
 }
 
@@ -76,11 +78,7 @@ void Nest::UseResources(int reducedMeat, int reducedWater) {
     if(reducedWater != 0 && water > nestMinResource)
         water -= reducedWater;
 
-    if(meat < nestMinResource)
-        meat = 0;
-
-    if(water < nestMinResource)
-        water = 0;
+    CorrectResources();
 
     kittenVisited = false;
 }
@@ -88,6 +86,19 @@ void Nest::UseResources(int reducedMeat, int reducedWater) {
 void Nest::Render() {
 
     sprite->Render();
+}
+
+void Nest::CorrectResources() {
+
+    if(meat > nestMaxResource)
+        meat = nestMaxResource;
+    else if(meat < nestMinResource)
+        meat = nestMinResource;
+
+    if(water > nestMaxResource)
+        water = nestMaxResource;
+    else if(water < nestMinResource)
+        water = nestMinResource;
 }
 
 

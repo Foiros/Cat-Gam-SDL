@@ -15,6 +15,9 @@ private:
     const int playerMinResource = 0;
     const int playerMaxResource = 100;
 
+private:
+    void CorrectResources();
+
 public:
     PlayerResources();
     ~PlayerResources();
