@@ -39,4 +39,10 @@ void PlayerResources::ReduceResources(int reducedMeat, int reducedWater) {
 
     if(reducedWater != 0 && collectedWater > playerMinResource)
         collectedWater -= reducedWater;
+
+    if(collectedMeat < playerMinResource)
+        collectedMeat = 0;
+
+    if(collectedWater < playerMinResource)
+        collectedWater = 0;
 }

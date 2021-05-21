@@ -76,6 +76,12 @@ void Nest::UseResources(int reducedMeat, int reducedWater) {
     if(reducedWater != 0 && water > nestMinResource)
         water -= reducedWater;
 
+    if(meat < nestMinResource)
+        meat = 0;
+
+    if(water < nestMinResource)
+        water = 0;
+
     kittenVisited = false;
 }
 
