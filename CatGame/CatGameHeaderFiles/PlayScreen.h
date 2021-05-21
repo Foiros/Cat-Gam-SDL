@@ -17,6 +17,8 @@
 #include "../CatGameHeaderFiles/Meat.h"
 #include "../CatGameHeaderFiles/Water.h"
 #include "../CatGameHeaderFiles/Nest.h"
+#include "../CatGameHeaderFiles/PlayerResources.h"
+#include "../CatGameHeaderFiles/KittenNeeds.h"
 
 using namespace SDL;
 
@@ -30,6 +32,11 @@ private:
     float mGameStartTimer;
     float mGameStartDelay;
     bool mGameStarted;
+
+    bool mMeatGathered;
+    bool mWaterGathered;
+    bool mResourcesAddedToNest;
+    bool mResourcesTakenFromNest;
 
     Texture* mBackground;
     Texture* mPlayerMeat;
@@ -48,6 +55,9 @@ private:
 
     Meat* mMeat;
     Water* mWater;
+
+    PlayerResources* mPlayerResources;
+    KittenNeeds* mKittenNeeds;
 
 public:
     PlayScreen();

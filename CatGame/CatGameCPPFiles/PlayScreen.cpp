@@ -15,6 +15,11 @@ PlayScreen::PlayScreen() {
     mGameStartDelay = 1.0f;
     mGameStarted = false;
 
+    mMeatGathered = false;
+    mWaterGathered = false;
+    mResourcesAddedToNest = false;
+    mResourcesTakenFromNest = false;
+
     SetUpPlayScreen();
     SetUpGrid();
     SetUpGameObjects();
@@ -31,6 +36,21 @@ PlayScreen::~PlayScreen() {
 
     delete mGrid;
     mGrid = nullptr;
+
+    delete mMotherCat;
+    mMotherCat = nullptr;
+
+    delete mKitten;
+    mKitten = nullptr;
+
+    delete mNest;
+    mNest = nullptr;
+
+    delete mMeat;
+    mMeat = nullptr;
+
+    delete mWater;
+    mWater = nullptr;
 }
 
 void PlayScreen::StartGame() {
@@ -50,6 +70,48 @@ bool PlayScreen::GameOver() {
 void PlayScreen::Update() {
 
     if(mGameStarted){
+
+        if(mMeat != nullptr)
+            mMeatGathered = mMeat->GetGathered();
+
+        if(mWater != nullptr)
+            mWaterGathered = mWater->GetGathered();
+
+        mResourcesAddedToNest = mNest->GetMotherVisited();
+        mResourcesTakenFromNest = mNest->GetKittenVisited();
+
+        if(mMeatGathered){
+
+            mPlayerResources->AddResources(mMeat->GetValue(), 0);
+            delete mMeat;
+            mMeat = nullptr;
+            mMeatGathered = false;
+        }
+
+        if(mWaterGathered){
+
+            mPlayerResources->AddResources(0, mWater->GetValue());
+            delete mWater;
+            mWater = nullptr;
+            mWaterGathered = false;
+        }
+
+        if(mResourcesAddedToNest){
+
+            int addedMeat = mPlayerResources->GetResource("Meat");
+            int addedWater = mPlayerResources->GetResource("Water");
+
+            mNest->AddResourcesToNest(addedMeat, addedWater);
+            mPlayerResources->ReduceResources(addedMeat, addedWater);
+
+            mResourcesAddedToNest = false;
+        }
+
+        if(mResourcesTakenFromNest){
+
+            mNest->UseResources(20, 20);
+            mResourcesTakenFromNest = false;
+        }
 
         UpdateTexts();
         mMotherCat->Update();
@@ -84,8 +146,11 @@ void PlayScreen::Render() {
         mKitten->Render();
         mNest->Render();
 
-        mMeat->Render();
-        mWater->Render();
+        if(mMeat != nullptr)
+            mMeat->Render();
+
+        if(mWater != nullptr)
+            mWater->Render();
     }
 }
 
@@ -146,6 +211,8 @@ void PlayScreen::SetUpGameObjects() {
     mNest->Parent(this);
     mNest->Pos(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f));
 
+    mPlayerResources = new PlayerResources();
+
     mMeat = new Meat();
     mMeat->Parent(this);
     mMeat->Pos(Vector2(500.0f, 500.0f));
@@ -157,9 +224,34 @@ void PlayScreen::SetUpGameObjects() {
 
 void PlayScreen::UpdateTexts() {
 
-    std::string theWholeThing = "Player Meat: 100";
+    std::string newPlayerMeat = "Player Meat: " + std::to_string(mPlayerResources->GetResource("Meat"));
+    std::string newPlayerWater = "Player Water: " + std::to_string(mPlayerResources->GetResource("Water"));
+    std::string newNestMeat = "Nest Meat: " + std::to_string(mNest->GetResource("Meat"));
+    std::string newNestWater = "Nest Water: " + std::to_string(mNest->GetResource("Water"));
+    std::string newKittenHunger = "Kitten Hunger: 100";
+    std::string newKittenThirst = "Kitten Thirst: 100";
+    std::string newKittenLove = "Kitten Love: 25";
 
-    mPlayerMeat = new Texture(theWholeThing, "ARCADE_N.ttf", 20, {150, 0, 0});
+
+    mPlayerMeat = new Texture(newPlayerMeat, "ARCADE_N.ttf", 20, {150, 0, 0});
     mPlayerMeat->Pos(Vector2(200, 50));
+
+    mPlayerWater = new Texture(newPlayerWater, "ARCADE_N.ttf", 20, {150, 0, 0});
+    mPlayerWater->Pos(Vector2(200, 100));
+
+    mNestMeat = new Texture(newNestMeat, "ARCADE_N.ttf", 20, {150, 0, 0});
+    mNestMeat->Pos(Vector2(200, 150));
+
+    mNestWater = new Texture(newNestWater, "ARCADE_N.ttf", 20, {150, 0, 0});
+    mNestWater->Pos(Vector2(200, 200));
+
+    mKittenHunger = new Texture(newKittenHunger, "ARCADE_N.ttf", 20, {150, 0, 0});
+    mKittenHunger->Pos(Vector2(1400, 50));
+
+    mKittenThirst = new Texture(newKittenThirst, "ARCADE_N.ttf", 20, {150, 0, 0});
+    mKittenThirst->Pos(Vector2(1400, 100));
+
+    mKittenLove = new Texture(newKittenLove, "ARCADE_N.ttf", 20, {150, 0, 0});
+    mKittenLove->Pos(Vector2(1400, 150));
 }
 

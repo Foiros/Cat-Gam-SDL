@@ -30,7 +30,7 @@ public:
         None = 0x00,
         MotherCat = 0x01,
         Kitten = 0x02,
-        Nest = 0x03,
+        Nest = 0x04,
         Meat = 0x08,
         Water = 0x10,
         Activity = 0x11,

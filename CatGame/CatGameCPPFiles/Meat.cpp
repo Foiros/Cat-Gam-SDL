@@ -7,10 +7,9 @@
 
 Meat::Meat() {
 
-    name = "Meat";
-
     int random = rand() % 50;
     value = random;
+    gathered = false;
 
     sprite = new Texture("Meat.png");
     sprite->Parent(this);
@@ -37,7 +36,17 @@ void Meat::ContactWithOtherCollider(PhysicsEntity *other) {
 
 void Meat::GatherResource() {
 
-    Parent(nullptr);
+    gathered = true;
+}
+
+bool Meat::GetGathered() {
+
+    return gathered;
+}
+
+int Meat::GetValue() {
+
+    return value;
 }
 
 void Meat::Render() {

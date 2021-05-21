@@ -6,8 +6,11 @@
 
 Nest::Nest() {
 
-    meat = 0;
-    water = 0;
+    meat = nestMinResource;
+    water = nestMinResource;
+
+    motherVisited = false;
+    kittenVisited = false;
 
     sprite = new Texture("Nest.png");
     sprite->Parent(this);
@@ -22,16 +25,6 @@ Nest::~Nest() {
     sprite = nullptr;
 }
 
-int Nest::NestMeat() {
-
-    return meat;
-}
-
-int Nest::NestWater() {
-
-    return water;
-}
-
 bool Nest::IgnoreCollisions() {
 
     return false;
@@ -39,47 +32,56 @@ bool Nest::IgnoreCollisions() {
 
 void Nest::ContactWithOtherCollider(PhysicsEntity* other) {
 
-    if(other->GetID() == 1){
+    if(other->GetID() == 1)
+        motherVisited = true;
 
-        AddResourcesToNest(100, 100);
-    }
-    else if(other->GetID() == 2){
+    else if(other->GetID() == 2)
+        kittenVisited = true;
+}
 
-        UseResources(20, 20);
-    }
+int Nest::GetResource(std::string resourceName) {
+
+    if(resourceName == "Meat")
+        return meat;
+    else
+        return water;
+}
+
+bool Nest::GetMotherVisited() {
+
+    return motherVisited;
+}
+
+bool Nest::GetKittenVisited() {
+
+    return kittenVisited;
 }
 
 void Nest::AddResourcesToNest(int _meat, int _water) {
 
-    if(_meat != 0){
-
+    if(_meat != 0 && meat != nestMaxResource)
         meat += _meat;
-    }
 
-    if(_water != 0){
+    if(_water != 0 && water != nestMaxResource)
+        water += _water;
 
-        water = _water;
-    }
+    motherVisited = false;
 }
 
 void Nest::UseResources(int reducedMeat, int reducedWater) {
 
-    if(reducedMeat != 0 && meat > 0){
-
+    if(reducedMeat != 0 && meat > nestMinResource)
         meat -= reducedMeat;
-    }
 
-    if(reducedWater != 0 && water > 0){
-
+    if(reducedWater != 0 && water > nestMinResource)
         water -= reducedWater;
-    }
-}
 
-void Nest::Update() {
-
+    kittenVisited = false;
 }
 
 void Nest::Render() {
 
     sprite->Render();
 }
+
+

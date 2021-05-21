@@ -11,8 +11,9 @@
 class Water : public PhysicsEntity{
 
 private:
-    std::string name;
     int value;
+
+    bool gathered;
 
     Texture* sprite;
 
@@ -24,6 +25,8 @@ public:
     void ContactWithOtherCollider(PhysicsEntity* other) override;
 
     void GatherResource();
+    bool GetGathered();
+    int GetValue();
 
     void Render();
 };

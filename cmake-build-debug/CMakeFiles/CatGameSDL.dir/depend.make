@@ -59,10 +59,12 @@ CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: E:\SDL\SD
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\CatGameCPPFiles\GameManager.cpp
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\CatGameHeaderFiles\GameManager.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\CatGameHeaderFiles\Kitten.h
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\CatGameHeaderFiles\KittenNeeds.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\CatGameHeaderFiles\Meat.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\CatGameHeaderFiles\MotherCat.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\CatGameHeaderFiles\Nest.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\CatGameHeaderFiles\PlayScreen.h
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\CatGameHeaderFiles\PlayerResources.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\CatGameHeaderFiles\Water.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\PathfindingHeaderFiles\Pathfinding.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\GameManager.cpp.obj: ..\CatGame\PathfindingHeaderFiles\PathfindingGrid.h
@@ -351,7 +353,6 @@ CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: E:\SDL\SDL2-2.0.
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: E:\SDL\SDL2-2.0.14\include\begin_code.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: E:\SDL\SDL2-2.0.14\include\close_code.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameCPPFiles\Nest.cpp
-CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameHeaderFiles\MotherCat.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\CatGameHeaderFiles\Nest.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\PhysicsEngineHeaderFiles\BoxCollider.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\PhysicsEngineHeaderFiles\CircleCollider.h
@@ -359,7 +360,6 @@ CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\Physi
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\PhysicsEngineHeaderFiles\PhysicsEntity.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\PhysicsEngineHeaderFiles\PhysicsHelper.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\PhysicsEngineHeaderFiles\PhysicsManager.h
-CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\SDLHeaderFiles\AnimatedTexture.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\SDLHeaderFiles\AssetManager.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\SDLHeaderFiles\AudioManager.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Nest.cpp.obj: ..\CatGame\SDLHeaderFiles\GameEntity.h
@@ -422,10 +422,12 @@ CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: E:\SDL\SDL
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: E:\SDL\SDL2-2.0.14\include\close_code.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: ..\CatGame\CatGameCPPFiles\PlayScreen.cpp
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: ..\CatGame\CatGameHeaderFiles\Kitten.h
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: ..\CatGame\CatGameHeaderFiles\KittenNeeds.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: ..\CatGame\CatGameHeaderFiles\Meat.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: ..\CatGame\CatGameHeaderFiles\MotherCat.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: ..\CatGame\CatGameHeaderFiles\Nest.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: ..\CatGame\CatGameHeaderFiles\PlayScreen.h
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: ..\CatGame\CatGameHeaderFiles\PlayerResources.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: ..\CatGame\CatGameHeaderFiles\Water.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: ..\CatGame\PathfindingHeaderFiles\Pathfinding.h
 CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\PlayScreen.cpp.obj: ..\CatGame\PathfindingHeaderFiles\PathfindingGrid.h
@@ -1424,10 +1426,12 @@ CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: E:\SDL\SDL2-2.0.1
 CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: E:\SDL\SDL2-2.0.14\include\close_code.h
 CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: ..\CatGame\CatGameHeaderFiles\GameManager.h
 CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: ..\CatGame\CatGameHeaderFiles\Kitten.h
+CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: ..\CatGame\CatGameHeaderFiles\KittenNeeds.h
 CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: ..\CatGame\CatGameHeaderFiles\Meat.h
 CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: ..\CatGame\CatGameHeaderFiles\MotherCat.h
 CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: ..\CatGame\CatGameHeaderFiles\Nest.h
 CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: ..\CatGame\CatGameHeaderFiles\PlayScreen.h
+CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: ..\CatGame\CatGameHeaderFiles\PlayerResources.h
 CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: ..\CatGame\CatGameHeaderFiles\Water.h
 CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: ..\CatGame\PathfindingHeaderFiles\Pathfinding.h
 CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\SDLMain.cpp.obj: ..\CatGame\PathfindingHeaderFiles\PathfindingGrid.h

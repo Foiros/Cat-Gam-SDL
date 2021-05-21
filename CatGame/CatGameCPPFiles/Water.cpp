@@ -7,10 +7,9 @@
 
 Water::Water(){
 
-    name = "Water";
-
     int random = rand() % 50;
     value = random;
+    gathered = false;
 
     sprite = new Texture("Water.png");
     sprite->Parent(this);
@@ -37,10 +36,21 @@ void Water::ContactWithOtherCollider(PhysicsEntity* other) {
 
 void Water::GatherResource() {
 
-    Parent(nullptr);
+    gathered = true;
+}
+
+bool Water::GetGathered() {
+
+    return gathered;
+}
+
+int Water::GetValue() {
+
+    return value ;
 }
 
 void Water::Render() {
 
     sprite->Render();
 }
+
