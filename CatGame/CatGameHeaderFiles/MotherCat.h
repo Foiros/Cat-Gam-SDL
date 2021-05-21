@@ -13,37 +13,40 @@
 using namespace SDL;
 using namespace PhysicsEngine;
 
-class MotherCat : public PhysicsEntity{
+namespace CatGame{
 
-private:
-    Timer* mTimer;
-    InputManager* mInputManager;
-    AudioManager* mAudioManager;
+    class MotherCat : public PhysicsEntity{
 
-    bool mVisible;
-    bool mAnimating;
+    private:
+        Timer* mTimer;
+        InputManager* mInputManager;
+        AudioManager* mAudioManager;
 
-    Texture* mMotherSprite;
+        bool mVisible;
+        bool mAnimating;
 
-    AnimatedTexture* mRunAnimation;
+        Texture* mMotherSprite;
 
-    float mMoveSpeed;
+        AnimatedTexture* mRunAnimation;
 
-private:
-    bool IgnoreCollisions() override;
-    void Move();
+        float mMoveSpeed;
 
-public:
-    MotherCat();
-    ~MotherCat();
+    private:
+        bool IgnoreCollisions() override;
+        void Move();
 
-    void ContactWithOtherCollider(PhysicsEntity* other) override;
+    public:
+        MotherCat();
+        ~MotherCat();
 
-    void Visible(bool visible);
-    bool IsAnimating();
+        void ContactWithOtherCollider(PhysicsEntity* other) override;
 
-    void Update();
-    void Render();
-};
+        void Visible(bool visible);
+        bool IsAnimating();
+
+        void Update();
+        void Render();
+    };
+}
 
 #endif //CATGAMESDL_MOTHERCAT_H

@@ -10,27 +10,30 @@
 
 using namespace PhysicsEngine;
 
-class Water : public PhysicsEntity{
+namespace CatGame{
 
-private:
-    int value;
+    class Water : public PhysicsEntity{
 
-    bool gathered;
+    private:
+        int value;
 
-    Texture* sprite;
+        bool gathered;
 
-public:
-    Water();
-    ~Water();
+        Texture* sprite;
 
-    bool IgnoreCollisions() override;
-    void ContactWithOtherCollider(PhysicsEntity* other) override;
+    public:
+        Water();
+        ~Water();
 
-    void GatherResource();
-    bool GetGathered();
-    int GetValue();
+        bool IgnoreCollisions() override;
+        void ContactWithOtherCollider(PhysicsEntity* other) override;
 
-    void Render();
-};
+        void GatherResource();
+        bool GetGathered();
+        int GetValue();
+
+        void Render();
+    };
+}
 
 #endif //CATGAMESDL_WATER_H

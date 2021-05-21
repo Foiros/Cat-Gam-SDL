@@ -22,63 +22,67 @@
 
 using namespace SDL;
 
-class PlayScreen : public GameEntity{
+namespace CatGame{
 
-private:
-    Timer* mTimer;
-    InputManager* mInputManager;
-    AudioManager* mAudio;
+    class PlayScreen : public GameEntity{
 
-    float mGameStartTimer;
-    float mGameStartDelay;
-    bool mGameStarted;
+    private:
+        Timer* mTimer;
+        InputManager* mInputManager;
+        AudioManager* mAudio;
 
-    bool mMeatGathered;
-    bool mWaterGathered;
-    bool mResourcesAddedToNest;
-    bool mResourcesTakenFromNest;
+        float mGameStartTimer;
+        float mGameStartDelay;
+        bool mGameStarted;
 
-    Texture* mBackground;
-    Texture* mPlayerMeat;
-    Texture* mPlayerWater;
-    Texture* mNestMeat;
-    Texture* mNestWater;
-    Texture* mKittenHunger;
-    Texture* mKittenThirst;
-    Texture* mKittenLove;
+        bool mMeatGathered;
+        bool mWaterGathered;
+        bool mResourcesAddedToNest;
+        bool mResourcesTakenFromNest;
 
-    PathfindingGrid* mGrid;
+        Texture* mBackground;
+        Texture* mPlayerMeat;
+        Texture* mPlayerWater;
+        Texture* mNestMeat;
+        Texture* mNestWater;
+        Texture* mKittenHunger;
+        Texture* mKittenThirst;
+        Texture* mKittenLove;
 
-    MotherCat* mMotherCat;
-    Kitten* mKitten;
-    Nest* mNest;
+        PathfindingGrid* mGrid;
 
-    Meat* mMeat;
-    Water* mWater;
+        MotherCat* mMotherCat;
+        Kitten* mKitten;
+        Nest* mNest;
 
-    PlayerResources* mPlayerResources;
-    KittenNeeds* mKittenNeeds;
+        Meat* mMeat;
+        Water* mWater;
 
-    const int reduceAmount = 10;
+        PlayerResources* mPlayerResources;
+        KittenNeeds* mKittenNeeds;
 
-private:
-    void SetUpPlayScreen();
-    void SetUpGrid();
-    void SetUpGameObjects();
+        const int reduceAmount = 10;
 
-    void StartGame();
-    bool GameOver();
+    private:
+        void SetUpPlayScreen();
+        void SetUpGrid();
+        void SetUpGameObjects();
 
-    void HandleResources();
-    void UpdateTexts();
+        void StartGame();
+        bool GameOver();
+
+        void HandleResources();
+        void UpdateTexts();
 
 
-public:
-    PlayScreen();
-    ~PlayScreen();
+    public:
+        PlayScreen();
+        ~PlayScreen();
 
-    void Update();
-    void Render();
-};
+        void Update();
+        void Render();
+    };
+
+}
 
 #endif //CATGAMESDL_PLAYSCREEN_H

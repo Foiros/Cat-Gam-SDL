@@ -5,9 +5,12 @@
 #ifndef CATGAMESDL_DATABASE_H
 #define CATGAMESDL_DATABASE_H
 
-class Database{
+namespace Database{
+
+    class Database{
 
 
-};
+    };
+}
 
 #endif //CATGAMESDL_DATABASE_H

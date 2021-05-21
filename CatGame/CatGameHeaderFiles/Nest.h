@@ -11,36 +11,39 @@
 using namespace SDL;
 using namespace PhysicsEngine;
 
-class Nest : public PhysicsEntity{
+namespace CatGame{
 
-private:
-    int meat, water;
+    class Nest : public PhysicsEntity{
 
-    const int nestMinResource = 0;
-    const int nestMaxResource = 200;
+    private:
+        int meat, water;
 
-    bool motherVisited;
-    bool kittenVisited;
+        const int nestMinResource = 0;
+        const int nestMaxResource = 200;
 
-    Texture* sprite;
+        bool motherVisited;
+        bool kittenVisited;
 
-private:
-    void CorrectResources();
+        Texture* sprite;
 
-public:
-    Nest();
-    ~Nest();
+    private:
+        void CorrectResources();
 
-    bool IgnoreCollisions() override;
-    void ContactWithOtherCollider(PhysicsEntity* other) override;
+    public:
+        Nest();
+        ~Nest();
 
-    int GetResource(std::string resourceName);
-    bool GetMotherVisited();
-    bool GetKittenVisited();
-    void AddResourcesToNest(int _meat, int _water);
-    void UseResources(int reducedMeat, int reducedWater);
+        bool IgnoreCollisions() override;
+        void ContactWithOtherCollider(PhysicsEntity* other) override;
 
-    void Render();
-};
+        int GetResource(std::string resourceName);
+        bool GetMotherVisited();
+        bool GetKittenVisited();
+        void AddResourcesToNest(int _meat, int _water);
+        void UseResources(int reducedMeat, int reducedWater);
+
+        void Render();
+    };
+}
 
 #endif

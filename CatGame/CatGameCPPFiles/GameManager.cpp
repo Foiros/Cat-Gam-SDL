@@ -4,6 +4,8 @@
 
 #include "../CatGameHeaderFiles/GameManager.h"
 
+using namespace CatGame;
+
 namespace SDL{
 
     GameManager* GameManager::sInstance = NULL;

@@ -4,75 +4,76 @@
 
 #include "../CatGameHeaderFiles/Kitten.h"
 
-Kitten::Kitten() {
+namespace CatGame{
 
-    mTimer = Timer::Instance();
-    mInputManager = InputManager::Instance();
-    mAudioManager = AudioManager::Instance();
+    Kitten::Kitten() {
 
-    mVisible = false;
-    mAnimating = false;
+        mTimer = Timer::Instance();
+        mInputManager = InputManager::Instance();
+        mAudioManager = AudioManager::Instance();
 
-    mMoveSpeed = 300.0f;
+        mVisible = false;
+        mAnimating = false;
 
-    mKittenSprite = new Texture("Kitten.png");
-    mKittenSprite->Parent(this);
+        mMoveSpeed = 300.0f;
 
-    mRunAnimation = new AnimatedTexture("KittenWalkAnimation.png", 0, 0, 100, 100, 4, 1.0f, AnimatedTexture::horizontal);
-    mRunAnimation->Parent(this);
-    mRunAnimation->WrapMode(AnimatedTexture::once);
+        mKittenSprite = new Texture("Kitten.png");
+        mKittenSprite->Parent(this);
 
-    AddCollider(new BoxCollider(Vector2(50.0f, 50.0f)));
-    mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Kitten);
+        mRunAnimation = new AnimatedTexture("KittenWalkAnimation.png", 0, 0, 100, 100, 4, 1.0f, AnimatedTexture::horizontal);
+        mRunAnimation->Parent(this);
+        mRunAnimation->WrapMode(AnimatedTexture::once);
 
-    mFollowingPath = false;
-}
+        AddCollider(new BoxCollider(Vector2(50.0f, 50.0f)));
+        mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Kitten);
 
-Kitten::~Kitten() {
+        mFollowingPath = false;
+    }
 
-    mTimer = nullptr;
-    mInputManager = nullptr;
-    mAudioManager = nullptr;
+    Kitten::~Kitten() {
 
-    delete mKittenSprite;
-    mKittenSprite = nullptr;
+        mTimer = nullptr;
+        mInputManager = nullptr;
+        mAudioManager = nullptr;
 
-    delete mRunAnimation;
-    mRunAnimation = nullptr;
-}
+        delete mKittenSprite;
+        mKittenSprite = nullptr;
 
-void Kitten::Visible(bool visible) {
+        delete mRunAnimation;
+        mRunAnimation = nullptr;
+    }
 
-    mVisible = visible;
-}
+    void Kitten::Visible(bool visible) {
 
-bool Kitten::IgnoreCollisions() {
+        mVisible = visible;
+    }
 
-    return !mVisible;
-}
+    bool Kitten::IgnoreCollisions() {
 
-void Kitten::ContactWithOtherCollider(PhysicsEntity *other) {
+        return !mVisible;
+    }
 
+    void Kitten::ContactWithOtherCollider(PhysicsEntity *other) {
 
-}
-
-void Kitten::Update(PathfindingGrid* grid) {
-
-    if(!PathfindingUnit::mFollowingPath){
-
-        PathfindingUnit::FindPath(grid);
 
     }
-    else{
 
-        PathfindingUnit::FollowPath(path);
+    void Kitten::Update(PathfindingGrid* grid) {
+
+        if(!PathfindingUnit::mFollowingPath){
+
+            PathfindingUnit::FindPath(grid);
+
+        }
+        else{
+
+            PathfindingUnit::FollowPath(path);
+        }
+    }
+
+    void Kitten::Render() {
+
+        if(mVisible)
+            mKittenSprite->Render();
     }
 }
-
-void Kitten::Render() {
-
-    if(mVisible)
-        mKittenSprite->Render();
-}
-
-

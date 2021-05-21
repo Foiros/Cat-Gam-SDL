@@ -4,52 +4,54 @@
 
 #include "../CatGameHeaderFiles/Meat.h"
 
+namespace CatGame{
 
-Meat::Meat() {
+    Meat::Meat() {
 
-    int random = rand() % 50;
-    value = random;
-    gathered = false;
+        int random = rand() % 50;
+        value = random;
+        gathered = false;
 
-    sprite = new Texture("Meat.png");
-    sprite->Parent(this);
+        sprite = new Texture("Meat.png");
+        sprite->Parent(this);
 
-    AddCollider(new BoxCollider(Vector2(50.0f, 50.0f)));
-    mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Meat);
-}
+        AddCollider(new BoxCollider(Vector2(50.0f, 50.0f)));
+        mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Meat);
+    }
 
-Meat::~Meat() {
+    Meat::~Meat() {
 
-    delete sprite;
-    sprite = nullptr;
-}
+        delete sprite;
+        sprite = nullptr;
+    }
 
-bool Meat::IgnoreCollisions() {
+    bool Meat::IgnoreCollisions() {
 
-    return false;
-}
+        return false;
+    }
 
-void Meat::ContactWithOtherCollider(PhysicsEntity *other) {
+    void Meat::ContactWithOtherCollider(PhysicsEntity *other) {
 
-    GatherResource();
-}
+        GatherResource();
+    }
 
-void Meat::GatherResource() {
+    void Meat::GatherResource() {
 
-    gathered = true;
-}
+        gathered = true;
+    }
 
-bool Meat::GetGathered() {
+    bool Meat::GetGathered() {
 
-    return gathered;
-}
+        return gathered;
+    }
 
-int Meat::GetValue() {
+    int Meat::GetValue() {
 
-    return value;
-}
+        return value;
+    }
 
-void Meat::Render() {
+    void Meat::Render() {
 
-    sprite->Render();
+        sprite->Render();
+    }
 }

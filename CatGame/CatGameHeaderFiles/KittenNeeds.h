@@ -7,34 +7,37 @@
 
 #include <string>
 
-class KittenNeeds{
+namespace CatGame{
 
-private:
-    int hunger, thirst, love;
+    class KittenNeeds{
 
-    const int kittenNeedMax = 100;
-    const int kittenNeedMin = 0;
-    const int kittenLoveStart = 25;
+    private:
+        int hunger, thirst, love;
 
-    const int reduceAmount = 3;
-    const int loveIncrease = 3;
+        const int kittenNeedMax = 100;
+        const int kittenNeedMin = 0;
+        const int kittenLoveStart = 25;
 
-    bool hasGrownUp;
-    bool hatesMom;
+        const int reduceAmount = 3;
+        const int loveIncrease = 3;
 
-private:
-    void CorrectNeeds();
+        bool hasGrownUp;
+        bool hatesMom;
 
-public:
-    KittenNeeds();
-    ~KittenNeeds();
+    private:
+        void CorrectNeeds();
 
-    int GetNeed(int need);
-    void ReduceNeed(int need);
-    void IncreaseNeed(int need, int amount);
+    public:
+        KittenNeeds();
+        ~KittenNeeds();
 
-    bool HasGrownUp();
-    bool HatesMom();
-};
+        int GetNeed(int need);
+        void ReduceNeed(int need);
+        void IncreaseNeed(int need, int amount);
+
+        bool HasGrownUp();
+        bool HatesMom();
+    };
+}
 
 #endif

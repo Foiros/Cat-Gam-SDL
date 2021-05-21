@@ -11,6 +11,7 @@
 #include "../CatGameHeaderFiles/PlayScreen.h"
 #include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 
+using namespace CatGame;
 using namespace PhysicsEngine;
 
 namespace SDL{

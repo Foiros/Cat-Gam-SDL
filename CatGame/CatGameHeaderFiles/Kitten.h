@@ -15,33 +15,36 @@
 using namespace SDL;
 using namespace PhysicsEngine;
 
-class Kitten : public PathfindingUnit {
+namespace CatGame{
 
-private:
-    Timer* mTimer;
-    InputManager* mInputManager;
-    AudioManager* mAudioManager;
+    class Kitten : public PathfindingUnit {
 
-    bool mVisible;
-    bool mAnimating;
+    private:
+        Timer* mTimer;
+        InputManager* mInputManager;
+        AudioManager* mAudioManager;
 
-    Texture* mKittenSprite;
+        bool mVisible;
+        bool mAnimating;
 
-    AnimatedTexture* mRunAnimation;
+        Texture* mKittenSprite;
 
-private:
-    bool IgnoreCollisions() override;
+        AnimatedTexture* mRunAnimation;
 
-public:
-    Kitten();
-    ~Kitten();
+    private:
+        bool IgnoreCollisions() override;
 
-    void Visible(bool visible);
+    public:
+        Kitten();
+        ~Kitten();
 
-    void ContactWithOtherCollider(PhysicsEntity* other) override;
+        void Visible(bool visible);
 
-    void Update(PathfindingGrid* grid);
-    void Render();
-};
+        void ContactWithOtherCollider(PhysicsEntity* other) override;
+
+        void Update(PathfindingGrid* grid);
+        void Render();
+    };
+}
 
 #endif //CATGAMESDL_KITTEN_H

@@ -10,27 +10,30 @@
 
 using namespace PhysicsEngine;
 
-class Meat : public PhysicsEntity{
+namespace CatGame{
 
-private:
-    int value;
+    class Meat : public PhysicsEntity{
 
-    bool gathered;
+    private:
+        int value;
 
-    Texture* sprite;
+        bool gathered;
 
-public:
-    Meat();
-    ~Meat();
+        Texture* sprite;
 
-    bool IgnoreCollisions() override;
-    void ContactWithOtherCollider(PhysicsEntity* other) override;
+    public:
+        Meat();
+        ~Meat();
 
-    void GatherResource();
-    bool GetGathered();
-    int GetValue();
+        bool IgnoreCollisions() override;
+        void ContactWithOtherCollider(PhysicsEntity* other) override;
 
-    void Render();
-};
+        void GatherResource();
+        bool GetGathered();
+        int GetValue();
+
+        void Render();
+    };
+}
 
 #endif

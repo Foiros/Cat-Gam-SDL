@@ -7,24 +7,27 @@
 
 #include <string>
 
-class PlayerResources{
+namespace CatGame{
 
-private:
-    int collectedMeat, collectedWater;
+    class PlayerResources{
 
-    const int playerMinResource = 0;
-    const int playerMaxResource = 100;
+    private:
+        int collectedMeat, collectedWater;
 
-private:
-    void CorrectResources();
+        const int playerMinResource = 0;
+        const int playerMaxResource = 100;
 
-public:
-    PlayerResources();
-    ~PlayerResources();
+    private:
+        void CorrectResources();
 
-    int GetResource(std::string resourceName);
-    void AddResources(int addedMeat, int addedWater);
-    void ReduceResources(int reducedMeat, int reducedWater);
-};
+    public:
+        PlayerResources();
+        ~PlayerResources();
+
+        int GetResource(std::string resourceName);
+        void AddResources(int addedMeat, int addedWater);
+        void ReduceResources(int reducedMeat, int reducedWater);
+    };
+}
 
 #endif
