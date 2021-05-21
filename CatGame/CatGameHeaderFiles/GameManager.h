@@ -9,7 +9,7 @@
 #include "../SDLHeaderFiles/Timer.h"
 #include "../SDLHeaderFiles/InputManager.h"
 #include "../CatGameHeaderFiles/PlayScreen.h"
-#include "../CatGameHeaderFiles/PhysicsManager.h"
+#include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 
 namespace SDL{
 

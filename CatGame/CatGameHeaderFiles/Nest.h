@@ -5,8 +5,8 @@
 #ifndef CATGAMESDL_NEST_H
 #define CATGAMESDL_NEST_H
 
-#include "../CatGameHeaderFiles/PhysicsEntity.h"
-#include "../CatGameHeaderFiles/PhysicsManager.h"
+#include "../PhysicsEngineHeaderFiles/PhysicsEntity.h"
+#include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 #include "../CatGameHeaderFiles/MotherCat.h"
 
 using namespace SDL;

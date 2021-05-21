@@ -5,7 +5,7 @@
 #ifndef CATGAMESDL_PATHFINDINGUNIT_H
 #define CATGAMESDL_PATHFINDINGUNIT_H
 
-#include "../CatGameHeaderFiles/PhysicsEntity.h"
+#include "../PhysicsEngineHeaderFiles/PhysicsEntity.h"
 #include "../SDLHeaderFiles/Texture.h"
 #include "../PathfindingHeaderFiles/Pathfinding.h"
 

@@ -10,7 +10,7 @@
 #include "../SDLHeaderFiles/AnimatedTexture.h"
 #include "../SDLHeaderFiles/AudioManager.h"
 #include "../PathfindingHeaderFiles//Pathfinding.h"
-#include "../CatGameHeaderFiles/PhysicsManager.h"
+#include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 
 using namespace SDL;
 

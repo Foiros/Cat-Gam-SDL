@@ -5,8 +5,8 @@
 #ifndef CATGAMESDL_MEAT_H
 #define CATGAMESDL_MEAT_H
 
-#include "../CatGameHeaderFiles/PhysicsEntity.h"
-#include "../CatGameHeaderFiles/PhysicsManager.h"
+#include "../PhysicsEngineHeaderFiles/PhysicsEntity.h"
+#include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 
 class Meat : public PhysicsEntity{
 

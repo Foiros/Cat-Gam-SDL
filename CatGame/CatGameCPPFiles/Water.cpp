@@ -37,13 +37,10 @@ void Water::ContactWithOtherCollider(PhysicsEntity* other) {
 
 void Water::GatherResource() {
 
-    printf("Gathering Water...");
     Parent(nullptr);
 }
 
 void Water::Render() {
 
     sprite->Render();
-
-    // mBroadPhaseCollider->Render();
 }

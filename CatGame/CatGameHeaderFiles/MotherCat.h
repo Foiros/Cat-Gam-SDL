@@ -7,8 +7,8 @@
 
 #include "../SDLHeaderFiles/AnimatedTexture.h"
 #include "../SDLHeaderFiles/Texture.h"
-#include "../CatGameHeaderFiles/PhysicsEntity.h"
-#include "../CatGameHeaderFiles/PhysicsManager.h"
+#include "../PhysicsEngineHeaderFiles/PhysicsEntity.h"
+#include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 
 using namespace SDL;
 

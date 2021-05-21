@@ -37,13 +37,10 @@ void Meat::ContactWithOtherCollider(PhysicsEntity *other) {
 
 void Meat::GatherResource() {
 
-    printf("Gathering Meat...");
     Parent(nullptr);
 }
 
 void Meat::Render() {
 
     sprite->Render();
-
-    // mBroadPhaseCollider->Render();
 }

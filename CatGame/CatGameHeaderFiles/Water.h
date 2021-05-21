@@ -5,8 +5,8 @@
 #ifndef CATGAMESDL_WATER_H
 #define CATGAMESDL_WATER_H
 
-#include "../CatGameHeaderFiles/PhysicsEntity.h"
-#include "../CatGameHeaderFiles/PhysicsManager.h"
+#include "../PhysicsEngineHeaderFiles/PhysicsEntity.h"
+#include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 
 class Water : public PhysicsEntity{
 

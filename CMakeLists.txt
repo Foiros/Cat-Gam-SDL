@@ -39,10 +39,10 @@ add_executable(CatGameSDL CatGame/SDLHeaderFiles/AnimatedTexture.h CatGame/SDLHe
         CatGame/CatGameHeaderFiles/Meat.h CatGame/CatGameHeaderFiles/Water.h
         CatGame/CatGameCPPFiles/Meat.cpp CatGame/CatGameCPPFiles/Water.cpp CatGame/CatGameHeaderFiles/Activity.h CatGame/CatGameCPPFiles/Activity.cpp
         CatGame/CatGameHeaderFiles/Tree.h CatGame/CatGameHeaderFiles/Mouse.h CatGame/CatGameHeaderFiles/Flower.h CatGame/CatGameCPPFiles/Flower.cpp
-        CatGame/CatGameCPPFiles/Mouse.cpp CatGame/CatGameCPPFiles/Tree.cpp CatGame/CatGameHeaderFiles/Collider.h CatGame/CatGameCPPFiles/Collider.cpp
-        CatGame/CatGameHeaderFiles/BoxCollider.h CatGame/CatGameCPPFiles/BoxCollider.cpp CatGame/CatGameHeaderFiles/PhysicsEntity.h
-        CatGame/CatGameHeaderFiles/PhysicsHelper.h CatGame/CatGameCPPFiles/PhysicsEntity.cpp CatGame/CatGameHeaderFiles/PhysicsManager.h
-        CatGame/CatGameCPPFiles/PhysicsManager.cpp CatGame/CatGameHeaderFiles/CircleCollider.h CatGame/CatGameCPPFiles/CircleCollider.cpp)
+        CatGame/CatGameCPPFiles/Mouse.cpp CatGame/CatGameCPPFiles/Tree.cpp CatGame/PhysicsEngineHeaderFiles/Collider.h CatGame/PhysicsEngineCPPFiles/Collider.cpp
+        CatGame/PhysicsEngineHeaderFiles/BoxCollider.h CatGame/PhysicsEngineCPPFiles/BoxCollider.cpp CatGame/PhysicsEngineHeaderFiles/PhysicsEntity.h
+        CatGame/PhysicsEngineHeaderFiles/PhysicsHelper.h CatGame/PhysicsEngineCPPFiles/PhysicsEntity.cpp CatGame/PhysicsEngineHeaderFiles/PhysicsManager.h
+        CatGame/PhysicsEngineCPPFiles/PhysicsManager.cpp CatGame/PhysicsEngineHeaderFiles/CircleCollider.h CatGame/PhysicsEngineCPPFiles/CircleCollider.cpp CatGame/CatGameHeaderFiles/PlayerResources.h CatGame/CatGameCPPFiles/PlayerResources.cpp CatGame/CatGameHeaderFiles/KittenNeeds.h CatGame/CatGameCPPFiles/KittenNeeds.cpp CatGame/FSMHeaderFiles/FSM.h CatGame/DatabaseHeaderFiles/Database.h)
 
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2)

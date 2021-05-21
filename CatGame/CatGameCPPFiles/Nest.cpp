@@ -41,12 +41,10 @@ void Nest::ContactWithOtherCollider(PhysicsEntity* other) {
 
     if(other->GetID() == 1){
 
-        printf("Adding resources to base...");
         AddResourcesToNest(100, 100);
     }
     else if(other->GetID() == 2){
 
-        printf("Kitten is feeding...");
         UseResources(20, 20);
     }
 }
