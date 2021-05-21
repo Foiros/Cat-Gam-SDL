@@ -11,6 +11,7 @@
 #include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 
 using namespace SDL;
+using namespace PhysicsEngine;
 
 class MotherCat : public PhysicsEntity{
 

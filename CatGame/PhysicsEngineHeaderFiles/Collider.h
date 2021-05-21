@@ -10,33 +10,36 @@
 
 using namespace SDL;
 
-class Collider : public GameEntity{
+namespace PhysicsEngine{
 
-public:
-    enum class ColliderType{
+    class Collider : public GameEntity{
 
-        Box,
-        Circle
+    public:
+        enum class ColliderType{
+
+            Box,
+            Circle
+        };
+
+    protected:
+        ColliderType mType;
+
+        static const bool DEBUG_COLLIDERS = true;
+        Texture* mDebugTexture;
+
+    public:
+        Collider(ColliderType type);
+        virtual ~Collider();
+
+        virtual Vector2 GetFurthestPoint() = 0;
+
+        ColliderType GetType();
+
+        virtual void Render();
+
+    protected:
+        void SetDebugTexture(Texture* texture);
     };
-
-protected:
-    ColliderType mType;
-
-    static const bool DEBUG_COLLIDERS = true;
-    Texture* mDebugTexture;
-
-public:
-    Collider(ColliderType type);
-    virtual ~Collider();
-
-    virtual Vector2 GetFurthestPoint() = 0;
-
-    ColliderType GetType();
-
-    virtual void Render();
-
-protected:
-    void SetDebugTexture(Texture* texture);
-};
+}
 
 #endif //CATGAMESDL_COLLIDER_H

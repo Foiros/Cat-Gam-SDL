@@ -9,6 +9,7 @@
 #include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 
 using namespace SDL;
+using namespace PhysicsEngine;
 
 class Nest : public PhysicsEntity{
 

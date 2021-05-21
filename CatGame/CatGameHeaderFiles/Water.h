@@ -8,6 +8,8 @@
 #include "../PhysicsEngineHeaderFiles/PhysicsEntity.h"
 #include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 
+using namespace PhysicsEngine;
+
 class Water : public PhysicsEntity{
 
 private:

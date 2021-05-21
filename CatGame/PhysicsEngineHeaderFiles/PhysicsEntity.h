@@ -9,32 +9,34 @@
 #include "PhysicsHelper.h"
 #include <vector>
 
+namespace PhysicsEngine{
 
-class PhysicsEntity : public GameEntity{
+    class PhysicsEntity : public GameEntity{
 
-protected:
-    unsigned long mID;
+    protected:
+        unsigned long mID;
 
-    std::vector<Collider*> mColliders;
+        std::vector<Collider*> mColliders;
 
-    Collider* mBroadPhaseCollider;
+        Collider* mBroadPhaseCollider;
 
-public:
-    PhysicsEntity();
-    ~PhysicsEntity();
+    public:
+        PhysicsEntity();
+        ~PhysicsEntity();
 
-    unsigned long GetID();
+        unsigned long GetID();
 
-    bool CheckCollision(PhysicsEntity* other);
+        bool CheckCollision(PhysicsEntity* other);
 
-    virtual void ContactWithOtherCollider(PhysicsEntity* other);
+        virtual void ContactWithOtherCollider(PhysicsEntity* other);
 
-    virtual void Render();
+        virtual void Render();
 
-protected:
-    virtual bool IgnoreCollisions() = 0;
+    protected:
+        virtual bool IgnoreCollisions() = 0;
 
-    void AddCollider(Collider* collider, Vector2 localPos = VEC2_ZERO);
-};
+        void AddCollider(Collider* collider, Vector2 localPos = VEC2_ZERO);
+    };
+}
 
 #endif //CATGAMESDL_PHYSICSENTITY_H

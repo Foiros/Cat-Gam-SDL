@@ -7,21 +7,24 @@
 
 #include "Collider.h"
 
-class BoxCollider : public Collider{
+namespace PhysicsEngine{
 
-private:
-    static const int MAX_VERTS = 4;
+    class BoxCollider : public Collider{
 
-    GameEntity* mVerts[MAX_VERTS];
+    private:
+        static const int MAX_VERTS = 4;
 
-public:
-    BoxCollider(Vector2 size);
-    ~BoxCollider();
+        GameEntity* mVerts[MAX_VERTS];
 
-    Vector2 GetFurthestPoint() override;
+    public:
+        BoxCollider(Vector2 size);
+        ~BoxCollider();
 
-private:
-    void AddVert(int index, Vector2 pos);
-};
+        Vector2 GetFurthestPoint() override;
+
+    private:
+        void AddVert(int index, Vector2 pos);
+    };
+}
 
 #endif //CATGAMESDL_BOXCOLLIDER_H

@@ -4,88 +4,91 @@
 
 #include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 
-PhysicsManager* PhysicsManager::sInstance = nullptr;
+namespace PhysicsEngine{
 
-PhysicsManager *PhysicsManager::Instance() {
+    PhysicsManager* PhysicsManager::sInstance = nullptr;
 
-    if(sInstance == nullptr)
-        sInstance = new PhysicsManager();
+    PhysicsManager *PhysicsManager::Instance() {
 
-    return sInstance;
-}
+        if(sInstance == nullptr)
+            sInstance = new PhysicsManager();
 
-void PhysicsManager::Release() {
-
-    delete sInstance;
-    sInstance = nullptr;
-}
-
-PhysicsManager::PhysicsManager() {
-
-    mLastID = 0;
-
-    for(unsigned int i = 0; i < static_cast<unsigned int>(CollisionLayers::MaxLayers); ++i){
-
-        mLayerMasks[i] = std::bitset<static_cast<unsigned int>(CollisionLayers::MaxLayers)>(static_cast<unsigned int>(CollisionFlags::None));
+        return sInstance;
     }
-}
 
-PhysicsManager::~PhysicsManager() {
+    void PhysicsManager::Release() {
 
-    for (unsigned int i = 0; i < static_cast<unsigned int>(CollisionLayers::MaxLayers); ++i) {
-
-        mCollisionLayers[i].clear();
+        delete sInstance;
+        sInstance = nullptr;
     }
-}
+
+    PhysicsManager::PhysicsManager() {
+
+        mLastID = 0;
+
+        for(unsigned int i = 0; i < static_cast<unsigned int>(CollisionLayers::MaxLayers); ++i){
+
+            mLayerMasks[i] = std::bitset<static_cast<unsigned int>(CollisionLayers::MaxLayers)>(static_cast<unsigned int>(CollisionFlags::None));
+        }
+    }
+
+    PhysicsManager::~PhysicsManager() {
+
+        for (unsigned int i = 0; i < static_cast<unsigned int>(CollisionLayers::MaxLayers); ++i) {
+
+            mCollisionLayers[i].clear();
+        }
+    }
 
 
-void PhysicsManager::SetLayerCollisionMask(PhysicsManager::CollisionLayers layer, PhysicsManager::CollisionFlags flags) {
+    void PhysicsManager::SetLayerCollisionMask(PhysicsManager::CollisionLayers layer, PhysicsManager::CollisionFlags flags) {
 
-    mLayerMasks[static_cast<unsigned int>(layer)] = std::bitset<static_cast<unsigned int>(CollisionLayers::MaxLayers)>(static_cast<unsigned int>(flags));
-}
+        mLayerMasks[static_cast<unsigned int>(layer)] = std::bitset<static_cast<unsigned int>(CollisionLayers::MaxLayers)>(static_cast<unsigned int>(flags));
+    }
 
-unsigned long PhysicsManager::RegisterEntity(PhysicsEntity *entity, PhysicsManager::CollisionLayers layer) {
+    unsigned long PhysicsManager::RegisterEntity(PhysicsEntity *entity, PhysicsManager::CollisionLayers layer) {
 
-    mCollisionLayers[static_cast<unsigned int>(layer)].push_back(entity);
+        mCollisionLayers[static_cast<unsigned int>(layer)].push_back(entity);
 
-    mLastID++;
+        mLastID++;
 
-    return mLastID;
-}
+        return mLastID;
+    }
 
-void PhysicsManager::UnRegisterEntity(unsigned long id) {
+    void PhysicsManager::UnRegisterEntity(unsigned long id) {
 
-    bool found = false;
+        bool found = false;
 
-    for (int i = 0; i < static_cast<unsigned int>(CollisionLayers::MaxLayers) && !found; ++i) {
+        for (int i = 0; i < static_cast<unsigned int>(CollisionLayers::MaxLayers) && !found; ++i) {
 
-        for (int j = 0; j < mCollisionLayers->size() && !found; ++j) {
+            for (int j = 0; j < mCollisionLayers->size() && !found; ++j) {
 
-            if(mCollisionLayers[i][j]->GetID() == id){
+                if(mCollisionLayers[i][j]->GetID() == id){
 
-                mCollisionLayers[i].erase(mCollisionLayers[i].begin() + j);
-                found = true;
+                    mCollisionLayers[i].erase(mCollisionLayers[i].begin() + j);
+                    found = true;
+                }
             }
         }
     }
-}
 
-void PhysicsManager::Update() {
+    void PhysicsManager::Update() {
 
-    for (unsigned int i = 0; i < static_cast<unsigned int>(CollisionLayers::MaxLayers); ++i) {
+        for (unsigned int i = 0; i < static_cast<unsigned int>(CollisionLayers::MaxLayers); ++i) {
 
-        for (unsigned int j = 0; j < static_cast<unsigned int>(CollisionLayers::MaxLayers); ++j) {
+            for (unsigned int j = 0; j < static_cast<unsigned int>(CollisionLayers::MaxLayers); ++j) {
 
-            if(mLayerMasks[i].test(j) && i <= j){
+                if(mLayerMasks[i].test(j) && i <= j){
 
-                for (unsigned int k = 0; k < mCollisionLayers[i].size(); ++k) {
+                    for (unsigned int k = 0; k < mCollisionLayers[i].size(); ++k) {
 
-                    for (unsigned int l = 0; l < mCollisionLayers[j].size(); ++l) {
+                        for (unsigned int l = 0; l < mCollisionLayers[j].size(); ++l) {
 
-                        if(mCollisionLayers[i][k]->CheckCollision(mCollisionLayers[j][l])){
+                            if(mCollisionLayers[i][k]->CheckCollision(mCollisionLayers[j][l])){
 
-                            mCollisionLayers[i][k]->ContactWithOtherCollider(mCollisionLayers[j][l]);
-                            mCollisionLayers[j][l]->ContactWithOtherCollider(mCollisionLayers[i][k]);
+                                mCollisionLayers[i][k]->ContactWithOtherCollider(mCollisionLayers[j][l]);
+                                mCollisionLayers[j][l]->ContactWithOtherCollider(mCollisionLayers[i][k]);
+                            }
                         }
                     }
                 }

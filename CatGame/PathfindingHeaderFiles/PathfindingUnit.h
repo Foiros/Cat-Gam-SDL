@@ -10,6 +10,7 @@
 #include "../PathfindingHeaderFiles/Pathfinding.h"
 
 using namespace SDL;
+using namespace PhysicsEngine;
 
 class PathfindingUnit : public PhysicsEntity{
 

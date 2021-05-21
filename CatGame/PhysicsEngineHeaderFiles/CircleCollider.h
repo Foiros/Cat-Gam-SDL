@@ -7,18 +7,21 @@
 
 #include "Collider.h"
 
-class CircleCollider : public Collider{
+namespace PhysicsEngine{
 
-private:
-    float mRadius;
+    class CircleCollider : public Collider{
 
-public:
-    CircleCollider(float radius, bool broadPhase = false);
-    ~CircleCollider();
+    private:
+        float mRadius;
 
-    Vector2 GetFurthestPoint() override;
+    public:
+        CircleCollider(float radius, bool broadPhase = false);
+        ~CircleCollider();
 
-    float GetRadius();
-};
+        Vector2 GetFurthestPoint() override;
+
+        float GetRadius();
+    };
+}
 
 #endif //CATGAMESDL_CIRCLECOLLIDER_H

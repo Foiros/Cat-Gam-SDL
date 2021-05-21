@@ -4,31 +4,34 @@
 
 #include "../PhysicsEngineHeaderFiles/CircleCollider.h"
 
-CircleCollider::CircleCollider(float radius, bool broadPhase)  : Collider(ColliderType::Circle){
+namespace PhysicsEngine{
 
-    mRadius = radius;
+    CircleCollider::CircleCollider(float radius, bool broadPhase)  : Collider(ColliderType::Circle){
 
-    if(DEBUG_COLLIDERS){
+        mRadius = radius;
 
-        if(broadPhase)
-            SetDebugTexture(new Texture("BroadPhaseCollider.png"));
-        else
-            SetDebugTexture(new Texture("CircleCollider.png"));
+        if(DEBUG_COLLIDERS){
 
-        mDebugTexture->Scale(VEC2_ONE * (radius * 2 / 100.0f));
+            if(broadPhase)
+                SetDebugTexture(new Texture("BroadPhaseCollider.png"));
+            else
+                SetDebugTexture(new Texture("CircleCollider.png"));
+
+            mDebugTexture->Scale(VEC2_ONE * (radius * 2 / 100.0f));
+        }
     }
-}
 
-CircleCollider::~CircleCollider() {
+    CircleCollider::~CircleCollider() {
 
-}
+    }
 
-Vector2 CircleCollider::GetFurthestPoint() {
+    Vector2 CircleCollider::GetFurthestPoint() {
 
-    return VEC2_RIGHT * (mRadius * Pos(GameEntity::local).Magnitude());
-}
+        return VEC2_RIGHT * (mRadius * Pos(GameEntity::local).Magnitude());
+    }
 
-float CircleCollider::GetRadius() {
+    float CircleCollider::GetRadius() {
 
-    return mRadius;
+        return mRadius;
+    }
 }
