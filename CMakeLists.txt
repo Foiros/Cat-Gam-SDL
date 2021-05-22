@@ -30,7 +30,8 @@ add_executable(CatGameSDL CatGame/SDLHeaderFiles/AnimatedTexture.h CatGame/SDLHe
         CatGame/SDLCPPFiles/AnimatedTexture.cpp CatGame/SDLCPPFiles/AssetManager.cpp CatGame/SDLCPPFiles/AudioManager.cpp CatGame/SDLCPPFiles/GameEntity.cpp CatGame/CatGameCPPFiles/GameManager.cpp
         CatGame/SDLCPPFiles/Graphics.cpp CatGame/SDLCPPFiles/InputManager.cpp CatGame/SDLCPPFiles/Texture.cpp CatGame/SDLCPPFiles/Timer.cpp CatGame/SDLCPPFiles/SDLMain.cpp
 
-        CatGame/CatGameHeaderFiles/MainMenu.h CatGame/CatGameHeaderFiles/PlayScreen.h CatGame/CatGameCPPFiles/MainMenu.cpp CatGame/CatGameCPPFiles/PlayScreen.cpp CatGame/CatGameHeaderFiles/MotherCat.h CatGame/CatGameCPPFiles/MotherCat.cpp
+        CatGame/CatGameHeaderFiles/MainMenu.h CatGame/CatGameHeaderFiles/PlayScreen.h CatGame/CatGameCPPFiles/MainMenu.cpp CatGame/CatGameCPPFiles/PlayScreen.cpp
+        CatGame/CatGameHeaderFiles/MotherCat.h CatGame/CatGameCPPFiles/MotherCat.cpp
 
         CatGame/PathfindingHeaderFiles/PathfindingGrid.h CatGame/PathfindingCPPFiles/PathfindingGrid.cpp
         CatGame/PathfindingCPPFiles/Pathfinding.cpp CatGame/PathfindingHeaderFiles/Pathfinding.h
@@ -42,7 +43,9 @@ add_executable(CatGameSDL CatGame/SDLHeaderFiles/AnimatedTexture.h CatGame/SDLHe
         CatGame/CatGameCPPFiles/Mouse.cpp CatGame/CatGameCPPFiles/Tree.cpp CatGame/PhysicsEngineHeaderFiles/Collider.h CatGame/PhysicsEngineCPPFiles/Collider.cpp
         CatGame/PhysicsEngineHeaderFiles/BoxCollider.h CatGame/PhysicsEngineCPPFiles/BoxCollider.cpp CatGame/PhysicsEngineHeaderFiles/PhysicsEntity.h
         CatGame/PhysicsEngineHeaderFiles/PhysicsHelper.h CatGame/PhysicsEngineCPPFiles/PhysicsEntity.cpp CatGame/PhysicsEngineHeaderFiles/PhysicsManager.h
-        CatGame/PhysicsEngineCPPFiles/PhysicsManager.cpp CatGame/PhysicsEngineHeaderFiles/CircleCollider.h CatGame/PhysicsEngineCPPFiles/CircleCollider.cpp CatGame/CatGameHeaderFiles/PlayerResources.h CatGame/CatGameCPPFiles/PlayerResources.cpp CatGame/CatGameHeaderFiles/KittenNeeds.h CatGame/CatGameCPPFiles/KittenNeeds.cpp CatGame/FSMHeaderFiles/FSM.h CatGame/DatabaseHeaderFiles/Database.h CatGame/FSMCPPFiles/FSM.cpp CatGame/FSMHeaderFiles/FSMAgent.h CatGame/FSMCPPFiles/FSMAgent.cpp)
+        CatGame/PhysicsEngineCPPFiles/PhysicsManager.cpp CatGame/PhysicsEngineHeaderFiles/CircleCollider.h CatGame/PhysicsEngineCPPFiles/CircleCollider.cpp CatGame/CatGameHeaderFiles/PlayerResources.h
+        CatGame/CatGameCPPFiles/PlayerResources.cpp CatGame/CatGameHeaderFiles/KittenNeeds.h CatGame/CatGameCPPFiles/KittenNeeds.cpp CatGame/FSMHeaderFiles/FSM.h
+        CatGame/DatabaseHeaderFiles/Database.h CatGame/FSMCPPFiles/FSM.cpp CatGame/FSMHeaderFiles/FSMAgent.h CatGame/FSMCPPFiles/FSMAgent.cpp)
 
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2)
