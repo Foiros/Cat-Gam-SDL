@@ -174,9 +174,6 @@
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Water.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/DatabaseHeaderFiles/Database.h">
-			<Option target="CatGameSDL"/>
-		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/FSM.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
