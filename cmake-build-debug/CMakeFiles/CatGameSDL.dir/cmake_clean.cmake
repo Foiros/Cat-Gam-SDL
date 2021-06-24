@@ -32,6 +32,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CatGameSDL.dir/CatGame/SDLCPPFiles/SDLMain.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/SDLCPPFiles/Texture.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/SDLCPPFiles/Timer.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/CatGame/SpawningCPPFiles/Spawner.cpp.obj"
   "CatGameSDL.exe"
   "CatGameSDL.exe.manifest"
   "CatGameSDL.lib"

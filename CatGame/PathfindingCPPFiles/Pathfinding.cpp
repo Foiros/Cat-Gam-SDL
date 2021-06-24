@@ -20,12 +20,9 @@ void Pathfinding::Release() {
     sInstance = nullptr;
 }
 
-Pathfinding::Pathfinding() {
-}
+Pathfinding::Pathfinding() = default;
 
-Pathfinding::~Pathfinding() {
-
-}
+Pathfinding::~Pathfinding() = default;
 
 void Pathfinding::FindPath(PathfindingGrid* graph, GridLocation start, GridLocation goal,
                            std::unordered_map<GridLocation, GridLocation>& cameFrom,

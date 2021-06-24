@@ -37,6 +37,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLCPPFiles/SDLMain.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/SDLCPPFiles/SDLMain.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLCPPFiles/Texture.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/SDLCPPFiles/Texture.cpp.obj"
   "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLCPPFiles/Timer.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/SDLCPPFiles/Timer.cpp.obj"
+  "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SpawningCPPFiles/Spawner.cpp" "E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/cmake-build-debug/CMakeFiles/CatGameSDL.dir/CatGame/SpawningCPPFiles/Spawner.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

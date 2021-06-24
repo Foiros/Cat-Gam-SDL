@@ -174,9 +174,6 @@
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Water.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/DatabaseHeaderFiles/Database.h">
-			<Option target="CatGameSDL"/>
-		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/FSM.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
@@ -292,6 +289,12 @@
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/Timer.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SpawningCPPFiles/Spawner.cpp">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SpawningHeaderFiles/Spawner.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CMakeLists.txt">

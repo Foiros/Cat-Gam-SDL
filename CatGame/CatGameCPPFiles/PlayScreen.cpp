@@ -11,6 +11,7 @@ namespace CatGame{
         mTimer = Timer::Instance();
         mInputManager = InputManager::Instance();
         mAudio = AudioManager::Instance();
+        mSpawner = Spawner::Instance();
 
         mGameStartTimer = 0.0f;
         mGameStartDelay = 1.0f;
@@ -31,6 +32,7 @@ namespace CatGame{
         mTimer = nullptr;
         mInputManager = nullptr;
         mAudio = nullptr;
+        mSpawner = nullptr;
 
         delete mBackground;
         mBackground = nullptr;
@@ -47,11 +49,17 @@ namespace CatGame{
         delete mNest;
         mNest = nullptr;
 
-        delete mMeat;
-        mMeat = nullptr;
+        for(int i = 0; i < mMeat.size(); i++){
 
-        delete mWater;
-        mWater = nullptr;
+            delete mMeat[i];
+            mMeat[i] = nullptr;
+        }
+
+        for(int i = 0; i < mWater.size(); i++){
+
+            delete mWater[i];
+            mWater[i] = nullptr;
+        }
 
         delete mPlayerResources;
         mPlayerResources = nullptr;
@@ -76,28 +84,28 @@ namespace CatGame{
 
     void PlayScreen::HandleResources() {
 
-        if(mMeat != nullptr)
-            mMeatGathered = mMeat->GetGathered();
-
-        if(mWater != nullptr)
-            mWaterGathered = mWater->GetGathered();
+//        if(mMeat != nullptr)
+//            mMeatGathered = mMeat->GetGathered();
+//
+//        if(mWater != nullptr)
+//            mWaterGathered = mWater->GetGathered();
 
         mResourcesAddedToNest = mNest->GetMotherVisited();
         mResourcesTakenFromNest = mNest->GetKittenVisited();
 
         if(mMeatGathered){
 
-            mPlayerResources->AddResources(mMeat->GetValue(), 0);
-            delete mMeat;
-            mMeat = nullptr;
+//            mPlayerResources->AddResources(mMeat->GetValue(), 0);
+//            delete mMeat;
+//            mMeat = nullptr;
             mMeatGathered = false;
         }
 
         if(mWaterGathered){
 
-            mPlayerResources->AddResources(0, mWater->GetValue());
-            delete mWater;
-            mWater = nullptr;
+//            mPlayerResources->AddResources(0, mWater->GetValue());
+//            delete mWater;
+//            mWater = nullptr;
             mWaterGathered = false;
         }
 
@@ -191,80 +199,73 @@ namespace CatGame{
             mKitten->Render();
             mNest->Render();
 
-            if(mMeat != nullptr)
-                mMeat->Render();
+            for(auto & i : mMeat){
 
-            if(mWater != nullptr)
-                mWater->Render();
+                i->Render();
+            }
+
+            for(auto & i : mWater){
+
+                i->Render();
+            }
         }
     }
 
     void PlayScreen::SetUpPlayScreen() {
 
         mBackground = new Texture("LevelBackground.png");
-        mBackground->Parent(this);
-        mBackground->Pos(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f));
+        Spawning::Spawner::SpawnOne(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f), mBackground, this);
         mBackground->Scale(Vector2(1620.0f, 1080));
 
         mPlayerMeat = new Texture("Player Meat: 0", "ARCADE_N.ttf", 20, {150, 0, 0});
-        mPlayerMeat->Parent(this);
-        mPlayerMeat->Pos(Vector2(200, 50));
+        Spawning::Spawner::SpawnOne(Vector2(200, 50), mPlayerMeat, this);
 
         mPlayerWater = new Texture("Player Water: 0", "ARCADE_N.ttf", 20, {150, 0, 0});
-        mPlayerWater->Parent(this);
-        mPlayerWater->Pos(Vector2(200, 100));
+        Spawning::Spawner::SpawnOne(Vector2(200, 100), mPlayerWater, this);
 
         mNestMeat = new Texture("Nest Meat: 0", "ARCADE_N.ttf", 20, {150, 0, 0});
-        mNestMeat->Parent(this);
-        mNestMeat->Pos(Vector2(200, 150));
+        Spawning::Spawner::SpawnOne(Vector2(200, 150), mNestMeat, this);
 
         mNestWater = new Texture("Nest Water: 0", "ARCADE_N.ttf", 20, {150, 0, 0});
-        mNestWater->Parent(this);
-        mNestWater->Pos(Vector2(200, 200));
+        Spawning::Spawner::SpawnOne(Vector2(200, 200), mNestWater, this);
 
         mKittenHunger = new Texture("Kitten Hunger: 100", "ARCADE_N.ttf", 20, {150, 0, 0});
-        mKittenHunger->Parent(this);
-        mKittenHunger->Pos(Vector2(1400, 50));
+        Spawning::Spawner::SpawnOne(Vector2(1400, 50), mKittenHunger, this);
 
         mKittenThirst = new Texture("Kitten Thirst: 100", "ARCADE_N.ttf", 20, {150, 0, 0});
-        mKittenThirst->Parent(this);
-        mKittenThirst->Pos(Vector2(1400, 100));
+        Spawning::Spawner::SpawnOne(Vector2(1400, 100), mKittenThirst, this);
 
         mKittenLove = new Texture("Kitten Love: 25", "ARCADE_N.ttf", 20, {150, 0, 0});
-        mKittenLove->Parent(this);
-        mKittenLove->Pos(Vector2(1400, 150));
+        Spawning::Spawner::SpawnOne(Vector2(1400, 150), mKittenLove, this);
     }
 
     void PlayScreen::SetUpGrid() {
 
         mGrid = new PathfindingGrid(mBackground->Scale(world).x, mBackground->Scale(world).y);
-        mGrid->Parent(this);
-        mGrid->Pos(Vector2());
+        Spawning::Spawner::SpawnOne(Vector2(), mGrid, this);
     }
 
     void PlayScreen::SetUpGameObjects() {
 
         mMotherCat = new MotherCat();
-        mMotherCat->Parent(this);
-        mMotherCat->Pos(Vector2(300, 300));
+        Spawning::Spawner::SpawnOne(Vector2(300, 300), mMotherCat, this);
 
         mKitten = new Kitten();
-        mKitten->Parent(this);
-        mKitten->Pos(Vector2(200, 200));
+        Spawning::Spawner::SpawnOne(Vector2(200, 200), mKitten, this);
 
         mNest = new Nest();
-        mNest->Parent(this);
-        mNest->Pos(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f));
+        Spawning::Spawner::SpawnOne(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f), mNest, this);
 
         mPlayerResources = new PlayerResources();
         mKittenNeeds = new KittenNeeds();
 
-        mMeat = new Meat();
-        mMeat->Parent(this);
-        mMeat->Pos(Vector2(500.0f, 500.0f));
+        for(int i = 0; i < 5; i++){
 
-        mWater = new Water();
-        mWater->Parent(this);
-        mWater->Pos(Vector2(100.0f, 100.0f));
+            mMeat.push_back(new Meat());
+            mWater.push_back(new Water());
+        }
+
+        Spawning::Spawner::SpawnMeat(mGrid, mMeat, this);
+        Spawning::Spawner::SpawnWater(mGrid, mWater, this);
     }
 }

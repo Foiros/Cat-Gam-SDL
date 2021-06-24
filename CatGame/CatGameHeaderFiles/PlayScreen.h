@@ -20,8 +20,11 @@
 #include "../CatGameHeaderFiles/PlayerResources.h"
 #include "../CatGameHeaderFiles/KittenNeeds.h"
 #include "../FSMHeaderFiles/FSM.h"
+#include "../SpawningHeaderFiles/Spawner.h"
+#include <vector>
 
 using namespace SDL;
+using namespace Spawning;
 
 namespace CatGame{
 
@@ -31,6 +34,7 @@ namespace CatGame{
         Timer* mTimer;
         InputManager* mInputManager;
         AudioManager* mAudio;
+        Spawner* mSpawner;
 
         float mGameStartTimer;
         float mGameStartDelay;
@@ -56,8 +60,8 @@ namespace CatGame{
         Kitten* mKitten;
         Nest* mNest;
 
-        Meat* mMeat;
-        Water* mWater;
+        std::vector<Meat*> mMeat;
+        std::vector<Water*> mWater;
 
         PlayerResources* mPlayerResources;
         KittenNeeds* mKittenNeeds;

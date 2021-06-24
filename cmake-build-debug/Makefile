@@ -1017,6 +1017,33 @@ CatGame\SDLCPPFiles\Timer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\Timer.cpp.s
 .PHONY : CatGame\SDLCPPFiles\Timer.cpp.s
 
+CatGame\SpawningCPPFiles\Spawner.obj: CatGame\SpawningCPPFiles\Spawner.cpp.obj
+
+.PHONY : CatGame\SpawningCPPFiles\Spawner.obj
+
+# target to build an object file
+CatGame\SpawningCPPFiles\Spawner.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SpawningCPPFiles\Spawner.cpp.obj
+.PHONY : CatGame\SpawningCPPFiles\Spawner.cpp.obj
+
+CatGame\SpawningCPPFiles\Spawner.i: CatGame\SpawningCPPFiles\Spawner.cpp.i
+
+.PHONY : CatGame\SpawningCPPFiles\Spawner.i
+
+# target to preprocess a source file
+CatGame\SpawningCPPFiles\Spawner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SpawningCPPFiles\Spawner.cpp.i
+.PHONY : CatGame\SpawningCPPFiles\Spawner.cpp.i
+
+CatGame\SpawningCPPFiles\Spawner.s: CatGame\SpawningCPPFiles\Spawner.cpp.s
+
+.PHONY : CatGame\SpawningCPPFiles\Spawner.s
+
+# target to generate assembly for a file
+CatGame\SpawningCPPFiles\Spawner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\SpawningCPPFiles\Spawner.cpp.s
+.PHONY : CatGame\SpawningCPPFiles\Spawner.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1125,6 +1152,9 @@ help:
 	@echo ... CatGame/SDLCPPFiles/Timer.obj
 	@echo ... CatGame/SDLCPPFiles/Timer.i
 	@echo ... CatGame/SDLCPPFiles/Timer.s
+	@echo ... CatGame/SpawningCPPFiles/Spawner.obj
+	@echo ... CatGame/SpawningCPPFiles/Spawner.i
+	@echo ... CatGame/SpawningCPPFiles/Spawner.s
 .PHONY : help
 
 

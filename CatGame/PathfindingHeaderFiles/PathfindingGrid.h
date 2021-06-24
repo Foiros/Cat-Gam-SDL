@@ -25,6 +25,7 @@ struct GridLocation{
 
 namespace std{
 
+
     template <> struct ::std::hash<GridLocation>{
 
         typedef GridLocation argument_type;
@@ -41,13 +42,9 @@ namespace std{
 class PathfindingGrid : public GameEntity{
 
 private:
-
-
-
     // East, west, north, south
     const ::std::set<GridLocation> directions = {GridLocation{1, 0}, GridLocation{-1, 0},
                                                            GridLocation{0, -1},GridLocation{0, 1}};
-
     std::unordered_set<GridLocation> harshLand;
 
 private:
