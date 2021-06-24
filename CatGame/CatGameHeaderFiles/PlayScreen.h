@@ -40,8 +40,6 @@ namespace CatGame{
         float mGameStartDelay;
         bool mGameStarted;
 
-        bool mMeatGathered;
-        bool mWaterGathered;
         bool mResourcesAddedToNest;
         bool mResourcesTakenFromNest;
 

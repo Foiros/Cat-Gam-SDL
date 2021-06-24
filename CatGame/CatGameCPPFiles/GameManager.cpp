@@ -41,16 +41,30 @@ namespace SDL{
         mTimer = Timer::Instance();
 
         mPhysicsManager = PhysicsManager::Instance();
+
+        // Mother's collision settings
         mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::MotherCat, PhysicsManager::CollisionFlags::Nest
         | PhysicsManager::CollisionFlags::Meat | PhysicsManager::CollisionFlags::Water | PhysicsManager::CollisionFlags::Wolf |
         PhysicsManager::CollisionFlags::Kitten);
+
+        //Nest's collision settings
         mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Nest, PhysicsManager::CollisionFlags::MotherCat
         | PhysicsManager::CollisionFlags::Kitten);
+
+        // Meat's collision settings
         mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Meat, PhysicsManager::CollisionFlags::MotherCat);
+
+        // Water's collision settings
         mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Water, PhysicsManager::CollisionFlags::MotherCat);
+
+        // Kitten's collision settings
         mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Kitten, PhysicsManager::CollisionFlags::Activity
         | PhysicsManager::CollisionFlags::Nest | PhysicsManager::CollisionFlags::Wolf | PhysicsManager::CollisionFlags::MotherCat);
+
+        // Activity's collision settings
         mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Activity, PhysicsManager::CollisionFlags::Kitten);
+
+        // Wolf's collision settings
         mPhysicsManager->SetLayerCollisionMask(PhysicsManager::CollisionLayers::Wolf, PhysicsManager::CollisionFlags::Kitten
         | PhysicsManager::CollisionFlags::MotherCat);
 
@@ -63,16 +77,16 @@ namespace SDL{
         mPhysicsManager = nullptr;
 
         AudioManager::Release();
-        mAudioManager = NULL;
+        mAudioManager = nullptr;
 
         AssetManager::Release();
-        mAssetManager = NULL;
+        mAssetManager = nullptr;
 
         Graphics::Release();
-        mGraphics = NULL;
+        mGraphics = nullptr;
 
         Timer::Release();
-        mTimer = NULL;
+        mTimer = nullptr;
     }
 
     void GameManager::EarlyUpdate() {

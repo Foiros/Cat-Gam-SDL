@@ -1898,22 +1898,15 @@ CMakeFiles/CatGameSDL.dir/CatGame/SpawningCPPFiles/Spawner.cpp.obj
  E:/SDL/SDL2-2.0.14/include/SDL_video.h
  E:/SDL/SDL2-2.0.14/include/begin_code.h
  E:/SDL/SDL2-2.0.14/include/close_code.h
- E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/KittenNeeds.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Meat.h
- E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Nest.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Water.h
- E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSM.h
- E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSMAgent.h
- E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/Pathfinding.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingGrid.h
- E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingHeaderFiles/PathfindingUnit.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/BoxCollider.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/CircleCollider.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/Collider.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsEntity.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsHelper.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PhysicsEngineHeaderFiles/PhysicsManager.h
- E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AnimatedTexture.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AssetManager.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/AudioManager.h
  E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/SDLHeaderFiles/GameEntity.h

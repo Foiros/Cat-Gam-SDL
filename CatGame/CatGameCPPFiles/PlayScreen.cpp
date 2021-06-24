@@ -17,8 +17,6 @@ namespace CatGame{
         mGameStartDelay = 1.0f;
         mGameStarted = false;
 
-        mMeatGathered = false;
-        mWaterGathered = false;
         mResourcesAddedToNest = false;
         mResourcesTakenFromNest = false;
 
@@ -84,29 +82,42 @@ namespace CatGame{
 
     void PlayScreen::HandleResources() {
 
-//        if(mMeat != nullptr)
-//            mMeatGathered = mMeat->GetGathered();
-//
-//        if(mWater != nullptr)
-//            mWaterGathered = mWater->GetGathered();
-
         mResourcesAddedToNest = mNest->GetMotherVisited();
         mResourcesTakenFromNest = mNest->GetKittenVisited();
 
-        if(mMeatGathered){
 
-//            mPlayerResources->AddResources(mMeat->GetValue(), 0);
-//            delete mMeat;
-//            mMeat = nullptr;
-            mMeatGathered = false;
+        for(auto & i : mMeat){
+
+            if(i != nullptr){
+
+                if(i->GetGathered()) {
+
+                    if (mPlayerResources->GetResource("Meat") < 100){
+
+                        mPlayerResources->AddResources(i->GetValue(), 0);
+                        i = nullptr;
+                    }
+                    else
+                        i->GatherResource();
+                }
+            }
         }
 
-        if(mWaterGathered){
+        for(auto & i : mWater){
 
-//            mPlayerResources->AddResources(0, mWater->GetValue());
-//            delete mWater;
-//            mWater = nullptr;
-            mWaterGathered = false;
+            if(i != nullptr){
+
+                if(i->GetGathered()){
+
+                    if(mPlayerResources->GetResource("Water") < 100){
+
+                        mPlayerResources->AddResources(0, i->GetValue());
+                        i = nullptr;
+                    }
+                    else
+                        i->GatherResource();
+                }
+            }
         }
 
         if(mResourcesAddedToNest){
@@ -199,14 +210,18 @@ namespace CatGame{
             mKitten->Render();
             mNest->Render();
 
+
             for(auto & i : mMeat){
 
-                i->Render();
+                if(i != nullptr)
+                    i->Render();
             }
+
 
             for(auto & i : mWater){
 
-                i->Render();
+                if(i != nullptr)
+                    i->Render();
             }
         }
     }

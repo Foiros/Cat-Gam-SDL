@@ -37,7 +37,10 @@ namespace CatGame{
 
     void Water::GatherResource() {
 
-        gathered = true;
+        if(!gathered)
+            gathered = true;
+        else
+            gathered = false;
     }
 
     bool Water::GetGathered() {

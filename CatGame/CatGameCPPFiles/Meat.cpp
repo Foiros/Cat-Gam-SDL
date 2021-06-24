@@ -37,8 +37,12 @@ namespace CatGame{
 
     void Meat::GatherResource() {
 
-        gathered = true;
+        if(!gathered)
+            gathered = true;
+        else
+            gathered = false;
     }
+
 
     bool Meat::GetGathered() {
 
