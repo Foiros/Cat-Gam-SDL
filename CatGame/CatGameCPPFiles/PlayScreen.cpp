@@ -85,40 +85,44 @@ namespace CatGame{
         mResourcesAddedToNest = mNest->GetMotherVisited();
         mResourcesTakenFromNest = mNest->GetKittenVisited();
 
+        for (int i = 0; i < mMeat.size(); i++) {
 
-        for(auto & i : mMeat){
+            if(mMeat[i] != nullptr){
 
-            if(i != nullptr){
-
-                if(i->GetGathered()) {
+                if(mMeat[i]->GetGathered()) {
 
                     if (mPlayerResources->GetResource("Meat") < 100){
 
-                        mPlayerResources->AddResources(i->GetValue(), 0);
-                        i = nullptr;
+                        mPlayerResources->AddResources(mMeat[i]->GetValue(), 0);
+                        // mMeat[i] = nullptr;
+                        mMeat.erase(mMeat.begin() + i);
+                        meatAmount--;
                     }
                     else
-                        i->GatherResource();
+                        mMeat[i]->GatherResource();
                 }
             }
         }
 
-        for(auto & i : mWater){
+        for (int i = 0; i < mWater.size(); i++) {
 
-            if(i != nullptr){
+            if(mWater[i] != nullptr){
 
-                if(i->GetGathered()){
+                if(mWater[i]->GetGathered()) {
 
-                    if(mPlayerResources->GetResource("Water") < 100){
+                    if (mPlayerResources->GetResource("Water") < 100){
 
-                        mPlayerResources->AddResources(0, i->GetValue());
-                        i = nullptr;
+                        mPlayerResources->AddResources(0, mWater[i]->GetValue());
+                        mWater[i] = nullptr;
+                        mWater.erase(mWater.begin() + i);
+                        waterAmount--;
                     }
                     else
-                        i->GatherResource();
+                        mWater[i]->GatherResource();
                 }
             }
         }
+
 
         if(mResourcesAddedToNest){
 
@@ -138,6 +142,8 @@ namespace CatGame{
             mKittenNeeds->IncreaseNeed(1, reduceAmount);
             mResourcesTakenFromNest = false;
         }
+
+        RefillResources();
     }
 
     void PlayScreen::UpdateTexts() {
@@ -211,17 +217,20 @@ namespace CatGame{
             mNest->Render();
 
 
-            for(auto & i : mMeat){
+            for(auto & meat : mMeat){
 
-                if(i != nullptr)
-                    i->Render();
+                if(meat != nullptr){
+
+                    meat->Render();
+                }
             }
 
+            for(auto & water : mWater){
 
-            for(auto & i : mWater){
+                if(water != nullptr){
 
-                if(i != nullptr)
-                    i->Render();
+                    water->Render();
+                }
             }
         }
     }
@@ -274,7 +283,10 @@ namespace CatGame{
         mPlayerResources = new PlayerResources();
         mKittenNeeds = new KittenNeeds();
 
-        for(int i = 0; i < 5; i++){
+        meatAmount = maxResources;
+        waterAmount = maxResources;
+
+        for(int i = 0; i < meatAmount; i++){
 
             mMeat.push_back(new Meat());
             mWater.push_back(new Water());
@@ -282,5 +294,30 @@ namespace CatGame{
 
         Spawning::Spawner::SpawnMeat(mGrid, mMeat, this);
         Spawning::Spawner::SpawnWater(mGrid, mWater, this);
+    }
+
+    void PlayScreen::RefillResources() {
+
+        if(meatAmount <= 0){
+
+            for(int i = 0; i < maxResources; i++){
+
+                mMeat.insert(mMeat.begin(), new Meat());
+                meatAmount++;
+            }
+
+            Spawning::Spawner::SpawnMeat(mGrid, mMeat, this);
+        }
+
+        if(waterAmount <= 0){
+
+            for (int i = 0; i < maxResources; ++i) {
+
+                mWater.insert(mWater.begin(), new Water);
+                waterAmount++;
+            }
+
+            Spawning::Spawner::SpawnWater(mGrid, mWater, this);
+        }
     }
 }

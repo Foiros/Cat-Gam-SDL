@@ -21,7 +21,9 @@
 #include "../CatGameHeaderFiles/KittenNeeds.h"
 #include "../FSMHeaderFiles/FSM.h"
 #include "../SpawningHeaderFiles/Spawner.h"
+
 #include <vector>
+#include <map>
 
 using namespace SDL;
 using namespace Spawning;
@@ -61,6 +63,9 @@ namespace CatGame{
         std::vector<Meat*> mMeat;
         std::vector<Water*> mWater;
 
+        const int maxResources = 5;
+        int meatAmount, waterAmount;
+
         PlayerResources* mPlayerResources;
         KittenNeeds* mKittenNeeds;
 
@@ -76,6 +81,7 @@ namespace CatGame{
 
         void HandleResources();
         void UpdateTexts();
+        void RefillResources();
 
     public:
         PlayScreen();

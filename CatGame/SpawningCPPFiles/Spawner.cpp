@@ -28,13 +28,13 @@ namespace Spawning{
 
     void Spawner::SpawnMultiple(PathfindingGrid *grid, std::vector<GameEntity*> entity, GameEntity* parent) {
 
-        for(int i = 0; i < entity.size(); i++){
+        for(auto & i : entity){
 
-            entity[i]->Parent(parent);
+            i->Parent(parent);
 
             float x = rand() % grid->width;
             float y = rand() % grid->height;
-            entity[i]->Pos(Vector2(x, y));
+            i->Pos(Vector2(x, y));
         }
     }
 
@@ -46,25 +46,25 @@ namespace Spawning{
 
     void Spawner::SpawnMeat(PathfindingGrid *grid, std::vector<Meat *> meats, GameEntity *parent) {
 
-        for(int i = 0; i < meats.size(); i++){
+        for(auto & meat : meats){
 
-            meats[i]->Parent(parent);
+            meat->Parent(parent);
 
             float x = rand() % grid->width;
             float y = rand() % grid->height;
-            meats[i]->Pos(Vector2(x, y));
+            meat->Pos(Vector2(x, y));
         }
     }
 
     void Spawner::SpawnWater(PathfindingGrid *grid, std::vector<Water *> waters, GameEntity *parent) {
 
-        for(int i = 0; i < waters.size(); i++){
+        for(auto & water : waters){
 
-            waters[i]->Parent(parent);
+            water->Parent(parent);
 
             float x = rand() % grid->width;
             float y = rand() % grid->height;
-            waters[i]->Pos(Vector2(x, y));
+            water->Pos(Vector2(x, y));
         }
     }
 }
