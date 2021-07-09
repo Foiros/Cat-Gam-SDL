@@ -21,6 +21,9 @@
 #include "../CatGameHeaderFiles/KittenNeeds.h"
 #include "../FSMHeaderFiles/FSM.h"
 #include "../SpawningHeaderFiles/Spawner.h"
+#include "../CatGameHeaderFiles/Tree.h"
+#include "../CatGameHeaderFiles/Mouse.h"
+#include "../CatGameHeaderFiles/Flower.h"
 
 #include <vector>
 #include <map>
@@ -62,6 +65,10 @@ namespace CatGame{
 
         std::vector<Meat*> mMeat;
         std::vector<Water*> mWater;
+
+        std::vector<Tree*> trees;
+        std::vector<Flower*> flowers;
+        std::vector<Mouse*> mice;
 
         const int maxResources = 5;
         int meatAmount, waterAmount;

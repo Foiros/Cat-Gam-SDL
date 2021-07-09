@@ -13,7 +13,17 @@ namespace CatGame{
 
     class Tree : public PhysicsEntity{
 
+    private:
+        Texture* sprite;
 
+    public:
+        Tree();
+        ~Tree();
+
+        void Render();
+
+        bool IgnoreCollisions() override;
+        void ContactWithOtherCollider(PhysicsEntity* other) override;
     };
 }
 

@@ -47,16 +47,34 @@ namespace CatGame{
         delete mNest;
         mNest = nullptr;
 
-        for(int i = 0; i < mMeat.size(); i++){
+        for(auto & meat : mMeat){
 
-            delete mMeat[i];
-            mMeat[i] = nullptr;
+            delete meat;
+            meat = nullptr;
         }
 
-        for(int i = 0; i < mWater.size(); i++){
+        for(auto & water : mWater){
 
-            delete mWater[i];
-            mWater[i] = nullptr;
+            delete water;
+            water = nullptr;
+        }
+
+        for(auto & tree : trees){
+
+            delete tree;
+            tree = nullptr;
+        }
+
+        for(auto & flower : flowers){
+
+            delete flower;
+            flower = nullptr;
+        }
+
+        for(auto & mouse : mice){
+
+            delete mouse;
+            mouse = nullptr;
         }
 
         delete mPlayerResources;
@@ -232,6 +250,30 @@ namespace CatGame{
                     water->Render();
                 }
             }
+
+            for(auto & tree : trees){
+
+                if(tree != nullptr){
+
+                    tree->Render();
+                }
+            }
+
+            for(auto & flower : flowers){
+
+                if(flower != nullptr){
+
+                    flower->Render();
+                }
+            }
+
+            for(auto & mouse : mice){
+
+                if(mouse != nullptr){
+
+                    mouse->Render();
+                }
+            }
         }
     }
 
@@ -294,6 +336,17 @@ namespace CatGame{
 
         Spawning::Spawner::SpawnMeat(mGrid, mMeat, this);
         Spawning::Spawner::SpawnWater(mGrid, mWater, this);
+
+        for (int i = 0; i < 3; i++){
+
+            trees.push_back(new Tree());
+            flowers.push_back(new Flower());
+            mice.push_back((new Mouse()));
+        }
+
+        Spawning::Spawner::SpawnTrees(mGrid, trees, this);
+        Spawning::Spawner::SpawnFlowers(mGrid, flowers, this);
+        Spawning::Spawner::SpawnMice(mGrid, mice, this);
     }
 
     void PlayScreen::RefillResources() {

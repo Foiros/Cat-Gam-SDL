@@ -39,7 +39,7 @@ add_executable(CatGameSDL CatGame/SDLHeaderFiles/AnimatedTexture.h CatGame/SDLHe
         CatGame/CatGameHeaderFiles/Kitten.h CatGame/CatGameCPPFiles/Kitten.cpp CatGame/PathfindingHeaderFiles/PathfindingUnit.h
         CatGame/PathfindingCPPFiles/PathfindingUnit.cpp CatGame/CatGameHeaderFiles/Nest.h CatGame/CatGameCPPFiles/Nest.cpp
         CatGame/CatGameHeaderFiles/Meat.h CatGame/CatGameHeaderFiles/Water.h
-        CatGame/CatGameCPPFiles/Meat.cpp CatGame/CatGameCPPFiles/Water.cpp CatGame/CatGameHeaderFiles/Activity.h CatGame/CatGameCPPFiles/Activity.cpp
+        CatGame/CatGameCPPFiles/Meat.cpp CatGame/CatGameCPPFiles/Water.cpp
         CatGame/CatGameHeaderFiles/Tree.h CatGame/CatGameHeaderFiles/Mouse.h CatGame/CatGameHeaderFiles/Flower.h CatGame/CatGameCPPFiles/Flower.cpp
         CatGame/CatGameCPPFiles/Mouse.cpp CatGame/CatGameCPPFiles/Tree.cpp CatGame/PhysicsEngineHeaderFiles/Collider.h CatGame/PhysicsEngineCPPFiles/Collider.cpp
         CatGame/PhysicsEngineHeaderFiles/BoxCollider.h CatGame/PhysicsEngineCPPFiles/BoxCollider.cpp CatGame/PhysicsEngineHeaderFiles/PhysicsEntity.h

@@ -126,33 +126,6 @@ CatGameSDL\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\build
 .PHONY : CatGameSDL\fast
 
-CatGame\CatGameCPPFiles\Activity.obj: CatGame\CatGameCPPFiles\Activity.cpp.obj
-
-.PHONY : CatGame\CatGameCPPFiles\Activity.obj
-
-# target to build an object file
-CatGame\CatGameCPPFiles\Activity.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.obj
-.PHONY : CatGame\CatGameCPPFiles\Activity.cpp.obj
-
-CatGame\CatGameCPPFiles\Activity.i: CatGame\CatGameCPPFiles\Activity.cpp.i
-
-.PHONY : CatGame\CatGameCPPFiles\Activity.i
-
-# target to preprocess a source file
-CatGame\CatGameCPPFiles\Activity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.i
-.PHONY : CatGame\CatGameCPPFiles\Activity.cpp.i
-
-CatGame\CatGameCPPFiles\Activity.s: CatGame\CatGameCPPFiles\Activity.cpp.s
-
-.PHONY : CatGame\CatGameCPPFiles\Activity.s
-
-# target to generate assembly for a file
-CatGame\CatGameCPPFiles\Activity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Activity.cpp.s
-.PHONY : CatGame\CatGameCPPFiles\Activity.cpp.s
-
 CatGame\CatGameCPPFiles\Flower.obj: CatGame\CatGameCPPFiles\Flower.cpp.obj
 
 .PHONY : CatGame\CatGameCPPFiles\Flower.obj
@@ -1053,9 +1026,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CatGameSDL
-	@echo ... CatGame/CatGameCPPFiles/Activity.obj
-	@echo ... CatGame/CatGameCPPFiles/Activity.i
-	@echo ... CatGame/CatGameCPPFiles/Activity.s
 	@echo ... CatGame/CatGameCPPFiles/Flower.obj
 	@echo ... CatGame/CatGameCPPFiles/Flower.i
 	@echo ... CatGame/CatGameCPPFiles/Flower.s

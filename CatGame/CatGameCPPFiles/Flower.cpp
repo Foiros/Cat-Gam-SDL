@@ -7,5 +7,31 @@
 namespace CatGame{
 
 
+    Flower::Flower() {
+
+        sprite = new Texture("Flower.png");
+        sprite->Parent(this);
+    }
+
+    Flower::~Flower() {
+
+        delete sprite;
+        sprite = nullptr;
+    }
+
+    void Flower::Render() {
+
+        sprite->Render();
+    }
+
+    bool Flower::IgnoreCollisions() {
+
+        return false;
+    }
+
+    void Flower::ContactWithOtherCollider(PhysicsEntity *other) {
+
+        PhysicsEntity::ContactWithOtherCollider(other);
+    }
 }
 
