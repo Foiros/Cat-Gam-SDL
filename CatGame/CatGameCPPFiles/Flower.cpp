@@ -9,7 +9,7 @@ namespace CatGame{
 
     Flower::Flower() {
 
-        sprite = new Texture("Flower.png");
+        sprite = new Texture("FlowerProp.png");
         sprite->Parent(this);
     }
 

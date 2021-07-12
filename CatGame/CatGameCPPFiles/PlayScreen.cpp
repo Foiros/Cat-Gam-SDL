@@ -112,7 +112,7 @@ namespace CatGame{
                     if (mPlayerResources->GetResource("Meat") < 100){
 
                         mPlayerResources->AddResources(mMeat[i]->GetValue(), 0);
-                        // mMeat[i] = nullptr;
+                        mMeat[i] = nullptr;
                         mMeat.erase(mMeat.begin() + i);
                         meatAmount--;
                     }
@@ -203,8 +203,8 @@ namespace CatGame{
             HandleResources();
             UpdateTexts();
             mMotherCat->Update();
-            mKitten->Update(mKittenNeeds, mNest, mGrid);
             mNest->Update();
+            mKitten->Update(mKittenNeeds, mNest, mGrid, treeLocations, flowerLocations, miceLocations);
         }
         else{
 
@@ -347,6 +347,21 @@ namespace CatGame{
         Spawning::Spawner::SpawnTrees(mGrid, trees, this);
         Spawning::Spawner::SpawnFlowers(mGrid, flowers, this);
         Spawning::Spawner::SpawnMice(mGrid, mice, this);
+
+        for(auto & tree : trees){
+
+            treeLocations.push_back(new Vector2(tree->Pos().x, tree->Pos().y));
+        }
+
+        for(auto & flower : flowers){
+
+            flowerLocations.push_back(new Vector2(flower->Pos().x, flower->Pos().y));
+        }
+
+        for(auto & mouse : mice){
+
+            miceLocations.push_back(new Vector2(mouse->Pos().x, mouse->Pos().y));
+        }
     }
 
     void PlayScreen::RefillResources() {

@@ -30,11 +30,11 @@ namespace FSM{
 
         FSM* GetFSM();
 
-        void CheckState(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid);
+        void CheckState(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid, std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice);
         void SetAction();
-        GridLocation SetDestination();
-        void ChooseAction(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid);
-        void DoAction(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid);
+        GridLocation SetDestination(std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice);
+        void ChooseAction(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid, std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice);
+        void DoAction(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid, std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice);
 
         void ActionScratchTree(KittenNeeds* needs, PathfindingGrid* grid);
         void ActionStudy(KittenNeeds* needs, PathfindingGrid* grid);

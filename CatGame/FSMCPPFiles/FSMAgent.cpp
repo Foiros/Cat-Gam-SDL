@@ -21,7 +21,7 @@ FSM::FSMAgent::~FSMAgent() {
     mFSM = nullptr;
 }
 
-void FSM::FSMAgent::CheckState(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid) {
+void FSM::FSMAgent::CheckState(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid, std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice) {
 
     if (needs->GetNeed(0) <= 75 && nest->GetResource("Meat") > 0)
         mFSM->SetState(FSM::States::Hungry);
@@ -33,10 +33,10 @@ void FSM::FSMAgent::CheckState(KittenNeeds* needs, Nest* nest, PathfindingGrid* 
     if(mFSM->CurrentState() == FSM::States::Idle){
 
         SetAction();
-        ChooseAction(needs, nest, grid);
+        ChooseAction(needs, nest, grid, trees, flowers, mice);
     }
     else
-        ChooseAction(needs, nest, grid);
+        ChooseAction(needs, nest, grid, trees, flowers, mice);
 }
 
 void FSM::FSMAgent::SetAction() {
@@ -59,11 +59,11 @@ void FSM::FSMAgent::SetAction() {
     }
 }
 
-void FSM::FSMAgent::ChooseAction(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid) {
+void FSM::FSMAgent::ChooseAction(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid, std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice) {
 
     if(mDoingAction && !mFollowingPath){
 
-        DoAction(needs, nest, grid);
+        DoAction(needs, nest, grid, trees, flowers, mice);
     }
     else if(mFollowingPath && !mDoingAction){
 
@@ -71,26 +71,30 @@ void FSM::FSMAgent::ChooseAction(KittenNeeds* needs, Nest* nest, PathfindingGrid
     }
     else if(!mFollowingPath && !mDoingAction){
 
-        destination = SetDestination();
+        destination = SetDestination(trees, flowers, mice);
 
         PathfindingUnit::FindPath(grid, destination);
     }
 }
 
-GridLocation FSM::FSMAgent::SetDestination() {
+GridLocation FSM::FSMAgent::SetDestination(std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice) {
+
+    int locationIndexTrees = rand() % trees.size();
+    int locationIndexFlowers = rand() % flowers.size();
+    int locationIndexMice = rand() % mice.size();
 
     switch (mFSM->CurrentState()) {
 
         case FSM::States::NeedToScratch:
-            destination = {300, 200};
+            destination = { (int) trees[locationIndexTrees]->x, (int) trees[locationIndexTrees]->y };
             break;
 
         case FSM::States::Curious:
-            destination = {-300, 220};
+            destination = { (int) flowers[locationIndexFlowers]->x, (int) flowers[locationIndexFlowers]->y };
             break;
 
         case FSM::States::Playful:
-            destination = {500, 40};
+            destination = { (int) mice[locationIndexMice]->x, (int) mice[locationIndexMice]->y };
             break;
 
         case FSM::States::Hungry:
@@ -102,17 +106,16 @@ GridLocation FSM::FSMAgent::SetDestination() {
             break;
     }
 
-    std::cout << destination.locationX << destination.locationY << "\n";
     return destination;
 }
 
-void FSM::FSMAgent::DoAction(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid) {
+void FSM::FSMAgent::DoAction(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid, std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice) {
 
     switch (mFSM->CurrentState()) {
 
         case FSM::States::Idle:
             mDoingAction = false;
-            CheckState(needs, nest, grid);
+            CheckState(needs, nest, grid, trees, flowers, mice);
             break;
 
         case FSM::States::NeedToScratch:

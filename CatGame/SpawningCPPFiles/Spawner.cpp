@@ -44,7 +44,6 @@ namespace Spawning{
         entity->Pos(Vector2(position));
     }
 
-
     void Spawner::SpawnMeat(PathfindingGrid* grid, std::vector<Meat*> meats, GameEntity* parent) {
 
         for(auto & meat : meats){

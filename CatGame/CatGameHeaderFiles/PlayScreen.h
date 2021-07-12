@@ -70,6 +70,10 @@ namespace CatGame{
         std::vector<Flower*> flowers;
         std::vector<Mouse*> mice;
 
+        std::vector<Vector2*> treeLocations;
+        std::vector<Vector2*> flowerLocations;
+        std::vector<Vector2*> miceLocations;
+
         const int maxResources = 5;
         int meatAmount, waterAmount;
 
