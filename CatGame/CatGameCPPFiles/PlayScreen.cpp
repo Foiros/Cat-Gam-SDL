@@ -18,7 +18,6 @@ namespace CatGame{
         mGameStarted = false;
 
         mResourcesAddedToNest = false;
-        mResourcesTakenFromNest = false;
 
         SetUpPlayScreen();
         SetUpGrid();
@@ -101,7 +100,7 @@ namespace CatGame{
     void PlayScreen::HandleResources() {
 
         mResourcesAddedToNest = mNest->GetMotherVisited();
-        mResourcesTakenFromNest = mNest->GetKittenVisited();
+
 
         for (int i = 0; i < mMeat.size(); i++) {
 
@@ -121,6 +120,7 @@ namespace CatGame{
                 }
             }
         }
+
 
         for (int i = 0; i < mWater.size(); i++) {
 
@@ -151,14 +151,6 @@ namespace CatGame{
             mPlayerResources->ReduceResources(addedMeat, addedWater);
 
             mResourcesAddedToNest = false;
-        }
-
-        if(mResourcesTakenFromNest){
-
-            mNest->UseResources(reduceAmount, reduceAmount);
-            mKittenNeeds->IncreaseNeed(0, reduceAmount);
-            mKittenNeeds->IncreaseNeed(1, reduceAmount);
-            mResourcesTakenFromNest = false;
         }
 
         RefillResources();

@@ -39,8 +39,8 @@ namespace FSM{
         void ActionScratchTree(KittenNeeds* needs, PathfindingGrid* grid);
         void ActionStudy(KittenNeeds* needs, PathfindingGrid* grid);
         void ActionPlay(KittenNeeds* needs, PathfindingGrid* grid);
-        void ActionEat(KittenNeeds* needs, PathfindingGrid* grid);
-        void ActionDrink(KittenNeeds* needs, PathfindingGrid* grid);
+        void ActionEat(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid);
+        void ActionDrink(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid);
         void ActionHateMom(KittenNeeds* needs, PathfindingGrid* grid);
     };
 }

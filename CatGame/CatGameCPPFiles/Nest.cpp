@@ -12,7 +12,6 @@ namespace CatGame{
         water = nestMinResource;
 
         motherVisited = false;
-        kittenVisited = false;
 
         sprite = new Texture("Nest.png");
         sprite->Parent(this);
@@ -36,9 +35,6 @@ namespace CatGame{
 
         if(other->GetID() == 1)
             motherVisited = true;
-
-        else if(other->GetID() == 2)
-            kittenVisited = true;
     }
 
     int Nest::GetResource(std::string resourceName) {
@@ -52,11 +48,6 @@ namespace CatGame{
     bool Nest::GetMotherVisited() {
 
         return motherVisited;
-    }
-
-    bool Nest::GetKittenVisited() {
-
-        return kittenVisited;
     }
 
     void Nest::AddResourcesToNest(int _meat, int _water) {
@@ -81,8 +72,6 @@ namespace CatGame{
             water -= reducedWater;
 
         CorrectResources();
-
-        kittenVisited = false;
     }
 
     void Nest::Render() {

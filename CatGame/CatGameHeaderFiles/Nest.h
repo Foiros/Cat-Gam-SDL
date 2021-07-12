@@ -22,7 +22,6 @@ namespace CatGame{
         const int nestMaxResource = 200;
 
         bool motherVisited;
-        bool kittenVisited;
 
         Texture* sprite;
 
@@ -38,7 +37,6 @@ namespace CatGame{
 
         int GetResource(std::string resourceName);
         bool GetMotherVisited();
-        bool GetKittenVisited();
         void AddResourcesToNest(int _meat, int _water);
         void UseResources(int reducedMeat, int reducedWater);
 

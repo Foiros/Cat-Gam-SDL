@@ -60,17 +60,17 @@ namespace CatGame{
         switch (need) {
 
             case 0:
-                if(amount != 0 && hunger >= kittenNeedMax)
+                if(amount != 0 && hunger <= kittenNeedMax)
                     hunger += amount;
                 break;
 
             case 1:
-                if(amount != 0 && thirst >= kittenNeedMax)
+                if(amount != 0 && thirst <= kittenNeedMax)
                     thirst += amount;
                 break;
 
             case 2:
-                if(love <= kittenNeedMin || love >= kittenNeedMax)
+                if(love >= kittenNeedMin && love <= kittenNeedMax)
                     love += loveIncrease;
                 break;
         }

@@ -5,8 +5,6 @@
 #ifndef CATGAMESDL_KITTENNEEDS_H
 #define CATGAMESDL_KITTENNEEDS_H
 
-#include <string>
-
 namespace CatGame{
 
     class KittenNeeds{

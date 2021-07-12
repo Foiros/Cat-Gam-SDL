@@ -98,7 +98,7 @@ GridLocation FSM::FSMAgent::SetDestination(std::vector<Vector2*> trees, std::vec
             break;
 
         case FSM::States::Hungry:
-            destination = {810, 510};
+            destination = { 810, 510};
             break;
 
         case FSM::States::Thirsty:
@@ -131,11 +131,11 @@ void FSM::FSMAgent::DoAction(KittenNeeds* needs, Nest* nest, PathfindingGrid* gr
             break;
 
         case FSM::States::Hungry:
-            ActionEat(needs, grid);
+            ActionEat(needs, nest, grid);
             break;
 
         case FSM::States::Thirsty:
-            ActionDrink(needs, grid);
+            ActionDrink(needs, nest, grid);
             break;
     }
 }
@@ -147,6 +147,7 @@ void FSM::FSMAgent::ActionScratchTree(KittenNeeds* needs, PathfindingGrid* grid)
 
         needs->ReduceNeed(0);
         needs->ReduceNeed(1);
+        needs->IncreaseNeed(2, 0);
 
         mFSM->SetState(FSM::States::Idle);
         mDoingAction = false;
@@ -160,6 +161,7 @@ void FSM::FSMAgent::ActionStudy(KittenNeeds* needs, PathfindingGrid* grid) {
 
         needs->ReduceNeed(0);
         needs->ReduceNeed(1);
+        needs->IncreaseNeed(2, 0);
 
         mFSM->SetState(FSM::States::Idle);
         mDoingAction = false;
@@ -173,27 +175,32 @@ void FSM::FSMAgent::ActionPlay(KittenNeeds* needs, PathfindingGrid* grid) {
 
         needs->ReduceNeed(0);
         needs->ReduceNeed(1);
+        needs->IncreaseNeed(2, 0);
 
         mFSM->SetState(FSM::States::Idle);
         mDoingAction = false;
     }
 }
 
-void FSM::FSMAgent::ActionEat(KittenNeeds* needs, PathfindingGrid* grid) {
+void FSM::FSMAgent::ActionEat(KittenNeeds* needs, Nest* nest,PathfindingGrid* grid) {
 
     actionTimer += mTimer->DeltaTime();
     if(actionTimer >= actionEndTime){
 
+        nest->UseResources(10, 0);
+        needs->IncreaseNeed(0, 10);
         mFSM->SetState(FSM::States::Idle);
         mDoingAction = false;
     }
 }
 
-void FSM::FSMAgent::ActionDrink(KittenNeeds* needs, PathfindingGrid* grid) {
+void FSM::FSMAgent::ActionDrink(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid) {
 
     actionTimer += mTimer->DeltaTime();
     if(actionTimer >= actionEndTime){
 
+        nest->UseResources(0, 10);
+        needs->IncreaseNeed(1, 10);
         mFSM->SetState(FSM::States::Idle);
         mDoingAction = false;
     }

@@ -46,7 +46,6 @@ namespace CatGame{
         bool mGameStarted;
 
         bool mResourcesAddedToNest;
-        bool mResourcesTakenFromNest;
 
         Texture* mBackground;
         Texture* mPlayerMeat;
