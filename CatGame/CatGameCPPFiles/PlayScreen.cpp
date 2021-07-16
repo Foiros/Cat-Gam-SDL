@@ -18,7 +18,7 @@ namespace CatGame{
         mGameStarted = false;
 
         mGameEndTimer = 0.0f;
-        mGameEndDelay = 2.0f;
+        mGameEndDelay = 4.0f;
         mGameOver = false;
 
         mResourcesAddedToNest = false;
@@ -102,13 +102,11 @@ namespace CatGame{
             victoryText = new Texture("Kitten grew up, you won!", "ARCADE_N.ttf", 20, {150, 0, 0});
             Spawning::Spawner::SpawnOne(Vector2(1000, 500), victoryText, this);
 
-            mGameOver = true;
+            mGameEndTimer += mTimer->DeltaTime();
+            if(mGameEndTimer >= mGameEndDelay){
 
-//            mGameEndTimer += mTimer->DeltaTime();
-//            if(mGameStartTimer >= mGameEndDelay){
-//
-//                std::cout << "Game has been won" << std::endl;
-//            }
+                mGameOver = true;
+            }
         }
         else if(mKittenNeeds->GetHatesMom()){
 
@@ -118,7 +116,7 @@ namespace CatGame{
 
 
             mGameEndTimer += mTimer->DeltaTime();
-            if(mGameStartTimer >= mGameEndDelay){
+            if(mGameEndTimer >= mGameEndDelay){
 
                 mGameOver = true;
             }

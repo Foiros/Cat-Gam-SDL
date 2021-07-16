@@ -141,7 +141,7 @@ namespace SDL{
 
         if(mPlayScreen->ReturnGameOver()){
 
-            mEvents.type = SDL_QUIT;
+            SDL_Quit();
         }
     }
 }
