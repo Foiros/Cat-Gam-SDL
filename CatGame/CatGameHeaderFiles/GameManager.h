@@ -55,6 +55,8 @@ namespace SDL{
         void LateUpdate();
 
         void Render();
+
+        void EndGame();
     };
 }
 

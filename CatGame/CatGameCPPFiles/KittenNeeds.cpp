@@ -2,6 +2,7 @@
 // Created by arttu on 20/05/2021.
 //
 
+#include <iostream>
 #include "../CatGameHeaderFiles/KittenNeeds.h"
 
 namespace CatGame{
@@ -53,6 +54,8 @@ namespace CatGame{
         }
 
         CorrectNeeds();
+        HasGrownUp();
+        HatesMom();
     }
 
     void KittenNeeds::IncreaseNeed(int need, int amount) {
@@ -76,6 +79,8 @@ namespace CatGame{
         }
 
         CorrectNeeds();
+        HasGrownUp();
+        HatesMom();
     }
 
     void KittenNeeds::CorrectNeeds() {
@@ -97,23 +102,25 @@ namespace CatGame{
     }
 
 
-    bool KittenNeeds::HasGrownUp() {
+    void KittenNeeds::HasGrownUp() {
 
-        if(love >= kittenNeedMax)
+        if(love >= kittenNeedMax){
+
             hasGrownUp = true;
+        }
         else
             hasGrownUp = false;
-
-        return hasGrownUp;
     }
 
-    bool KittenNeeds::HatesMom() {
+    void KittenNeeds::HatesMom() {
 
         if(love <= kittenNeedMin)
             hatesMom = true;
         else
             hatesMom = false;
-
-        return hatesMom;
     }
+
+    bool KittenNeeds::GetGrownUp() const { return hasGrownUp; }
+
+    bool KittenNeeds::GetHatesMom() const { return hatesMom; }
 }

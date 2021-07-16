@@ -104,6 +104,7 @@ namespace SDL{
         mPhysicsManager->Update();
         mInputManager->UpdatePrevInput();
         mTimer->Reset();
+        EndGame();
     }
 
     void GameManager::Render() {
@@ -133,6 +134,14 @@ namespace SDL{
                 LateUpdate();
                 Render();
             }
+        }
+    }
+
+    void GameManager::EndGame() {
+
+        if(mPlayScreen->ReturnGameOver()){
+
+            mEvents.type = SDL_QUIT;
         }
     }
 }

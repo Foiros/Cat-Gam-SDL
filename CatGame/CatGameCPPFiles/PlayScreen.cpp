@@ -17,6 +17,10 @@ namespace CatGame{
         mGameStartDelay = 1.0f;
         mGameStarted = false;
 
+        mGameEndTimer = 0.0f;
+        mGameEndDelay = 2.0f;
+        mGameOver = false;
+
         mResourcesAddedToNest = false;
 
         SetUpPlayScreen();
@@ -91,16 +95,39 @@ namespace CatGame{
         mGameStartTimer = 0.0f;
     }
 
-    bool PlayScreen::GameOver() {
+    void PlayScreen::GameOver() {
 
-        if(!mGameStarted)
-            return false;
+        if(mKittenNeeds->GetGrownUp()){
+
+            victoryText = new Texture("Kitten grew up, you won!", "ARCADE_N.ttf", 20, {150, 0, 0});
+            Spawning::Spawner::SpawnOne(Vector2(1000, 500), victoryText, this);
+
+            mGameOver = true;
+
+//            mGameEndTimer += mTimer->DeltaTime();
+//            if(mGameStartTimer >= mGameEndDelay){
+//
+//                std::cout << "Game has been won" << std::endl;
+//            }
+        }
+        else if(mKittenNeeds->GetHatesMom()){
+
+            gameOverText = new Texture("Kitten doesn't love you anymore and goes to search for a new mom",
+                                           "ARCADE_N.ttf", 20, {150, 0, 0});
+            Spawning::Spawner::SpawnOne(Vector2(1000, 500), gameOverText, this);
+
+
+            mGameEndTimer += mTimer->DeltaTime();
+            if(mGameStartTimer >= mGameEndDelay){
+
+                mGameOver = true;
+            }
+        }
     }
 
     void PlayScreen::HandleResources() {
 
         mResourcesAddedToNest = mNest->GetMotherVisited();
-
 
         for (int i = 0; i < mMeat.size(); i++) {
 
@@ -197,6 +224,7 @@ namespace CatGame{
             mMotherCat->Update();
             mNest->Update();
             mKitten->Update(mKittenNeeds, mNest, mGrid, treeLocations, flowerLocations, miceLocations);
+            GameOver();
         }
         else{
 
@@ -380,4 +408,6 @@ namespace CatGame{
             Spawning::Spawner::SpawnWater(mGrid, mWater, this);
         }
     }
+
+    bool PlayScreen::ReturnGameOver() { return mGameOver; }
 }

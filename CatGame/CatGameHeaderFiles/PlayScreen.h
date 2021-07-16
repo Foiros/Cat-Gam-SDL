@@ -45,6 +45,10 @@ namespace CatGame{
         float mGameStartDelay;
         bool mGameStarted;
 
+        float mGameEndTimer;
+        float mGameEndDelay;
+        bool mGameOver;
+
         bool mResourcesAddedToNest;
 
         Texture* mBackground;
@@ -55,6 +59,8 @@ namespace CatGame{
         Texture* mKittenHunger;
         Texture* mKittenThirst;
         Texture* mKittenLove;
+        Texture* victoryText;
+        Texture* gameOverText;
 
         PathfindingGrid* mGrid;
 
@@ -69,9 +75,7 @@ namespace CatGame{
         std::vector<Flower*> flowers;
         std::vector<Mouse*> mice;
 
-        std::vector<Vector2*> treeLocations;
-        std::vector<Vector2*> flowerLocations;
-        std::vector<Vector2*> miceLocations;
+        std::vector<Vector2*> treeLocations, flowerLocations, miceLocations;
 
         const int maxResources = 5;
         int meatAmount, waterAmount;
@@ -79,7 +83,7 @@ namespace CatGame{
         PlayerResources* mPlayerResources;
         KittenNeeds* mKittenNeeds;
 
-        const int reduceAmount = 10;
+        // const int reduceAmount = 10;
 
     private:
         void SetUpPlayScreen();
@@ -87,7 +91,7 @@ namespace CatGame{
         void SetUpGameObjects();
 
         void StartGame();
-        bool GameOver();
+        void GameOver();
 
         void HandleResources();
         void UpdateTexts();
@@ -99,6 +103,8 @@ namespace CatGame{
 
         void Update();
         void Render();
+
+        bool ReturnGameOver();
     };
 
 }

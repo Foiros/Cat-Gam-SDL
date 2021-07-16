@@ -28,12 +28,16 @@ namespace Spawning{
 
     void Spawner::SpawnMultiple(PathfindingGrid *grid, std::vector<GameEntity*> entity, GameEntity* parent) {
 
+        std::random_device generator;
+        std::uniform_int_distribution<int> distributionHeight(1,grid->height);
+        std::uniform_int_distribution<int> distributionWidth(1, grid->width);
+
         for(auto & i : entity){
 
             i->Parent(parent);
 
-            float x = rand() % grid->width;
-            float y = rand() % grid->height;
+            auto x = (float) distributionWidth(generator);
+            auto y = (float) distributionHeight(generator);
             i->Pos(Vector2(x, y));
         }
     }
@@ -46,60 +50,80 @@ namespace Spawning{
 
     void Spawner::SpawnMeat(PathfindingGrid* grid, std::vector<Meat*> meats, GameEntity* parent) {
 
+        std::random_device generator;
+        std::uniform_int_distribution<int> distributionHeight(1,grid->height);
+        std::uniform_int_distribution<int> distributionWidth(1, grid->width);
+
         for(auto & meat : meats){
 
             meat->Parent(parent);
 
-            float x = rand() % grid->width;
-            float y = rand() % grid->height;
+            auto x = (float) distributionWidth(generator);
+            auto y = (float) distributionHeight(generator);
             meat->Pos(Vector2(x, y));
         }
     }
 
     void Spawner::SpawnWater(PathfindingGrid *grid, std::vector<Water *> waters, GameEntity *parent) {
 
+        std::random_device generator;
+        std::uniform_int_distribution<int> distributionHeight(1,grid->height);
+        std::uniform_int_distribution<int> distributionWidth(1, grid->width);
+
         for(auto & water : waters){
 
             water->Parent(parent);
 
-            float x = rand() % grid->width;
-            float y = rand() % grid->height;
+            auto x = (float) distributionWidth(generator);
+            auto y = (float) distributionHeight(generator);
             water->Pos(Vector2(x, y));
         }
     }
 
     void Spawner::SpawnTrees(PathfindingGrid *grid, std::vector<Tree *> trees, GameEntity *parent) {
 
+        std::random_device generator;
+        std::uniform_int_distribution<int> distributionHeight(1,grid->height);
+        std::uniform_int_distribution<int> distributionWidth(1, grid->width);
+
         for(auto & tree : trees){
 
             tree->Parent(parent);
 
-            float x = rand() % grid->width;
-            float y = rand() % grid->height;
+            auto x = (float) distributionWidth(generator);
+            auto y = (float) distributionHeight(generator);
             tree->Pos(Vector2(x, y));
         }
     }
 
     void Spawner::SpawnFlowers(PathfindingGrid *grid, std::vector<Flower *> flowers, GameEntity *parent) {
 
+        std::random_device generator;
+        std::uniform_int_distribution<int> distributionHeight(1,grid->height);
+        std::uniform_int_distribution<int> distributionWidth(1, grid->width);
+
         for(auto & flower : flowers){
 
             flower->Parent(parent);
 
-            float x = rand() % grid->width;
-            float y = rand() % grid->height;
+            auto x = (float) distributionWidth(generator);
+            auto y = (float) distributionHeight(generator);
             flower->Pos(Vector2(x, y));
         }
     }
 
     void Spawner::SpawnMice(PathfindingGrid *grid, std::vector<Mouse *> mice, GameEntity *parent) {
 
+        std::random_device generator;
+        std::uniform_int_distribution<int> distributionHeight(1,grid->height);
+        std::uniform_int_distribution<int> distributionWidth(1, grid->width);
+
         for(auto & mouse : mice){
 
             mouse->Parent(parent);
 
-            float x = rand() % grid->width;
-            float y = rand() % grid->height;
+            auto x = (float) distributionWidth(generator);
+            auto y = (float) distributionHeight(generator);
             mouse->Pos(Vector2(x, y));
         }
     }

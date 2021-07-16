@@ -13,6 +13,7 @@
 #include "../CatGameHeaderFiles/Mouse.h"
 
 #include <vector>
+#include <random>
 
 using namespace CatGame;
 

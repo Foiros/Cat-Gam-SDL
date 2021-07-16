@@ -8,7 +8,9 @@ namespace CatGame{
 
     Meat::Meat() {
 
-        int random = rand() % 50;
+        std::random_device generator;
+        std::uniform_int_distribution<int> distribution(10, 30);
+        int random = distribution(generator);
         value = random;
         gathered = false;
 
