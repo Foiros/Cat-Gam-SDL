@@ -14,9 +14,10 @@ namespace CatGame{
 
         const int kittenNeedMax = 100;
         const int kittenNeedMin = 0;
-        const int kittenLoveStart = 95;
+        const int kittenLoveStart = 25;
 
-        const int reduceAmount = 3;
+        const int reduceAmountEasy = 2;
+        const int reduceAmountHarsh = 3;
         const int loveIncrease = 3;
 
         bool hasGrownUp;

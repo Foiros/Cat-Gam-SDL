@@ -145,7 +145,6 @@ void FSM::FSMAgent::ActionScratchTree(KittenNeeds* needs, PathfindingGrid* grid)
     actionTimer += mTimer->DeltaTime();
     if(actionTimer >= actionEndTime){
 
-        needs->ReduceNeed(0, 0);
         needs->ReduceNeed(1, 0);
         needs->IncreaseNeed(2, 0);
 
@@ -160,7 +159,6 @@ void FSM::FSMAgent::ActionStudy(KittenNeeds* needs, PathfindingGrid* grid) {
     if(actionTimer >= actionEndTime){
 
         needs->ReduceNeed(0, 0);
-        needs->ReduceNeed(1, 0);
         needs->IncreaseNeed(2, 0);
 
         mFSM->SetState(FSM::States::Idle);
@@ -173,7 +171,6 @@ void FSM::FSMAgent::ActionPlay(KittenNeeds* needs, PathfindingGrid* grid) {
     actionTimer += mTimer->DeltaTime();
     if(actionTimer >= actionEndTime){
 
-        needs->ReduceNeed(0, 0);
         needs->ReduceNeed(1, 0);
         needs->IncreaseNeed(2, 0);
 

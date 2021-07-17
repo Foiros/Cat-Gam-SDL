@@ -41,12 +41,12 @@ namespace CatGame{
         switch (need) {
 
             case 0:
-                hunger -= reduceAmount;
+                hunger -= reduceAmountHarsh;
                 LoseLove();
                 break;
 
             case 1:
-                thirst -= reduceAmount;
+                thirst -= reduceAmountEasy;
                 LoseLove();
                 break;
 
@@ -101,7 +101,7 @@ namespace CatGame{
 
             loveLoss += 2;
         }
-        else if(hunger > 75){
+        else if(hunger <= 90 && hunger > 75){
 
             loveLoss += 1;
         }
@@ -118,7 +118,7 @@ namespace CatGame{
 
             loveLoss += 2;
         }
-        else if(thirst > 75){
+        else if(thirst <= 90 && thirst > 75){
 
             loveLoss += 1;
         }
@@ -147,10 +147,8 @@ namespace CatGame{
 
     void KittenNeeds::HasGrownUp() {
 
-        if(love >= kittenNeedMax){
-
+        if(love >= kittenNeedMax)
             hasGrownUp = true;
-        }
         else
             hasGrownUp = false;
     }
