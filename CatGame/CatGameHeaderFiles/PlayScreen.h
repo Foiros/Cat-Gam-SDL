@@ -83,7 +83,6 @@ namespace CatGame{
         PlayerResources* mPlayerResources;
         KittenNeeds* mKittenNeeds;
 
-        // const int reduceAmount = 10;
 
     private:
         void SetUpPlayScreen();

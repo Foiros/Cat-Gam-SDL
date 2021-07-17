@@ -14,7 +14,7 @@ namespace CatGame{
 
         const int kittenNeedMax = 100;
         const int kittenNeedMin = 0;
-        const int kittenLoveStart = 97;
+        const int kittenLoveStart = 95;
 
         const int reduceAmount = 3;
         const int loveIncrease = 3;
@@ -30,8 +30,9 @@ namespace CatGame{
         ~KittenNeeds();
 
         int GetNeed(int need);
-        void ReduceNeed(int need);
+        void ReduceNeed(int need, int amount);
         void IncreaseNeed(int need, int amount);
+        void LoseLove();
 
         void HasGrownUp();
         void HatesMom();

@@ -36,20 +36,22 @@ namespace CatGame{
         }
     }
 
-    void KittenNeeds::ReduceNeed(int need) {
+    void KittenNeeds::ReduceNeed(int need, int amount) {
 
         switch (need) {
 
             case 0:
                 hunger -= reduceAmount;
+                LoseLove();
                 break;
 
             case 1:
                 thirst -= reduceAmount;
+                LoseLove();
                 break;
 
             case 2:
-                love -= reduceAmount;
+                love -= amount;
                 break;
         }
 
@@ -81,6 +83,47 @@ namespace CatGame{
         CorrectNeeds();
         HasGrownUp();
         HatesMom();
+    }
+
+    void KittenNeeds::LoseLove() {
+
+        int loveLoss = 0;
+
+        if(hunger <= 25){
+
+            loveLoss += 4;
+        }
+        else if(hunger <= 50 && hunger > 25){
+
+            loveLoss += 3;
+        }
+        else if(hunger <= 75 && hunger > 50){
+
+            loveLoss += 2;
+        }
+        else if(hunger > 75){
+
+            loveLoss += 1;
+        }
+
+        if(thirst <= 25){
+
+            loveLoss += 4;
+        }
+        else if(thirst <= 50 && thirst > 25){
+
+            loveLoss += 3;
+        }
+        else if(thirst <= 75 && thirst > 50){
+
+            loveLoss += 2;
+        }
+        else if(thirst > 75){
+
+            loveLoss += 1;
+        }
+
+        ReduceNeed(2, loveLoss);
     }
 
     void KittenNeeds::CorrectNeeds() {
