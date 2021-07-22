@@ -61,20 +61,20 @@ void FSM::FSMAgent::SetAction() {
 
 void FSM::FSMAgent::ChooseAction(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid, std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice) {
 
-    if(mDoingAction && !mFollowingPath){
-
-        DoAction(needs, nest, grid, trees, flowers, mice);
-    }
-    else if(mFollowingPath && !mDoingAction){
-
-        PathfindingUnit::FollowPath(path);
-    }
-    else if(!mFollowingPath && !mDoingAction){
-
-        destination = SetDestination(trees, flowers, mice);
-
-        PathfindingUnit::FindPath(grid, destination);
-    }
+//    if(mDoingAction && !mFollowingPath){aa
+//aa
+//        DoAction(needs, nest, grid, trees, flowers, mice);
+//    }
+//    else if(mFollowingPath && !mDoingAction){
+//
+//        PathfindingUnit::FollowPath(path);
+//    }
+//    else if(!mFollowingPath && !mDoingAction){
+//
+//        destination = SetDestination(trees, flowers, mice);
+//
+//        PathfindingUnit::FindPath(grid, destination);
+//    }
 }
 
 GridLocation FSM::FSMAgent::SetDestination(std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice) {
@@ -114,7 +114,7 @@ void FSM::FSMAgent::DoAction(KittenNeeds* needs, Nest* nest, PathfindingGrid* gr
     switch (mFSM->CurrentState()) {
 
         case FSM::States::Idle:
-            mDoingAction = false;
+            // mDoingAction = false;
             CheckState(needs, nest, grid, trees, flowers, mice);
             break;
 
@@ -149,7 +149,7 @@ void FSM::FSMAgent::ActionScratchTree(KittenNeeds* needs, PathfindingGrid* grid)
         needs->IncreaseNeed(2, 0);
 
         mFSM->SetState(FSM::States::Idle);
-        mDoingAction = false;
+        // mDoingAction = false;
     }
 }
 
@@ -162,7 +162,7 @@ void FSM::FSMAgent::ActionStudy(KittenNeeds* needs, PathfindingGrid* grid) {
         needs->IncreaseNeed(2, 0);
 
         mFSM->SetState(FSM::States::Idle);
-        mDoingAction = false;
+        // mDoingAction = false;
     }
 }
 
@@ -175,7 +175,7 @@ void FSM::FSMAgent::ActionPlay(KittenNeeds* needs, PathfindingGrid* grid) {
         needs->IncreaseNeed(2, 0);
 
         mFSM->SetState(FSM::States::Idle);
-        mDoingAction = false;
+        // mDoingAction = false;
     }
 }
 
@@ -187,7 +187,7 @@ void FSM::FSMAgent::ActionEat(KittenNeeds* needs, Nest* nest,PathfindingGrid* gr
         nest->UseResources(10, 0);
         needs->IncreaseNeed(0, 10);
         mFSM->SetState(FSM::States::Idle);
-        mDoingAction = false;
+        // mDoingAction = false;
     }
 }
 
@@ -199,7 +199,7 @@ void FSM::FSMAgent::ActionDrink(KittenNeeds* needs, Nest* nest, PathfindingGrid*
         nest->UseResources(0, 10);
         needs->IncreaseNeed(1, 10);
         mFSM->SetState(FSM::States::Idle);
-        mDoingAction = false;
+        // mDoingAction = false;
     }
 }
 

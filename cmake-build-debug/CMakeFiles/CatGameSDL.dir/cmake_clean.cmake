@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Water.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/FSMCPPFiles/FSM.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/FSMCPPFiles/FSMAgent.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/CatGame/FSMCPPFiles/FSMHandler.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/CatGame/FSMCPPFiles/NewFSM.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/PathfindingCPPFiles/Pathfinding.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/PathfindingCPPFiles/PathfindingGrid.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/PathfindingCPPFiles/PathfindingUnit.cpp.obj"

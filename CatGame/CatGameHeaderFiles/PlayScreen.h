@@ -24,12 +24,14 @@
 #include "../CatGameHeaderFiles/Tree.h"
 #include "../CatGameHeaderFiles/Mouse.h"
 #include "../CatGameHeaderFiles/Flower.h"
+#include "../FSMHeaderFiles/NewFSM.h"
 
 #include <vector>
 #include <map>
 
 using namespace SDL;
 using namespace Spawning;
+using namespace FSM;
 
 namespace CatGame{
 
@@ -76,6 +78,8 @@ namespace CatGame{
         std::vector<Mouse*> mice;
 
         std::vector<Vector2*> treeLocations, flowerLocations, miceLocations;
+
+        NewFSM* kittenFSM;
 
         const int maxResources = 5;
         int meatAmount, waterAmount;

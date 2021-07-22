@@ -15,8 +15,6 @@ namespace CatGame{
         mVisible = false;
         mAnimating = false;
 
-        mMoveSpeed = 300.0f;
-
         mKittenSprite = new Texture("Kitten.png");
         mKittenSprite->Parent(this);
 
@@ -26,9 +24,6 @@ namespace CatGame{
 
         AddCollider(new BoxCollider(Vector2(50.0f, 50.0f)));
         mID = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Kitten);
-
-        mFollowingPath = false;
-        mDoingAction = false;
     }
 
     Kitten::~Kitten() {
@@ -60,7 +55,7 @@ namespace CatGame{
 
     void Kitten::Update(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid, std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice) {
 
-        CheckState(needs, nest, grid, trees, flowers, mice);
+        // CheckState(needs, nest, grid, trees, flowers, mice);
     }
 
     void Kitten::Render() {

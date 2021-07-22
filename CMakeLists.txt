@@ -48,7 +48,7 @@ add_executable(CatGameSDL CatGame/SDLHeaderFiles/AnimatedTexture.h CatGame/SDLHe
         CatGame/PhysicsEngineCPPFiles/PhysicsManager.cpp CatGame/PhysicsEngineHeaderFiles/CircleCollider.h CatGame/PhysicsEngineCPPFiles/CircleCollider.cpp
         CatGame/CatGameHeaderFiles/PlayerResources.h CatGame/CatGameCPPFiles/PlayerResources.cpp CatGame/CatGameHeaderFiles/KittenNeeds.h
         CatGame/CatGameCPPFiles/KittenNeeds.cpp CatGame/FSMHeaderFiles/FSM.h CatGame/FSMCPPFiles/FSM.cpp
-        CatGame/FSMHeaderFiles/FSMAgent.h CatGame/FSMCPPFiles/FSMAgent.cpp CatGame/SpawningHeaderFiles/Spawner.h CatGame/SpawningCPPFiles/Spawner.cpp)
+        CatGame/FSMHeaderFiles/FSMAgent.h CatGame/FSMCPPFiles/FSMAgent.cpp CatGame/SpawningHeaderFiles/Spawner.h CatGame/SpawningCPPFiles/Spawner.cpp CatGame/FSMHeaderFiles/NewFSM.h CatGame/FSMCPPFiles/NewFSM.cpp CatGame/FSMHeaderFiles/FSMHandler.h CatGame/FSMCPPFiles/FSMHandler.cpp)
 
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2)

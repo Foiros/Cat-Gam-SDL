@@ -531,6 +531,60 @@ CatGame\FSMCPPFiles\FSMAgent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMAgent.cpp.s
 .PHONY : CatGame\FSMCPPFiles\FSMAgent.cpp.s
 
+CatGame\FSMCPPFiles\FSMHandler.obj: CatGame\FSMCPPFiles\FSMHandler.cpp.obj
+
+.PHONY : CatGame\FSMCPPFiles\FSMHandler.obj
+
+# target to build an object file
+CatGame\FSMCPPFiles\FSMHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMHandler.cpp.obj
+.PHONY : CatGame\FSMCPPFiles\FSMHandler.cpp.obj
+
+CatGame\FSMCPPFiles\FSMHandler.i: CatGame\FSMCPPFiles\FSMHandler.cpp.i
+
+.PHONY : CatGame\FSMCPPFiles\FSMHandler.i
+
+# target to preprocess a source file
+CatGame\FSMCPPFiles\FSMHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMHandler.cpp.i
+.PHONY : CatGame\FSMCPPFiles\FSMHandler.cpp.i
+
+CatGame\FSMCPPFiles\FSMHandler.s: CatGame\FSMCPPFiles\FSMHandler.cpp.s
+
+.PHONY : CatGame\FSMCPPFiles\FSMHandler.s
+
+# target to generate assembly for a file
+CatGame\FSMCPPFiles\FSMHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMHandler.cpp.s
+.PHONY : CatGame\FSMCPPFiles\FSMHandler.cpp.s
+
+CatGame\FSMCPPFiles\NewFSM.obj: CatGame\FSMCPPFiles\NewFSM.cpp.obj
+
+.PHONY : CatGame\FSMCPPFiles\NewFSM.obj
+
+# target to build an object file
+CatGame\FSMCPPFiles\NewFSM.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\NewFSM.cpp.obj
+.PHONY : CatGame\FSMCPPFiles\NewFSM.cpp.obj
+
+CatGame\FSMCPPFiles\NewFSM.i: CatGame\FSMCPPFiles\NewFSM.cpp.i
+
+.PHONY : CatGame\FSMCPPFiles\NewFSM.i
+
+# target to preprocess a source file
+CatGame\FSMCPPFiles\NewFSM.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\NewFSM.cpp.i
+.PHONY : CatGame\FSMCPPFiles\NewFSM.cpp.i
+
+CatGame\FSMCPPFiles\NewFSM.s: CatGame\FSMCPPFiles\NewFSM.cpp.s
+
+.PHONY : CatGame\FSMCPPFiles\NewFSM.s
+
+# target to generate assembly for a file
+CatGame\FSMCPPFiles\NewFSM.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\NewFSM.cpp.s
+.PHONY : CatGame\FSMCPPFiles\NewFSM.cpp.s
+
 CatGame\PathfindingCPPFiles\Pathfinding.obj: CatGame\PathfindingCPPFiles\Pathfinding.cpp.obj
 
 .PHONY : CatGame\PathfindingCPPFiles\Pathfinding.obj
@@ -1071,6 +1125,12 @@ help:
 	@echo ... CatGame/FSMCPPFiles/FSMAgent.obj
 	@echo ... CatGame/FSMCPPFiles/FSMAgent.i
 	@echo ... CatGame/FSMCPPFiles/FSMAgent.s
+	@echo ... CatGame/FSMCPPFiles/FSMHandler.obj
+	@echo ... CatGame/FSMCPPFiles/FSMHandler.i
+	@echo ... CatGame/FSMCPPFiles/FSMHandler.s
+	@echo ... CatGame/FSMCPPFiles/NewFSM.obj
+	@echo ... CatGame/FSMCPPFiles/NewFSM.i
+	@echo ... CatGame/FSMCPPFiles/NewFSM.s
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.obj
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.i
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.s

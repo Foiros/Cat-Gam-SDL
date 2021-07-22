@@ -221,7 +221,8 @@ namespace CatGame{
             UpdateTexts();
             mMotherCat->Update();
             mNest->Update();
-            mKitten->Update(mKittenNeeds, mNest, mGrid, treeLocations, flowerLocations, miceLocations);
+            kittenFSM->Update();
+            //mKitten->Update(mKittenNeeds, mNest, mGrid, treeLocations, flowerLocations, miceLocations);
             GameOver();
         }
         else{
@@ -380,6 +381,8 @@ namespace CatGame{
 
             miceLocations.push_back(new Vector2(mouse->Pos().x, mouse->Pos().y));
         }
+
+        kittenFSM = new NewFSM(mGrid, mKitten, mKittenNeeds, mNest, mTimer, treeLocations, flowerLocations, miceLocations);
     }
 
     void PlayScreen::RefillResources() {

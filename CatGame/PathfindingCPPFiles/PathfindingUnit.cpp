@@ -14,7 +14,6 @@ void PathfindingUnit::FindPath(PathfindingGrid *mGrid, GridLocation destination)
     Pathfinding::Instance()->FindPath(mGrid, mKittenLocation, destination, came_from, cost_so_far);
     path = Pathfinding::Instance()->ReconstructPath(mKittenLocation, destination, came_from);
 
-    mFollowingPath = true;
     this->destination = destination;
 
     came_from.clear();
@@ -33,9 +32,9 @@ void PathfindingUnit::FollowPath(std::vector<GridLocation> path) {
 
     if(node == destination){
 
-        mFollowingPath = false;
-        mDoingAction = true;
         path.clear();
+
+        hasMoved = true;
     }
 }
 

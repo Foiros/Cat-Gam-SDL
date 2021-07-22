@@ -5,6 +5,7 @@
 #ifndef CATGAMESDL_PATHFINDINGUNIT_H
 #define CATGAMESDL_PATHFINDINGUNIT_H
 
+
 #include "../PhysicsEngineHeaderFiles/PhysicsEntity.h"
 #include "../SDLHeaderFiles/Texture.h"
 #include "../PathfindingHeaderFiles/Pathfinding.h"
@@ -14,15 +15,13 @@ using namespace PhysicsEngine;
 
 class PathfindingUnit : public PhysicsEntity{
 
-protected:
-    float mMoveSpeed;
-
+public:
     std::vector<GridLocation> path;
     GridLocation destination;
-    bool mFollowingPath;
-    bool mDoingAction;
 
-protected:
+    bool hasMoved = false;
+
+public:
     void FindPath(PathfindingGrid* mGrid, GridLocation destination);
     void FollowPath(std::vector<GridLocation> path);
 };

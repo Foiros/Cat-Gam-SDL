@@ -20,7 +20,7 @@ using namespace FSM;
 
 namespace CatGame{
 
-    class Kitten : public FSMAgent {
+    class Kitten : public PathfindingUnit {
 
     private:
         Timer* mTimer;

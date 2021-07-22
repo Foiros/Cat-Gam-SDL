@@ -174,10 +174,22 @@
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/FSMAgent.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/FSMHandler.cpp">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/NewFSM.cpp">
+			<Option target="CatGameSDL"/>
+		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSM.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSMAgent.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSMHandler.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/NewFSM.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingCPPFiles/Pathfinding.cpp">
