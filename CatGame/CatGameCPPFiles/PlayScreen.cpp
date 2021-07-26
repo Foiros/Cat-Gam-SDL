@@ -382,7 +382,7 @@ namespace CatGame{
             miceLocations.push_back(new Vector2(mouse->Pos().x, mouse->Pos().y));
         }
 
-        kittenFSM = new NewFSM(mGrid, mKitten, mKittenNeeds, mNest, mTimer, treeLocations, flowerLocations, miceLocations);
+        kittenFSM = new KittenFSM(mGrid, mKitten, mKittenNeeds, mNest, mTimer, treeLocations, flowerLocations, miceLocations);
     }
 
     void PlayScreen::RefillResources() {

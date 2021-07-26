@@ -168,28 +168,28 @@
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Water.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/FSM.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/KittenFSM.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/FSMAgent.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/KittenFSMHandler.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/FSMHandler.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/WolfFSM.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/NewFSM.cpp">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/WolfFSMHandler.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSM.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/KittenFSM.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSMAgent.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/KittenFSMHandler.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/FSMHandler.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/WolfFSM.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
-		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/NewFSM.h">
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMHeaderFiles/WolfFSMHandler.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/PathfindingCPPFiles/Pathfinding.cpp">

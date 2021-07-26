@@ -19,12 +19,11 @@
 #include "../CatGameHeaderFiles/Nest.h"
 #include "../CatGameHeaderFiles/PlayerResources.h"
 #include "../CatGameHeaderFiles/KittenNeeds.h"
-#include "../FSMHeaderFiles/FSM.h"
 #include "../SpawningHeaderFiles/Spawner.h"
 #include "../CatGameHeaderFiles/Tree.h"
 #include "../CatGameHeaderFiles/Mouse.h"
 #include "../CatGameHeaderFiles/Flower.h"
-#include "../FSMHeaderFiles/NewFSM.h"
+#include "../FSMHeaderFiles/KittenFSM.h"
 
 #include <vector>
 #include <map>
@@ -79,7 +78,7 @@ namespace CatGame{
 
         std::vector<Vector2*> treeLocations, flowerLocations, miceLocations;
 
-        NewFSM* kittenFSM;
+        KittenFSM* kittenFSM;
 
         const int maxResources = 5;
         int meatAmount, waterAmount;

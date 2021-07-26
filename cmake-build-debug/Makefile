@@ -477,113 +477,113 @@ CatGame\CatGameCPPFiles\Water.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.s
 .PHONY : CatGame\CatGameCPPFiles\Water.cpp.s
 
-CatGame\FSMCPPFiles\FSM.obj: CatGame\FSMCPPFiles\FSM.cpp.obj
+CatGame\FSMCPPFiles\KittenFSM.obj: CatGame\FSMCPPFiles\KittenFSM.cpp.obj
 
-.PHONY : CatGame\FSMCPPFiles\FSM.obj
-
-# target to build an object file
-CatGame\FSMCPPFiles\FSM.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSM.cpp.obj
-.PHONY : CatGame\FSMCPPFiles\FSM.cpp.obj
-
-CatGame\FSMCPPFiles\FSM.i: CatGame\FSMCPPFiles\FSM.cpp.i
-
-.PHONY : CatGame\FSMCPPFiles\FSM.i
-
-# target to preprocess a source file
-CatGame\FSMCPPFiles\FSM.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSM.cpp.i
-.PHONY : CatGame\FSMCPPFiles\FSM.cpp.i
-
-CatGame\FSMCPPFiles\FSM.s: CatGame\FSMCPPFiles\FSM.cpp.s
-
-.PHONY : CatGame\FSMCPPFiles\FSM.s
-
-# target to generate assembly for a file
-CatGame\FSMCPPFiles\FSM.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSM.cpp.s
-.PHONY : CatGame\FSMCPPFiles\FSM.cpp.s
-
-CatGame\FSMCPPFiles\FSMAgent.obj: CatGame\FSMCPPFiles\FSMAgent.cpp.obj
-
-.PHONY : CatGame\FSMCPPFiles\FSMAgent.obj
+.PHONY : CatGame\FSMCPPFiles\KittenFSM.obj
 
 # target to build an object file
-CatGame\FSMCPPFiles\FSMAgent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMAgent.cpp.obj
-.PHONY : CatGame\FSMCPPFiles\FSMAgent.cpp.obj
+CatGame\FSMCPPFiles\KittenFSM.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\KittenFSM.cpp.obj
+.PHONY : CatGame\FSMCPPFiles\KittenFSM.cpp.obj
 
-CatGame\FSMCPPFiles\FSMAgent.i: CatGame\FSMCPPFiles\FSMAgent.cpp.i
+CatGame\FSMCPPFiles\KittenFSM.i: CatGame\FSMCPPFiles\KittenFSM.cpp.i
 
-.PHONY : CatGame\FSMCPPFiles\FSMAgent.i
+.PHONY : CatGame\FSMCPPFiles\KittenFSM.i
 
 # target to preprocess a source file
-CatGame\FSMCPPFiles\FSMAgent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMAgent.cpp.i
-.PHONY : CatGame\FSMCPPFiles\FSMAgent.cpp.i
+CatGame\FSMCPPFiles\KittenFSM.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\KittenFSM.cpp.i
+.PHONY : CatGame\FSMCPPFiles\KittenFSM.cpp.i
 
-CatGame\FSMCPPFiles\FSMAgent.s: CatGame\FSMCPPFiles\FSMAgent.cpp.s
+CatGame\FSMCPPFiles\KittenFSM.s: CatGame\FSMCPPFiles\KittenFSM.cpp.s
 
-.PHONY : CatGame\FSMCPPFiles\FSMAgent.s
+.PHONY : CatGame\FSMCPPFiles\KittenFSM.s
 
 # target to generate assembly for a file
-CatGame\FSMCPPFiles\FSMAgent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMAgent.cpp.s
-.PHONY : CatGame\FSMCPPFiles\FSMAgent.cpp.s
+CatGame\FSMCPPFiles\KittenFSM.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\KittenFSM.cpp.s
+.PHONY : CatGame\FSMCPPFiles\KittenFSM.cpp.s
 
-CatGame\FSMCPPFiles\FSMHandler.obj: CatGame\FSMCPPFiles\FSMHandler.cpp.obj
+CatGame\FSMCPPFiles\KittenFSMHandler.obj: CatGame\FSMCPPFiles\KittenFSMHandler.cpp.obj
 
-.PHONY : CatGame\FSMCPPFiles\FSMHandler.obj
+.PHONY : CatGame\FSMCPPFiles\KittenFSMHandler.obj
 
 # target to build an object file
-CatGame\FSMCPPFiles\FSMHandler.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMHandler.cpp.obj
-.PHONY : CatGame\FSMCPPFiles\FSMHandler.cpp.obj
+CatGame\FSMCPPFiles\KittenFSMHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\KittenFSMHandler.cpp.obj
+.PHONY : CatGame\FSMCPPFiles\KittenFSMHandler.cpp.obj
 
-CatGame\FSMCPPFiles\FSMHandler.i: CatGame\FSMCPPFiles\FSMHandler.cpp.i
+CatGame\FSMCPPFiles\KittenFSMHandler.i: CatGame\FSMCPPFiles\KittenFSMHandler.cpp.i
 
-.PHONY : CatGame\FSMCPPFiles\FSMHandler.i
+.PHONY : CatGame\FSMCPPFiles\KittenFSMHandler.i
 
 # target to preprocess a source file
-CatGame\FSMCPPFiles\FSMHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMHandler.cpp.i
-.PHONY : CatGame\FSMCPPFiles\FSMHandler.cpp.i
+CatGame\FSMCPPFiles\KittenFSMHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\KittenFSMHandler.cpp.i
+.PHONY : CatGame\FSMCPPFiles\KittenFSMHandler.cpp.i
 
-CatGame\FSMCPPFiles\FSMHandler.s: CatGame\FSMCPPFiles\FSMHandler.cpp.s
+CatGame\FSMCPPFiles\KittenFSMHandler.s: CatGame\FSMCPPFiles\KittenFSMHandler.cpp.s
 
-.PHONY : CatGame\FSMCPPFiles\FSMHandler.s
+.PHONY : CatGame\FSMCPPFiles\KittenFSMHandler.s
 
 # target to generate assembly for a file
-CatGame\FSMCPPFiles\FSMHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\FSMHandler.cpp.s
-.PHONY : CatGame\FSMCPPFiles\FSMHandler.cpp.s
+CatGame\FSMCPPFiles\KittenFSMHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\KittenFSMHandler.cpp.s
+.PHONY : CatGame\FSMCPPFiles\KittenFSMHandler.cpp.s
 
-CatGame\FSMCPPFiles\NewFSM.obj: CatGame\FSMCPPFiles\NewFSM.cpp.obj
+CatGame\FSMCPPFiles\WolfFSM.obj: CatGame\FSMCPPFiles\WolfFSM.cpp.obj
 
-.PHONY : CatGame\FSMCPPFiles\NewFSM.obj
+.PHONY : CatGame\FSMCPPFiles\WolfFSM.obj
 
 # target to build an object file
-CatGame\FSMCPPFiles\NewFSM.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\NewFSM.cpp.obj
-.PHONY : CatGame\FSMCPPFiles\NewFSM.cpp.obj
+CatGame\FSMCPPFiles\WolfFSM.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSM.cpp.obj
+.PHONY : CatGame\FSMCPPFiles\WolfFSM.cpp.obj
 
-CatGame\FSMCPPFiles\NewFSM.i: CatGame\FSMCPPFiles\NewFSM.cpp.i
+CatGame\FSMCPPFiles\WolfFSM.i: CatGame\FSMCPPFiles\WolfFSM.cpp.i
 
-.PHONY : CatGame\FSMCPPFiles\NewFSM.i
+.PHONY : CatGame\FSMCPPFiles\WolfFSM.i
 
 # target to preprocess a source file
-CatGame\FSMCPPFiles\NewFSM.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\NewFSM.cpp.i
-.PHONY : CatGame\FSMCPPFiles\NewFSM.cpp.i
+CatGame\FSMCPPFiles\WolfFSM.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSM.cpp.i
+.PHONY : CatGame\FSMCPPFiles\WolfFSM.cpp.i
 
-CatGame\FSMCPPFiles\NewFSM.s: CatGame\FSMCPPFiles\NewFSM.cpp.s
+CatGame\FSMCPPFiles\WolfFSM.s: CatGame\FSMCPPFiles\WolfFSM.cpp.s
 
-.PHONY : CatGame\FSMCPPFiles\NewFSM.s
+.PHONY : CatGame\FSMCPPFiles\WolfFSM.s
 
 # target to generate assembly for a file
-CatGame\FSMCPPFiles\NewFSM.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\NewFSM.cpp.s
-.PHONY : CatGame\FSMCPPFiles\NewFSM.cpp.s
+CatGame\FSMCPPFiles\WolfFSM.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSM.cpp.s
+.PHONY : CatGame\FSMCPPFiles\WolfFSM.cpp.s
+
+CatGame\FSMCPPFiles\WolfFSMHandler.obj: CatGame\FSMCPPFiles\WolfFSMHandler.cpp.obj
+
+.PHONY : CatGame\FSMCPPFiles\WolfFSMHandler.obj
+
+# target to build an object file
+CatGame\FSMCPPFiles\WolfFSMHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSMHandler.cpp.obj
+.PHONY : CatGame\FSMCPPFiles\WolfFSMHandler.cpp.obj
+
+CatGame\FSMCPPFiles\WolfFSMHandler.i: CatGame\FSMCPPFiles\WolfFSMHandler.cpp.i
+
+.PHONY : CatGame\FSMCPPFiles\WolfFSMHandler.i
+
+# target to preprocess a source file
+CatGame\FSMCPPFiles\WolfFSMHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSMHandler.cpp.i
+.PHONY : CatGame\FSMCPPFiles\WolfFSMHandler.cpp.i
+
+CatGame\FSMCPPFiles\WolfFSMHandler.s: CatGame\FSMCPPFiles\WolfFSMHandler.cpp.s
+
+.PHONY : CatGame\FSMCPPFiles\WolfFSMHandler.s
+
+# target to generate assembly for a file
+CatGame\FSMCPPFiles\WolfFSMHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSMHandler.cpp.s
+.PHONY : CatGame\FSMCPPFiles\WolfFSMHandler.cpp.s
 
 CatGame\PathfindingCPPFiles\Pathfinding.obj: CatGame\PathfindingCPPFiles\Pathfinding.cpp.obj
 
@@ -1119,18 +1119,18 @@ help:
 	@echo ... CatGame/CatGameCPPFiles/Water.obj
 	@echo ... CatGame/CatGameCPPFiles/Water.i
 	@echo ... CatGame/CatGameCPPFiles/Water.s
-	@echo ... CatGame/FSMCPPFiles/FSM.obj
-	@echo ... CatGame/FSMCPPFiles/FSM.i
-	@echo ... CatGame/FSMCPPFiles/FSM.s
-	@echo ... CatGame/FSMCPPFiles/FSMAgent.obj
-	@echo ... CatGame/FSMCPPFiles/FSMAgent.i
-	@echo ... CatGame/FSMCPPFiles/FSMAgent.s
-	@echo ... CatGame/FSMCPPFiles/FSMHandler.obj
-	@echo ... CatGame/FSMCPPFiles/FSMHandler.i
-	@echo ... CatGame/FSMCPPFiles/FSMHandler.s
-	@echo ... CatGame/FSMCPPFiles/NewFSM.obj
-	@echo ... CatGame/FSMCPPFiles/NewFSM.i
-	@echo ... CatGame/FSMCPPFiles/NewFSM.s
+	@echo ... CatGame/FSMCPPFiles/KittenFSM.obj
+	@echo ... CatGame/FSMCPPFiles/KittenFSM.i
+	@echo ... CatGame/FSMCPPFiles/KittenFSM.s
+	@echo ... CatGame/FSMCPPFiles/KittenFSMHandler.obj
+	@echo ... CatGame/FSMCPPFiles/KittenFSMHandler.i
+	@echo ... CatGame/FSMCPPFiles/KittenFSMHandler.s
+	@echo ... CatGame/FSMCPPFiles/WolfFSM.obj
+	@echo ... CatGame/FSMCPPFiles/WolfFSM.i
+	@echo ... CatGame/FSMCPPFiles/WolfFSM.s
+	@echo ... CatGame/FSMCPPFiles/WolfFSMHandler.obj
+	@echo ... CatGame/FSMCPPFiles/WolfFSMHandler.i
+	@echo ... CatGame/FSMCPPFiles/WolfFSMHandler.s
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.obj
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.i
 	@echo ... CatGame/PathfindingCPPFiles/Pathfinding.s

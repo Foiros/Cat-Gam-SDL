@@ -11,12 +11,11 @@
 #include "../SDLHeaderFiles/AudioManager.h"
 #include "../PathfindingHeaderFiles//Pathfinding.h"
 #include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
-#include "../FSMHeaderFiles/FSMAgent.h"
 #include "../CatGameHeaderFiles/KittenNeeds.h"
+#include "Nest.h"
 
 using namespace SDL;
 using namespace PhysicsEngine;
-using namespace FSM;
 
 namespace CatGame{
 
@@ -45,7 +44,6 @@ namespace CatGame{
 
         void ContactWithOtherCollider(PhysicsEntity* other) override;
 
-        void Update(KittenNeeds* needs, Nest* nest, PathfindingGrid* grid, std::vector<Vector2*> trees, std::vector<Vector2*> flowers, std::vector<Vector2*> mice);
         void Render();
     };
 }
