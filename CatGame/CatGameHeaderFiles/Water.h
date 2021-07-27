@@ -19,6 +19,7 @@ namespace CatGame{
         int value;
 
         bool gathered;
+        bool destroyed;
 
         Texture* sprite;
 
@@ -30,8 +31,10 @@ namespace CatGame{
         void ContactWithOtherCollider(PhysicsEntity* other) override;
 
         void GatherResource();
-        bool GetGathered();
-        int GetValue();
+        void DestroyResource();
+        bool GetGathered() const;
+        bool GetDestroyed() const;
+        int GetValue() const;
 
         void Render();
     };

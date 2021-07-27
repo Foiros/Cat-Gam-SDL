@@ -13,6 +13,7 @@ namespace CatGame{
         int random = distribution(generator);
         value = random;
         gathered = false;
+        destroyed = false;
 
         sprite = new Texture("Water.png");
         sprite->Parent(this);
@@ -45,19 +46,22 @@ namespace CatGame{
             gathered = false;
     }
 
-    bool Water::GetGathered() {
+    void Water::DestroyResource() {
 
-        return gathered;
+        if(!destroyed)
+            destroyed = true;
+        else
+            destroyed = false;
     }
 
-    int Water::GetValue() {
+    bool Water::GetGathered() const { return gathered; }
 
-        return value ;
-    }
+    bool Water::GetDestroyed() const { return destroyed; }
+
+    int Water::GetValue() const { return value ; }
 
     void Water::Render() {
 
         sprite->Render();
     }
-
 }

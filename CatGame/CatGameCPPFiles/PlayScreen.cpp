@@ -143,6 +143,12 @@ namespace CatGame{
                     else
                         mMeat[i]->GatherResource();
                 }
+                else if(mMeat[i]->GetDestroyed()){
+
+                    mMeat[i] = nullptr;
+                    mMeat.erase(mMeat.begin() + i);
+                    meatAmount--;
+                }
             }
         }
 
@@ -162,6 +168,12 @@ namespace CatGame{
                     }
                     else
                         mWater[i]->GatherResource();
+                }
+                else if(mWater[i]->GetDestroyed()){
+
+                    mWater[i] = nullptr;
+                    mWater.erase(mWater.begin() + i);
+                    waterAmount--;
                 }
             }
         }
@@ -222,7 +234,6 @@ namespace CatGame{
             mMotherCat->Update();
             mNest->Update();
             kittenFSM->Update();
-            //mKitten->Update(mKittenNeeds, mNest, mGrid, treeLocations, flowerLocations, miceLocations);
             GameOver();
         }
         else{

@@ -20,34 +20,27 @@ namespace FSM{
 
     void FSM::WolfFSMHandler::SetAction(FSM::WolfFSM* fsm) {
 
-        if (fsm->needs->GetNeed(0) <= 75 && fsm->nest->GetResource("Meat") > 0) {
+        std::random_device generator;
+        std::uniform_int_distribution<int> distribution(1, 4);
+        int randomNumber = distribution(generator);
 
-            fsm->SetWolfAction(FSM::WolfFSM::WolfActions::DestroyMeat);
-        }
-        else if(fsm->needs->GetNeed(1) <= 75 && fsm->nest->GetResource("Water") > 0){
-
-            fsm->SetWolfAction(FSM::WolfFSM::WolfActions::DestroyWater);
-        }
-        else{
-
-            std::random_device generator;
-            std::uniform_int_distribution<int> distribution(1, 3);
-            int randomNumber = distribution(generator);
-
-            switch (randomNumber) {
-
-                case 1:
-                    fsm->SetWolfAction(FSM::WolfFSM::WolfActions::StealFromNest);
-                    break;
+        switch (randomNumber)
+        {
+            case 1:
+                fsm->SetWolfAction(FSM::WolfFSM::WolfActions::DestroyMeat);
+                break;
 
                 case 2:
-                    fsm->SetWolfAction(FSM::WolfFSM::WolfActions::BullyKitten);
+                    fsm->SetWolfAction(FSM::WolfFSM::WolfActions::DestroyWater);
                     break;
 
                 case 3:
-                    fsm->SetWolfAction(FSM::WolfFSM::WolfActions::RunAway);
+                    fsm->SetWolfAction(FSM::WolfFSM::WolfActions::StealFromNest);
                     break;
-            }
+
+                    case 4:
+                    fsm->SetWolfAction(FSM::WolfFSM::WolfActions::BullyKitten);
+                    break;
         }
 
         fsm->SetState(FSM::WolfFSM::States::SettingDestination);
@@ -79,32 +72,37 @@ namespace FSM{
     GridLocation FSM::WolfFSMHandler::SetDestination(FSM::WolfFSM* fsm) {
 
         std::random_device generator;
-        std::uniform_int_distribution<int> distribution(0, 2);
+        std::uniform_int_distribution<int> distributionIndex(0, 4);
+        std::uniform_int_distribution<int> escapeDistributionX(0, fsm->grid->width);
+        std::uniform_int_distribution<int> escapeDistributionY(0, fsm->grid->height);
 
-        int locationIndexTrees = distribution(generator);
-        int locationIndexFlowers = distribution(generator);
-        int locationIndexMice = distribution(generator);
+        fsm->locationIndexMeat = distributionIndex(generator);
+        fsm->locationIndexWater = distributionIndex(generator);
+
+        auto escapeX = (float) escapeDistributionX(generator);
+        auto escapeY = (float) escapeDistributionY(generator);
+        auto* escapeLocation = new Vector2(escapeX, escapeY);
 
         switch (fsm->CurrentWolfAction()) {
 
             case FSM::WolfFSM::WolfActions::DestroyMeat:
-                fsm->unit->destination = { (int) fsm->destinations1[locationIndexTrees]->x, (int) fsm->destinations1[locationIndexTrees]->y };
+                fsm->unit->destination = { (int) fsm->destinations1[fsm->locationIndexMeat]->x, (int) fsm->destinations1[fsm->locationIndexMeat]->y };
                 break;
 
             case FSM::WolfFSM::WolfActions::DestroyWater:
-                fsm->unit->destination = { (int) fsm->destinations2[locationIndexFlowers]->x, (int) fsm->destinations2[locationIndexFlowers]->y };
+                fsm->unit->destination = { (int) fsm->destinations2[fsm->locationIndexWater]->x, (int) fsm->destinations2[fsm->locationIndexWater]->y };
                 break;
 
             case FSM::WolfFSM::WolfActions::StealFromNest:
-                fsm->unit->destination = { (int) fsm->destinations3[locationIndexMice]->x, (int) fsm->destinations3[locationIndexMice]->y };
-                break;
-
-            case FSM::WolfFSM::WolfActions::BullyKitten:
                 fsm->unit->destination = { 810, 510};
                 break;
 
+            case FSM::WolfFSM::WolfActions::BullyKitten:
+                fsm->unit->destination = { (int) fsm->kittensLocation->x, (int) fsm->kittensLocation->y };
+                break;
+
             case FSM::WolfFSM::WolfActions::RunAway:
-                fsm->unit->destination = {810, 540};
+                fsm->unit->destination = { (int) escapeLocation->x, (int) escapeLocation->y };
                 break;
 
             case FSM::WolfFSM::WolfActions::NoAction:
@@ -124,25 +122,32 @@ namespace FSM{
             switch (fsm->CurrentWolfAction()) {
 
                 case FSM::WolfFSM::WolfActions::DestroyMeat:
+                    fsm->meats[fsm->locationIndexMeat]->DestroyResource();
                     break;
 
                 case FSM::WolfFSM::WolfActions::DestroyWater:
+                    fsm->waters[fsm->locationIndexWater]->DestroyResource();
                     break;
 
                 case FSM::WolfFSM::WolfActions::StealFromNest:
+                    fsm->nest->UseResources(20, 20);
                     break;
 
                 case FSM::WolfFSM::WolfActions::BullyKitten:
+                    fsm->needs->ReduceNeed(2, 5);
                     break;
 
                 case FSM::WolfFSM::WolfActions::RunAway:
                     break;
 
                 case FSM::WolfFSM::WolfActions::NoAction:
+                    DefaultStates(fsm);
                     CheckState(fsm);
                     break;
             }
         }
+
+        DefaultStates(fsm);
     }
 
     void WolfFSMHandler::DefaultStates(WolfFSM *fsm) {

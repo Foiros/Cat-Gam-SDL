@@ -13,6 +13,7 @@ namespace CatGame{
         int random = distribution(generator);
         value = random;
         gathered = false;
+        destroyed = false;
 
         sprite = new Texture("Meat.png");
         sprite->Parent(this);
@@ -45,16 +46,20 @@ namespace CatGame{
             gathered = false;
     }
 
+    void Meat::DestroyResource() {
 
-    bool Meat::GetGathered() {
-
-        return gathered;
+        if(!destroyed)
+            destroyed = true;
+        else
+            destroyed = false;
     }
 
-    int Meat::GetValue() {
 
-        return value;
-    }
+    bool Meat::GetGathered() const { return gathered; }
+
+    bool Meat::GetDestroyed() const { return destroyed; }
+
+    int Meat::GetValue() const { return value; }
 
     void Meat::Render() {
 

@@ -9,6 +9,8 @@
 #include "../PathfindingHeaderFiles/PathfindingUnit.h"
 #include "../CatGameHeaderFiles/KittenNeeds.h"
 #include "../CatGameHeaderFiles/Nest.h"
+#include "../CatGameHeaderFiles/Meat.h"
+#include "../CatGameHeaderFiles/Water.h"
 
 #include <vector>
 
@@ -49,7 +51,12 @@ namespace FSM{
         KittenNeeds* needs;
         Nest* nest;
 
-        std::vector<Vector2*> destinations1, destinations2, destinations3, destinations4;
+        std::vector<Meat*> meats;
+        std::vector<Water*> waters;
+
+        int locationIndexMeat, locationIndexWater;
+
+        std::vector<Vector2*> destinations1, destinations2;
         Vector2* kittensLocation;
 
         Timer* timer;
@@ -59,7 +66,8 @@ namespace FSM{
 
     public:
         WolfFSM(PathfindingGrid* _grid, PathfindingUnit* _unit, KittenNeeds* _needs, Nest* _nest, Timer* _timer,
-                  std::vector<Vector2*> d1, std::vector<Vector2*> d2, std::vector<Vector2*> d3);
+                  std::vector<Vector2*> d1, std::vector<Vector2*> d2,
+                  std::vector<Meat*> _meats, std::vector<Water*> _waters);
         ~WolfFSM();
 
         void SetState(States newState);
