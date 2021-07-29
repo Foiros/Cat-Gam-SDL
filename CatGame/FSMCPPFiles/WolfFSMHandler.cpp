@@ -97,7 +97,7 @@ namespace FSM{
                 break;
 
             case FSM::WolfFSM::WolfActions::BullyKitten:
-                fsm->unit->destination = { (int) fsm->kittensLocation->x, (int) fsm->kittensLocation->y };
+                fsm->unit->destination = { (int) fsm->kittenLocation->x, (int) fsm->kittenLocation->y };
                 break;
 
             case FSM::WolfFSM::WolfActions::RunAway:

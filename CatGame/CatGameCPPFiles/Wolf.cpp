@@ -46,9 +46,9 @@ namespace CatGame{
             wolfSprite->Render();
     }
 
-    void Wolf::Update() {
+    void Wolf::Update(Vector2* kittenLocation) {
 
-        wolfFSM->Update();
+        wolfFSM->Update(kittenLocation);
     }
 }
 

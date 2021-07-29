@@ -244,7 +244,10 @@ namespace CatGame{
         }
         else{
 
-            mWolf->Update();
+            float kittenX = mKitten->Pos().x;
+            float kittenY = mKitten->Pos().y;
+            auto* kittenLocation = new Vector2(kittenX, kittenY);
+            mWolf->Update(kittenLocation);
         }
     }
 

@@ -64,8 +64,9 @@ namespace FSM{
         return wolfAction;
     }
 
-    void FSM::WolfFSM::Update() {
+    void FSM::WolfFSM::Update(Vector2* _kittenLocation) {
 
+        kittenLocation = _kittenLocation;
         FSM::WolfFSMHandler::CheckState(this);
     }
 }

@@ -36,7 +36,7 @@ namespace CatGame{
 
         void ContactWithOtherCollider(PhysicsEntity* other) override;
 
-        void Update();
+        void Update(Vector2* kittenLocation);
         void Render();
     };
 }

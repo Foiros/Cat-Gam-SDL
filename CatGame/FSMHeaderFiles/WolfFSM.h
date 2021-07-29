@@ -57,7 +57,7 @@ namespace FSM{
         int locationIndexMeat, locationIndexWater;
 
         std::vector<Vector2*> destinations1, destinations2;
-        Vector2* kittensLocation;
+        Vector2* kittenLocation;
 
         Timer* timer;
         float actionTimer = 0.0f;
@@ -76,7 +76,7 @@ namespace FSM{
         void SetWolfAction(WolfActions newAction);
         WolfActions CurrentWolfAction() const;
 
-        void Update();
+        void Update(Vector2* _kittenLocation);
     };
 }
 
