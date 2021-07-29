@@ -477,6 +477,33 @@ CatGame\CatGameCPPFiles\Water.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Water.cpp.s
 .PHONY : CatGame\CatGameCPPFiles\Water.cpp.s
 
+CatGame\CatGameCPPFiles\Wolf.obj: CatGame\CatGameCPPFiles\Wolf.cpp.obj
+
+.PHONY : CatGame\CatGameCPPFiles\Wolf.obj
+
+# target to build an object file
+CatGame\CatGameCPPFiles\Wolf.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.obj
+.PHONY : CatGame\CatGameCPPFiles\Wolf.cpp.obj
+
+CatGame\CatGameCPPFiles\Wolf.i: CatGame\CatGameCPPFiles\Wolf.cpp.i
+
+.PHONY : CatGame\CatGameCPPFiles\Wolf.i
+
+# target to preprocess a source file
+CatGame\CatGameCPPFiles\Wolf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.i
+.PHONY : CatGame\CatGameCPPFiles\Wolf.cpp.i
+
+CatGame\CatGameCPPFiles\Wolf.s: CatGame\CatGameCPPFiles\Wolf.cpp.s
+
+.PHONY : CatGame\CatGameCPPFiles\Wolf.s
+
+# target to generate assembly for a file
+CatGame\CatGameCPPFiles\Wolf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CatGameSDL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.s
+.PHONY : CatGame\CatGameCPPFiles\Wolf.cpp.s
+
 CatGame\FSMCPPFiles\KittenFSM.obj: CatGame\FSMCPPFiles\KittenFSM.cpp.obj
 
 .PHONY : CatGame\FSMCPPFiles\KittenFSM.obj
@@ -1119,6 +1146,9 @@ help:
 	@echo ... CatGame/CatGameCPPFiles/Water.obj
 	@echo ... CatGame/CatGameCPPFiles/Water.i
 	@echo ... CatGame/CatGameCPPFiles/Water.s
+	@echo ... CatGame/CatGameCPPFiles/Wolf.obj
+	@echo ... CatGame/CatGameCPPFiles/Wolf.i
+	@echo ... CatGame/CatGameCPPFiles/Wolf.s
 	@echo ... CatGame/FSMCPPFiles/KittenFSM.obj
 	@echo ... CatGame/FSMCPPFiles/KittenFSM.i
 	@echo ... CatGame/FSMCPPFiles/KittenFSM.s

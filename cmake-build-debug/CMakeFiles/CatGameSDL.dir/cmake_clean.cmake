@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/PlayerResources.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Tree.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Water.cpp.obj"
+  "CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Wolf.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/FSMCPPFiles/KittenFSM.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/FSMCPPFiles/KittenFSMHandler.cpp.obj"
   "CMakeFiles/CatGameSDL.dir/CatGame/FSMCPPFiles/WolfFSM.cpp.obj"

@@ -129,6 +129,9 @@
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Water.cpp">
 			<Option target="CatGameSDL"/>
 		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameCPPFiles/Wolf.cpp">
+			<Option target="CatGameSDL"/>
+		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Flower.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
@@ -166,6 +169,9 @@
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Water.h">
+			<Option target="CatGameSDL"/>
+		</Unit>
+		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/CatGameHeaderFiles/Wolf.h">
 			<Option target="CatGameSDL"/>
 		</Unit>
 		<Unit filename="E:/Yliopisto toita/GitHub/CatGameSDL/Cat-Gam-SDL/CatGame/FSMCPPFiles/KittenFSM.cpp">

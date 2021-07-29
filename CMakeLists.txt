@@ -48,7 +48,7 @@ add_executable(CatGameSDL CatGame/SDLHeaderFiles/AnimatedTexture.h CatGame/SDLHe
         CatGame/PhysicsEngineCPPFiles/PhysicsManager.cpp CatGame/PhysicsEngineHeaderFiles/CircleCollider.h CatGame/PhysicsEngineCPPFiles/CircleCollider.cpp
         CatGame/CatGameHeaderFiles/PlayerResources.h CatGame/CatGameCPPFiles/PlayerResources.cpp CatGame/CatGameHeaderFiles/KittenNeeds.h
         CatGame/CatGameCPPFiles/KittenNeeds.cpp
-        CatGame/SpawningHeaderFiles/Spawner.h CatGame/SpawningCPPFiles/Spawner.cpp CatGame/FSMHeaderFiles/KittenFSM.h CatGame/FSMCPPFiles/KittenFSM.cpp CatGame/FSMHeaderFiles/KittenFSMHandler.h CatGame/FSMCPPFiles/KittenFSMHandler.cpp CatGame/FSMHeaderFiles/WolfFSM.h CatGame/FSMCPPFiles/WolfFSM.cpp CatGame/FSMHeaderFiles/WolfFSMHandler.h CatGame/FSMCPPFiles/WolfFSMHandler.cpp)
+        CatGame/SpawningHeaderFiles/Spawner.h CatGame/SpawningCPPFiles/Spawner.cpp CatGame/FSMHeaderFiles/KittenFSM.h CatGame/FSMCPPFiles/KittenFSM.cpp CatGame/FSMHeaderFiles/KittenFSMHandler.h CatGame/FSMCPPFiles/KittenFSMHandler.cpp CatGame/FSMHeaderFiles/WolfFSM.h CatGame/FSMCPPFiles/WolfFSM.cpp CatGame/FSMHeaderFiles/WolfFSMHandler.h CatGame/FSMCPPFiles/WolfFSMHandler.cpp CatGame/CatGameHeaderFiles/Wolf.h CatGame/CatGameCPPFiles/Wolf.cpp)
 
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2)

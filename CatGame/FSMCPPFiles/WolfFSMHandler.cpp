@@ -34,7 +34,7 @@ namespace FSM{
                     fsm->SetWolfAction(FSM::WolfFSM::WolfActions::DestroyWater);
                     break;
 
-                case 3:
+                    case 3:
                     fsm->SetWolfAction(FSM::WolfFSM::WolfActions::StealFromNest);
                     break;
 
@@ -64,7 +64,6 @@ namespace FSM{
         else if(fsm->CurrentState() == FSM::WolfFSM::States::SettingDestination){
 
             fsm->unit->destination = SetDestination(fsm);
-
             fsm->unit->FindPath(fsm->grid, fsm->unit->destination);
         }
     }

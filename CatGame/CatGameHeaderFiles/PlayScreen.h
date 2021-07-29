@@ -23,7 +23,7 @@
 #include "../CatGameHeaderFiles/Tree.h"
 #include "../CatGameHeaderFiles/Mouse.h"
 #include "../CatGameHeaderFiles/Flower.h"
-#include "../FSMHeaderFiles/KittenFSM.h"
+#include "../CatGameHeaderFiles/Wolf.h"
 
 #include <vector>
 #include <map>
@@ -67,6 +67,7 @@ namespace CatGame{
 
         MotherCat* mMotherCat;
         Kitten* mKitten;
+        Wolf* mWolf;
         Nest* mNest;
 
         std::vector<Meat*> mMeat;
@@ -76,15 +77,17 @@ namespace CatGame{
         std::vector<Flower*> flowers;
         std::vector<Mouse*> mice;
 
-        std::vector<Vector2*> treeLocations, flowerLocations, miceLocations;
-
-        KittenFSM* kittenFSM;
+        std::vector<Vector2*> treeLocations, flowerLocations, miceLocations, meatLocations, waterLocations;
 
         const int maxResources = 5;
         int meatAmount, waterAmount;
 
         PlayerResources* mPlayerResources;
         KittenNeeds* mKittenNeeds;
+
+        bool wolfActive;
+        float mWolfTimer;
+        float mWolfDelay;
 
 
     private:
@@ -98,6 +101,7 @@ namespace CatGame{
         void HandleResources();
         void UpdateTexts();
         void RefillResources();
+        void WolfSpawning();
 
     public:
         PlayScreen();
@@ -106,7 +110,7 @@ namespace CatGame{
         void Update();
         void Render();
 
-        bool ReturnGameOver();
+        bool ReturnGameOver() const;
     };
 
 }

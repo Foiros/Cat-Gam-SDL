@@ -23,6 +23,10 @@ namespace CatGame{
 
         mResourcesAddedToNest = false;
 
+        wolfActive = false;
+        mWolfTimer = 0.0f;
+        mWolfTimer = 4.0f;
+
         SetUpPlayScreen();
         SetUpGrid();
         SetUpGameObjects();
@@ -225,6 +229,25 @@ namespace CatGame{
         mKittenLove->Pos(Vector2(1400, 150));
     }
 
+    void PlayScreen::WolfSpawning() {
+
+        if(!wolfActive){
+
+            mWolfTimer += mTimer->DeltaTime();
+            if(mWolfTimer >= mWolfDelay){
+
+                wolfActive = true;
+                Spawning::Spawner::SpawnOne(Vector2(850, 540), mWolf, this);
+                mWolf->Visible(true);
+                mWolfTimer = 0.0f;
+            }
+        }
+        else{
+
+            mWolf->Update();
+        }
+    }
+
     void PlayScreen::Update() {
 
         if(mGameStarted){
@@ -233,7 +256,8 @@ namespace CatGame{
             UpdateTexts();
             mMotherCat->Update();
             mNest->Update();
-            kittenFSM->Update();
+            mKitten->Update();
+            WolfSpawning();
             GameOver();
         }
         else{
@@ -263,6 +287,9 @@ namespace CatGame{
             mMotherCat->Render();
             mKitten->Render();
             mNest->Render();
+
+            if(wolfActive)
+                mWolf->Render();
 
 
             for(auto & meat : mMeat){
@@ -346,9 +373,6 @@ namespace CatGame{
         mMotherCat = new MotherCat();
         Spawning::Spawner::SpawnOne(Vector2(300, 300), mMotherCat, this);
 
-        mKitten = new Kitten();
-        Spawning::Spawner::SpawnOne(Vector2(200, 200), mKitten, this);
-
         mNest = new Nest();
         Spawning::Spawner::SpawnOne(Vector2(Graphics::Instance()->SCREEN_WIDTH * 0.5f, Graphics::Instance()->SCREEN_HEIGHT * 0.5f), mNest, this);
 
@@ -393,7 +417,20 @@ namespace CatGame{
             miceLocations.push_back(new Vector2(mouse->Pos().x, mouse->Pos().y));
         }
 
-        kittenFSM = new KittenFSM(mGrid, mKitten, mKittenNeeds, mNest, mTimer, treeLocations, flowerLocations, miceLocations);
+        for(auto & meat : mMeat){
+
+            meatLocations.push_back(new Vector2(meat->Pos().x, meat->Pos().y));
+        }
+
+        for(auto & water : mWater){
+
+            waterLocations.push_back(new Vector2(water->Pos().x, water->Pos().y));
+        }
+
+        mKitten = new Kitten(mGrid, mKittenNeeds, mNest, mTimer, treeLocations, flowerLocations, miceLocations);
+        Spawning::Spawner::SpawnOne(Vector2(200, 200), mKitten, this);
+
+        mWolf = new Wolf(mGrid, mKittenNeeds, mNest, mTimer, meatLocations, waterLocations, mMeat, mWater);
     }
 
     void PlayScreen::RefillResources() {
@@ -421,5 +458,5 @@ namespace CatGame{
         }
     }
 
-    bool PlayScreen::ReturnGameOver() { return mGameOver; }
+    bool PlayScreen::ReturnGameOver() const { return mGameOver; }
 }

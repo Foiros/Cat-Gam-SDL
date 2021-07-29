@@ -13,9 +13,11 @@
 #include "../PhysicsEngineHeaderFiles/PhysicsManager.h"
 #include "../CatGameHeaderFiles/KittenNeeds.h"
 #include "Nest.h"
+#include "../FSMHeaderFiles/KittenFSM.h"
 
 using namespace SDL;
 using namespace PhysicsEngine;
+using namespace FSM;
 
 namespace CatGame{
 
@@ -25,6 +27,7 @@ namespace CatGame{
         Timer* mTimer;
         InputManager* mInputManager;
         AudioManager* mAudioManager;
+        KittenFSM* kittenFSM;
 
         bool mVisible;
         bool mAnimating;
@@ -37,13 +40,15 @@ namespace CatGame{
         bool IgnoreCollisions() override;
 
     public:
-        Kitten();
+        Kitten(PathfindingGrid *_grid, KittenNeeds *_needs, Nest *_nest, Timer* _timer,
+               std::vector<Vector2*> d1, std::vector<Vector2*> d2, std::vector<Vector2*> d3);
         ~Kitten();
 
         void Visible(bool visible);
 
         void ContactWithOtherCollider(PhysicsEntity* other) override;
 
+        void Update();
         void Render();
     };
 }

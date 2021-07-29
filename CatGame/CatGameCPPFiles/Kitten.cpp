@@ -6,11 +6,13 @@
 
 namespace CatGame{
 
-    Kitten::Kitten() {
+    Kitten::Kitten(PathfindingGrid *_grid, KittenNeeds *_needs, Nest *_nest, Timer* _timer,
+                   std::vector<Vector2*> d1, std::vector<Vector2*> d2, std::vector<Vector2*> d3) {
 
         mTimer = Timer::Instance();
         mInputManager = InputManager::Instance();
         mAudioManager = AudioManager::Instance();
+        kittenFSM = new KittenFSM(_grid, this, _needs, _nest, _timer, d1, d2, d3);
 
         mVisible = false;
         mAnimating = false;
@@ -51,6 +53,11 @@ namespace CatGame{
 
     void Kitten::ContactWithOtherCollider(PhysicsEntity *other) {
 
+    }
+
+    void Kitten::Update() {
+
+        kittenFSM->Update();
     }
 
     void Kitten::Render() {

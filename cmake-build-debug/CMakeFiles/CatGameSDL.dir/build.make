@@ -725,6 +725,25 @@ CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSMHandler.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSMHandler.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\FSMCPPFiles\WolfFSMHandler.cpp"
 <<
 
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.obj: CMakeFiles\CatGameSDL.dir\flags.make
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.obj: ..\CatGame\CatGameCPPFiles\Wolf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Wolf.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.obj /FdCMakeFiles\CatGameSDL.dir\ /FS -c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Wolf.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Wolf.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Wolf.cpp"
+<<
+
+CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CatGameSDL.dir/CatGame/CatGameCPPFiles/Wolf.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.s /c "E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\CatGame\CatGameCPPFiles\Wolf.cpp"
+<<
+
 # Object files for target CatGameSDL
 CatGameSDL_OBJECTS = \
 "CMakeFiles\CatGameSDL.dir\CatGame\SDLCPPFiles\AnimatedTexture.cpp.obj" \
@@ -761,7 +780,8 @@ CatGameSDL_OBJECTS = \
 "CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\KittenFSM.cpp.obj" \
 "CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\KittenFSMHandler.cpp.obj" \
 "CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSM.cpp.obj" \
-"CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSMHandler.cpp.obj"
+"CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSMHandler.cpp.obj" \
+"CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.obj"
 
 # External object files for target CatGameSDL
 CatGameSDL_EXTERNAL_OBJECTS =
@@ -801,9 +821,10 @@ CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\KittenFSM.cpp.obj
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\KittenFSMHandler.cpp.obj
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSM.cpp.obj
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\FSMCPPFiles\WolfFSMHandler.cpp.obj
+CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\CatGame\CatGameCPPFiles\Wolf.cpp.obj
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\build.make
 CatGameSDL.exe: CMakeFiles\CatGameSDL.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable CatGameSDL.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable CatGameSDL.exe"
 	"E:\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\CatGameSDL.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\CatGameSDL.dir\objects1.rsp @<<
  /out:CatGameSDL.exe /implib:CatGameSDL.lib /pdb:"E:\Yliopisto toita\GitHub\CatGameSDL\Cat-Gam-SDL\cmake-build-debug\CatGameSDL.pdb" /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console   -LIBPATH:E:\SDL\SDL2-2.0.14\lib\x86  -LIBPATH:E:\SDL\SDL2-2.0.14\Images\lib\x86  -LIBPATH:E:\SDL\SDL2-2.0.14\Fonts\lib\x86  -LIBPATH:E:\SDL\SDL2-2.0.14\Audio\lib\x86  SDL2main.lib SDL2.lib SDL2_image.lib SDL2_ttf.lib SDL2_mixer.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

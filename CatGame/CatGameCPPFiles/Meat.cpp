@@ -48,10 +48,7 @@ namespace CatGame{
 
     void Meat::DestroyResource() {
 
-        if(!destroyed)
-            destroyed = true;
-        else
-            destroyed = false;
+        destroyed = true;
     }
 
 
